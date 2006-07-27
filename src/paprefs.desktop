@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=PulseAudio Preferences
+GenericName=Sound server Preferences
+Comment=View and modify the configuration of the local sound server
+Exec=paprefs
+Icon=preferences-desktop
+StartupNotify=true
+Type=Application
+Categories=Application;AudioVideo;Audio;
