@@ -242,10 +242,10 @@ void MainWindow::writeToGConfRtpSend() {
     if (rtpSendCheckButton->get_active()) {
         if (!mikeEnabled && !speakerEnabled) {
             changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name0", Glib::ustring("module-null-sink"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args0", Glib::ustring("sink_name=rtp format=s16be channels=2 rate=44100"));
+            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args0", Glib::ustring("sink_name=rtp format=s16be channels=2 rate=44100 description=\"RTP Multicast Sink\""));
 
             changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name1", Glib::ustring("module-rtp-send"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args1", Glib::ustring(loopbackEnabled ? "source=rtp_monitor loop=1" : "source=rtp_monitor loop=0"));
+            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args1", Glib::ustring(loopbackEnabled ? "source=rtp.monitor loop=1" : "source=rtp.monitor loop=0"));
         } else {
             char tmp[256];
 
