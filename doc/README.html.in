@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>PulseAudio Volume Control @PACKAGE_VERSION@</title>
+<title>PulseAudio Preferences @PACKAGE_VERSION@</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-<h1><a name="top">PulseAudio Volume Control @PACKAGE_VERSION@</a></h1>
+<h1><a name="top">PulseAudio Preferences @PACKAGE_VERSION@</a></h1>
 
 <p><i>Copyright 2006 Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;</i></p>
 
