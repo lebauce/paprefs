@@ -48,7 +48,9 @@ else
     rm -rf autom4te.cache
     rm -f config.cache
 
-    run_versioned aclocal "$VERSION"
+    echo "no" | gettextize --copy --force
+    intltoolize --copy --force --automake
+    run_versioned aclocal "$VERSION" -I m4
     run_versioned autoconf 2.59 -Wall
     run_versioned autoheader 2.59
     run_versioned automake "$VERSION" -a -c --foreign

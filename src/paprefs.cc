@@ -304,7 +304,14 @@ void MainWindow::readFromGConf() {
 }
 
 int main(int argc, char *argv[]) {
+
+    /* Initialize the i18n stuff */ 
+    bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR); 
+    bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8"); 
+    textdomain(GETTEXT_PACKAGE); 
+    
     signal(SIGPIPE, SIG_IGN);
+
     Gtk::Main kit(argc, argv);
 
     Gnome::Conf::init();

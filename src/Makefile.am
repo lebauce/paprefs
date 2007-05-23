@@ -18,14 +18,22 @@
 # USA.
 
 desktopdir = $(datadir)/applications
+gladedir = $(pkgdatadir)
+localedir = $(datadir)/locale
 
 bin_PROGRAMS=paprefs
-
-dist_pkgdata_DATA=paprefs.glade
-dist_desktop_DATA=paprefs.desktop
+glade_DATA=paprefs.glade
+desktop_in_files=paprefs.desktop.in 
+desktop_DATA=$(desktop_in_files:.desktop.in=.desktop) 
 
 paprefs_SOURCES=paprefs.cc
 
 paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS)
 paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)
-paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(pkgdatadir)/paprefs.glade\"
+paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\"
+
+EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
+
+CLEANFILES = $(desktop_DATA)
+
+@INTLTOOL_DESKTOP_RULE@

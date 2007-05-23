@@ -17,8 +17,17 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA.
 
-EXTRA_DIST = bootstrap.sh README LICENSE
-SUBDIRS=src doc
+EXTRA_DIST=\
+	config.rpath \
+	m4/ChangeLog \
+	bootstrap.sh \
+	README \
+	LICENSE \
+	intltool-merge.in \
+	intltool-update.in \
+	intltool-extract.in
+
+SUBDIRS=src doc po
 
 MAINTAINERCLEANFILES=README
 noinst_DATA = README
@@ -35,4 +44,11 @@ homepage: all dist
 	cp doc/README.html doc/screenshot.png doc/style.css $$HOME/homepage/private/projects/paprefs
 	ln -sf README.html $$HOME/homepage/private/projects/paprefs/index.html
 
+DISTCLEANFILES = \
+        intltool-extract \
+        intltool-merge \
+        intltool-update 
+
 .PHONY: homepage
+
+ACLOCAL_AMFLAGS = -I m4
