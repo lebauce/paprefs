@@ -76,11 +76,10 @@ AC_SUBST([GETTEXT_PACKAGE])
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],["$GETTEXT_PACKAGE"],[Gettext package]) 
 AM_GLIB_GNU_GETTEXT 
 
-AC_CONFIG_FILES([
+AC_CONFIG_FILES([ po/Makefile.in
 Makefile 
 src/Makefile 
 doc/Makefile 
-doc/README.html 
-po/Makefile.in])
+doc/README.html])
 
 AC_OUTPUT
