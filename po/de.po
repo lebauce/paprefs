@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2007-05-24 00:37+0100\n"
+"PO-Revision-Date: 2007-05-24 01:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -39,37 +39,37 @@ msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio-Einstellungen</b></sp
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines in LAN to _browse for local sound devices"
-msgstr "Lokale Audio-Geräte für andere Maschinen im lokalen Netz auffindbar machen"
+msgstr "Lokale Audio-Geräte für andere Maschinen im lokalen Netz auf_findbar machen"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
-msgstr "Separates Audio-Gerät für Multicast/RTP erstellen"
+msgstr "Separates Audio-_Gerät für Multicast/RTP erstellen"
 
 #: ../src/paprefs.glade.h:6
 msgid "Don't require _authentication"
-msgstr "Authentikation nicht erzwingen"
+msgstr "_Authentikation nicht erzwingen"
 
 #: ../src/paprefs.glade.h:7
 msgid "Enable Multicast/RTP _receiver"
-msgstr "Multicast/RTP-Empfänger aktivieren"
+msgstr "Multicast/RTP-_Empfänger aktivieren"
 
 #: ../src/paprefs.glade.h:8
 msgid "Enable Multicast/RTP _sender"
-msgstr "Multicast/RTP-Sender aktivieren"
+msgstr "Multicast/RTP-_Sender aktivieren"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
-msgstr "Netzwerkzugriff auf lokale Audio-Geräte erlauben"
+msgstr "_Netzwerkzugriff auf lokale Audio-Geräte erlauben"
 
 #: ../src/paprefs.glade.h:11
 msgid "Send audio from local _microphone"
-msgstr "Audio vom lokalen Mikrophon senden"
+msgstr "Audio vom lokalen _Mikrophon senden"
 
 #: ../src/paprefs.glade.h:12
 msgid "Send audio from local s_peakers"
-msgstr "Audio von den lokalen Lautsprechern senden"
+msgstr "Audio von den lokalen _Lautsprechern senden"
 
 #: ../src/paprefs.glade.h:14
 msgid "_Loopback audio to local speakers"
-msgstr "Versendetes Audio durch lokale Lautsprecher zurückschleifen"
+msgstr "Versendetes Audio durch lokale Lautsprecher _zurückschleifen"
 
