@@ -48,7 +48,11 @@ else
     rm -rf autom4te.cache
     rm -f config.cache
 
+    rm -f Makefile.am~ configure.ac~
     echo "no" | gettextize --copy --force
+    test -f Makefile~ && mv Makefile.am~ Makefile.am
+    test -f configure.ac~ && mv configure.ac~ configure.ac
+
     intltoolize --copy --force --automake
     run_versioned aclocal "$VERSION" -I m4
     run_versioned autoconf 2.59 -Wall
