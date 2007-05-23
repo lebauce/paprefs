@@ -50,7 +50,7 @@ else
 
     rm -f Makefile.am~ configure.ac~
     echo "no" | gettextize --copy --force
-    test -f Makefile~ && mv Makefile.am~ Makefile.am
+    test -f Makefile.am~ && mv Makefile.am~ Makefile.am
     test -f configure.ac~ && mv configure.ac~ configure.ac
 
     intltoolize --copy --force --automake

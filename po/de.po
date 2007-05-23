@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-05-24 00:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:10
+msgid "PulseAudio Preferences"
+msgstr "PulseAudio-Einstellungen"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Audio-Dienst-Einstellungen"
+
+#: ../src/paprefs.desktop.in.h:3
+#: ../src/paprefs.glade.h:13
+msgid "View and modify the configuration of the local sound server"
+msgstr "Anzeigen und Ändern der Konfiguration des lokalen Audio-Dienstes"
+
+#: ../src/paprefs.glade.h:1
+msgid "<b>Multicast/RTP</b>"
+msgstr "<b>Multicast/RTP</b>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<b>Network Access</b>"
+msgstr "<b>Netzwerkzugriff</b>"
+
+#: ../src/paprefs.glade.h:3
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio-Einstellungen</b></span>"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines in LAN to _browse for local sound devices"
+msgstr "Lokale Audio-Geräte für andere Maschinen im lokalen Netz auffindbar machen"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Separates Audio-Gerät für Multicast/RTP erstellen"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Authentikation nicht erzwingen"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Multicast/RTP-Empfänger aktivieren"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Multicast/RTP-Sender aktivieren"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Netzwerkzugriff auf lokale Audio-Geräte erlauben"
+
+#: ../src/paprefs.glade.h:11
+msgid "Send audio from local _microphone"
+msgstr "Audio vom lokalen Mikrophon senden"
+
+#: ../src/paprefs.glade.h:12
+msgid "Send audio from local s_peakers"
+msgstr "Audio von den lokalen Lautsprechern senden"
+
+#: ../src/paprefs.glade.h:14
+msgid "_Loopback audio to local speakers"
+msgstr "Versendetes Audio durch lokale Lautsprecher zurückschleifen"
+
