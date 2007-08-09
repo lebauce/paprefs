@@ -17,6 +17,9 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA.
 
+# Needs fixing on some borked OS
+SHREXT=.so
+
 desktopdir = $(datadir)/applications
 gladedir = $(pkgdatadir)
 localedir = $(datadir)/locale
@@ -29,8 +32,8 @@ desktop_DATA=$(desktop_in_files:.desktop.in=.desktop)
 paprefs_SOURCES=paprefs.cc
 
 paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS)
-paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)
-paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\"
+paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)  
+paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""${libdir}/pulse-0.9/modules/"\" -DSHREXT=\"$(SHREXT)\"
 
 EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
 

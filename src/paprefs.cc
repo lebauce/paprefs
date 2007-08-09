@@ -63,10 +63,13 @@ public:
     void onChangeRtpReceive();
     void onChangeRtpSend();
     void readFromGConf();
+    void checkForModules();
     void writeToGConfRemoteAccess();
     void writeToGConfRtpReceive();
     void writeToGConfRtpSend();
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
+
+    bool rtpRecvAvailable, rtpSendAvailable, zeroconfAvailable, remoteAvailable;
 };
 
 MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade::Xml>& x) :
@@ -89,6 +92,8 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     Gdk::Color c("white");
     titleEventBox->modify_bg(Gtk::STATE_NORMAL, c);
 
+    checkForModules();
+    
     gconf = Gnome::Conf::Client::get_default_client();
     gconf->set_error_handling(Gnome::Conf::CLIENT_HANDLE_ALL);
     gconf->add_dir(PA_GCONF_ROOT, Gnome::Conf::CLIENT_PRELOAD_RECURSIVE);
@@ -125,15 +130,18 @@ void MainWindow::onCloseButtonClicked() {
 void MainWindow::updateSensitive() {
     bool b;
 
+    remoteAccessCheckButton->set_sensitive(remoteAvailable);
     b = remoteAccessCheckButton->get_active();
-    zeroconfCheckButton->set_sensitive(b);
-    anonymousAuthCheckButton->set_sensitive(b);
+    zeroconfCheckButton->set_sensitive(b && zeroconfAvailable);
+    anonymousAuthCheckButton->set_sensitive(b && remoteAvailable);
 
+    rtpReceiveCheckButton->set_sensitive(rtpRecvAvailable);
+    rtpSendCheckButton->set_sensitive(rtpSendAvailable);
     b = rtpSendCheckButton->get_active();
-    rtpLoopbackCheckButton->set_sensitive(b && !rtpSpeakerRadioButton->get_active());
-    rtpMikeRadioButton->set_sensitive(b);
-    rtpSpeakerRadioButton->set_sensitive(b);
-    rtpNullSinkRadioButton->set_sensitive(b);
+    rtpLoopbackCheckButton->set_sensitive(b && !rtpSpeakerRadioButton->get_active() && rtpSendAvailable);
+    rtpMikeRadioButton->set_sensitive(b && rtpSendAvailable);
+    rtpSpeakerRadioButton->set_sensitive(b && rtpSendAvailable);
+    rtpNullSinkRadioButton->set_sensitive(b && rtpSendAvailable);
 }
 
 void MainWindow::onChangeRemoteAccess() {
@@ -301,6 +309,18 @@ void MainWindow::readFromGConf() {
     ignoreChanges = FALSE;
 
     updateSensitive();
+}
+
+void MainWindow::checkForModules() {
+
+    remoteAvailable =
+        access(MODULESDIR "module-esound-protocol-tcp" SHREXT, F_OK) == 0 ||
+        access(MODULESDIR "module-native-protocol-tcp" SHREXT, F_OK) == 0;
+    
+    zeroconfAvailable = access(MODULESDIR "module-zeroconf-publish" SHREXT, F_OK) == 0;
+
+    rtpRecvAvailable = access(MODULESDIR "module-rtp-recv" SHREXT, F_OK) == 0;
+    rtpSendAvailable = access(MODULESDIR "module-rtp-send" SHREXT, F_OK) == 0;
 }
 
 int main(int argc, char *argv[]) {
