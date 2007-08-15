@@ -47,6 +47,9 @@ DISTCLEANFILES = \
         intltool-merge \
         intltool-update 
 
+fedora-snapshot: dist
+	cp $(distdir).tar.gz $$HOME/cvs.fedora/paprefs/devel/$(distdir).svn`date +%Y%m%d`.tar.gz
+
 .PHONY: homepage
 
 ACLOCAL_AMFLAGS = -I m4
