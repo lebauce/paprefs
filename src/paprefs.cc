@@ -46,7 +46,8 @@ public:
         *anonymousAuthCheckButton,
         *rtpReceiveCheckButton,
         *rtpSendCheckButton,
-        *rtpLoopbackCheckButton;
+        *rtpLoopbackCheckButton,
+        *combineCheckButton;
 
     Gtk::RadioButton
         *rtpMikeRadioButton,
@@ -62,11 +63,13 @@ public:
     void onChangeRemoteAccess();
     void onChangeRtpReceive();
     void onChangeRtpSend();
+    void onChangeCombine();
     void readFromGConf();
     void checkForModules();
     void writeToGConfRemoteAccess();
     void writeToGConfRtpReceive();
     void writeToGConfRtpSend();
+    void writeToGConfCombine();
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
 
     bool rtpRecvAvailable, rtpSendAvailable, zeroconfAvailable, remoteAvailable;
@@ -84,6 +87,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     x->get_widget("rtpReceiveCheckButton", rtpReceiveCheckButton);
     x->get_widget("rtpSendCheckButton", rtpSendCheckButton);
     x->get_widget("rtpLoopbackCheckButton", rtpLoopbackCheckButton);
+    x->get_widget("combineCheckButton", combineCheckButton);
     
     x->get_widget("rtpMikeRadioButton", rtpMikeRadioButton);
     x->get_widget("rtpSpeakerRadioButton", rtpSpeakerRadioButton);
@@ -114,6 +118,8 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     rtpMikeRadioButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onChangeRtpSend));
     rtpSpeakerRadioButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onChangeRtpSend));
     rtpNullSinkRadioButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onChangeRtpSend));
+
+    combineCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeCombine));
 }
 
 MainWindow* MainWindow::create() {
@@ -168,6 +174,36 @@ void MainWindow::onChangeRtpSend() {
     
     updateSensitive();
     writeToGConfRtpSend();
+}
+
+void MainWindow::onChangeCombine() {
+    Gnome::Conf::ChangeSet changeSet;
+
+    if (ignoreChanges)
+        return;
+
+    writeToGConfCombine();
+}
+
+void MainWindow::writeToGConfCombine() {
+    Gnome::Conf::ChangeSet changeSet;
+    changeSet.set(PA_GCONF_PATH_MODULES"/combine/locked", true);
+    gconf->change_set_commit(changeSet, true);
+    
+    if (combineCheckButton->get_active()) {
+        changeSet.set(PA_GCONF_PATH_MODULES"/combine/name0", Glib::ustring("module-combine"));
+        changeSet.set(PA_GCONF_PATH_MODULES"/combine/args0", Glib::ustring(""));
+
+        changeSet.set(PA_GCONF_PATH_MODULES"/combine/enabled", true);
+    } else
+        changeSet.set(PA_GCONF_PATH_MODULES"/combine/enabled", false);
+
+    gconf->change_set_commit(changeSet, true);
+
+    changeSet.set(PA_GCONF_PATH_MODULES"/combine/locked", false);
+    gconf->change_set_commit(changeSet, true);
+
+    gconf->suggest_sync();
 }
 
 void MainWindow::writeToGConfRemoteAccess() {
@@ -306,6 +342,8 @@ void MainWindow::readFromGConf() {
     else
         rtpNullSinkRadioButton->set_active(TRUE);
 
+    combineCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/combine/enabled"));
+    
     ignoreChanges = FALSE;
 
     updateSensitive();

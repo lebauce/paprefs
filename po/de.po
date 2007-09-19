@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2007-05-24 01:12+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-19 20:34+0200\n"
+"PO-Revision-Date: 2007-09-19 20:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -12,7 +13,7 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 
 #: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio-Einstellungen"
 
@@ -21,24 +22,23 @@ msgid "Sound Server Preferences"
 msgstr "Audio-Dienst-Einstellungen"
 
 #: ../src/paprefs.desktop.in.h:3
-#: ../src/paprefs.glade.h:13
 msgid "View and modify the configuration of the local sound server"
 msgstr "Anzeigen und Ändern der Konfiguration des lokalen Audio-Dienstes"
 
 #: ../src/paprefs.glade.h:1
-msgid "<b>Multicast/RTP</b>"
-msgstr "<b>Multicast/RTP</b>"
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr "<span color=\"black\">Anzeigen und Ändern der Konfiguration des lokalen Audio-Dienstes</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<b>Network Access</b>"
-msgstr "<b>Netzwerkzugriff</b>"
-
-#: ../src/paprefs.glade.h:3
 msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio-Einstellungen</b></span>"
 
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all sound cards"
+msgstr "_Virtuelles Ausgabegerät zur simultanen Wiedergabe auf allen Soundkarten zur Verfügung stellen"
+
 #: ../src/paprefs.glade.h:4
-msgid "Allow other machines in LAN to _browse for local sound devices"
+msgid "Allow other machines on LAN to _browse for local sound devices"
 msgstr "Lokale Audio-Geräte für andere Maschinen im lokalen Netz auf_findbar machen"
 
 #: ../src/paprefs.glade.h:5
@@ -61,15 +61,27 @@ msgstr "Multicast/RTP-_Sender aktivieren"
 msgid "Enable _network access to local sound devices"
 msgstr "_Netzwerkzugriff auf lokale Audio-Geräte erlauben"
 
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
 #: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "N_etzwerkzugriff"
+
+#: ../src/paprefs.glade.h:13
 msgid "Send audio from local _microphone"
 msgstr "Audio vom lokalen _Mikrophon senden"
 
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.glade.h:14
 msgid "Send audio from local s_peakers"
 msgstr "Audio von den lokalen _Lautsprechern senden"
 
-#: ../src/paprefs.glade.h:14
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "Sim_ultane Ausgabe"
+
+#: ../src/paprefs.glade.h:16
 msgid "_Loopback audio to local speakers"
 msgstr "Versendetes Audio durch lokale Lautsprecher _zurückschleifen"
 
