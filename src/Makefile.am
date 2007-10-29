@@ -26,14 +26,15 @@ localedir = $(datadir)/locale
 
 bin_PROGRAMS=paprefs
 glade_DATA=paprefs.glade
-desktop_in_files=paprefs.desktop.in 
-desktop_DATA=$(desktop_in_files:.desktop.in=.desktop) 
+desktop_in_files=paprefs.desktop.in
+desktop_DATA=$(desktop_in_files:.desktop.in=.desktop)
 
 paprefs_SOURCES=paprefs.cc
 
 paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS)
-paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)  
+paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)
 paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""${libdir}/pulse-0.9/modules/"\" -DSHREXT=\"$(SHREXT)\"
+#paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""/usr/local/lib/pulse-0.9/modules/"\" -DSHREXT=\"$(SHREXT)\"
 
 EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
 
