@@ -24,12 +24,12 @@ run_versioned() {
     local V
 
     V=$(echo "$2" | sed -e 's,\.,,g')
-    
+
     if [ -e "`which $1$V`" ] ; then
-    	P="$1$V" 
+    	P="$1$V"
     else
 	if [ -e "`which $1-$2`" ] ; then
-	    P="$1-$2" 
+	    P="$1-$2"
 	else
 	    P="$1"
 	fi
@@ -44,12 +44,13 @@ set -ex
 if [ "x$1" = "xam" ] ; then
     run_versioned automake "$VERSION" -a -c --foreign
     ./config.status
-else 
+else
     rm -rf autom4te.cache
     rm -f config.cache
 
     rm -f Makefile.am~ configure.ac~
-    echo "no" | gettextize --copy --force
+    # Evil, evil, evil, evil hack
+    sed 's/read dummy/\#/' `which gettextize` | sh -s -- --copy --force
     test -f Makefile.am~ && mv Makefile.am~ Makefile.am
     test -f configure.ac~ && mv configure.ac~ configure.ac
 
