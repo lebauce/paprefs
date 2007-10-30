@@ -53,3 +53,10 @@ fedora-snapshot: dist
 .PHONY: homepage
 
 ACLOCAL_AMFLAGS = -I m4
+
+dist-hook:
+	if test -d .svn ; then \
+		svn update ; \
+		chmod u+w ${distdir}/ChangeLog || true ; \
+		svn2cl -o ${distdir}/ChangeLog ; \
+	fi
