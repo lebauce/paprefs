@@ -43,7 +43,7 @@ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.</p>
 <h2><a name="news">News</a></h2>
 
 <div class="news-date">Tue Oct 30 2007: </div> <p class="news-text"><a
-href="@PACKAGE_URL@paprefs-0.9.6.tar.gz">Version 0.9.6</a> released; rework UI; add support to enable automatic zeroconf discovery; automatic device combination</p>
+href="@PACKAGE_URL@paprefs-0.9.6.tar.gz">Version 0.9.6</a> released; rework UI; add support to enable automatic zeroconf discovery; automatic device combination; i18n support</p>
 
 <div class="news-date">Sat Aug 26 2006: </div> <p class="news-text"><a
 href="@PACKAGE_URL@paprefs-0.9.5.tar.gz">Version 0.9.5</a> released; initial release</p>
@@ -94,7 +94,7 @@ compilation and <tt>make install</tt> (as root) for installation of
 
 <h2><a name="acks">Acknowledgements</a></h2>
 
-<p>None so far.</p>
+<p>Christian Persch for patches.</p>
 
 <h2><a name="download">Download</a></h2>
 
