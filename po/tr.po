@@ -1,0 +1,91 @@
+# translation of de.po to Turkish
+# Necmettin Begiter <necmettin.begiter@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-19 20:34+0200\n"
+"PO-Revision-Date: 2008-04-21 03:05+0300\n"
+"Last-Translator: Necmettin Begiter <necmettin.begiter@gmail.com>\n"
+"Language-Team: Turkish <yerellestirme@kde.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "PulseAudio Tercihleri"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Ses Sunucusu Tercihleri"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "Yerel ses sunucusunun yapılandırmasına bak ve değiştir"
+
+#: ../src/paprefs.glade.h:1
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr "<span color=\"black\">Yerel ses sunucunuzun yapılandırmasına bakın ve değiştirin</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio Tercihleri</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all sound cards"
+msgstr "Tüm ses kartlarından eşzamanlı çıktı almak için _sanal çıktı aygıtı ekle"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on LAN to _browse for local sound devices"
+msgstr "Yerel ağdaki diğer makinaların yerel ses aygıtlarına gözatmasına _izin ver"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Multicast/RTP için ayrı _ses aygıtı oluştur"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Kimlik denetimi _kullanma"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Multicast/RTP _alıcısını aç"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Multicast/RTP _göndericisini aç"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Yerel ses aygıtlarına ağ _erişimini aç"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "Ağ E_rişimi"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "Sesi yerel _mikrofondan gönder"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "Sesi yerel _hoparlörlerden gönder"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "Eş_zamanlı Çıktı"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "Çıktıyı yerel hoparlörlere _yönlendir"
+
