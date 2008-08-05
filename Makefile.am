@@ -53,8 +53,8 @@ fedora-snapshot: dist
 ACLOCAL_AMFLAGS = -I m4
 
 dist-hook:
-	if test -d .svn ; then \
-		svn update ; \
+	if test -d .git ; then \
+		git pull ; \
 		chmod u+w ${distdir}/ChangeLog || true ; \
-		svn2cl -o ${distdir}/ChangeLog ; \
+		git-changelog.perl > ${distdir}/ChangeLog ; \
 	fi
