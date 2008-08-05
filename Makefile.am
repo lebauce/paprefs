@@ -15,7 +15,8 @@
 # You should have received a copy of the GNU General Public License
 # along with paprefs. If not, see <http://www.gnu.org/licenses/>.
 
-EXTRA_DIST= config.rpath m4/ChangeLog \
+EXTRA_DIST = \
+	m4/ChangeLog \
 	bootstrap.sh \
 	README \
 	LICENSE \
@@ -43,7 +44,7 @@ homepage: all dist
 DISTCLEANFILES = \
         intltool-extract \
         intltool-merge \
-        intltool-update 
+        intltool-update
 
 fedora-snapshot: dist
 	cp $(distdir).tar.gz $$HOME/cvs.fedora/paprefs/devel/$(distdir).svn`date +%Y%m%d`.tar.gz
