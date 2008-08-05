@@ -26,14 +26,14 @@ run_versioned() {
 
     V=$(echo "$2" | sed -e 's,\.,,g')
 
-    if [ -e "`which $1$V`" ] ; then
-    	P="$1$V"
+    if [ -e "`which $1$V 2> /dev/null`" ] ; then
+        P="$1$V"
     else
-	if [ -e "`which $1-$2`" ] ; then
-	    P="$1-$2"
-	else
-	    P="$1"
-	fi
+        if [ -e "`which $1-$2 2> /dev/null`" ] ; then
+            P="$1-$2"
+        else
+            P="$1"
+        fi
     fi
 
     shift 2
@@ -61,7 +61,8 @@ else
     run_versioned autoheader 2.59
     run_versioned automake "$VERSION" -a -c --foreign
 
-    CFLAGS="-g -O0" ./configure --sysconfdir=/etc "$@"
-
-    make clean
+    if test "x$NOCONFIGURE" = "x"; then
+        CFLAGS="-g -O0" ./configure --sysconfdir=/etc --localstatedir=/var "$@"
+        make clean
+    fi
 fi
