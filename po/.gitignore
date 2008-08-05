@@ -1,0 +1,13 @@
+.*-cache
+*~
+Makefile.in.in
+Makevars.template
+POTFILES
+Rules-quot
+boldquot.sed
+*.gmo
+en@boldquot.header
+en@quot.header
+insert-header.sin
+quot.sed
+remove-potcdate.sin
