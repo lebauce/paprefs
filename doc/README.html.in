@@ -10,7 +10,7 @@
 <body>
 <h1><a name="top">PulseAudio Preferences @PACKAGE_VERSION@</a></h1>
 
-<p><i>Copyright 2006-2007 Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;</i></p>
+<p><i>Copyright 2006-2008 Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;</i></p>
 
 <ul class="toc">
     <li><a href="#license">License</a></li>
@@ -27,18 +27,14 @@
 <h2><a name="license">License</a></h2>
 
 <p>This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License as
-published by the Free Software Foundation; either version 2 of the
+modify it under the terms of the GNU Lesser General Public License as
+published by the Free Software Foundation, either version 2.1 of the
 License, or (at your option) any later version.</p>
 
 <p>This program is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-General Public License for more details.</p>
-
-<p>You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.</p>
+Lesser General Public License for more details.</p>
 
 <h2><a name="news">News</a></h2>
 
@@ -110,7 +106,6 @@ compilation and <tt>make install</tt> (as root) for installation of
 
 <hr/>
 <address class="grey">Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;, October 2007</address>
-<div class="grey"><i>$Id$</i></div>
 
 </body>
 </html>
