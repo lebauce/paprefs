@@ -1,0 +1,94 @@
+# Brazilian Portuguese translation of Paprefs.
+# This file is distributed under the same license as the Paprefs package.
+# Nadilson dos Santos de Santana <nadilson@projetofedora.org>, 2008.
+# Igor Pires Soares <igor@projetofedora.org>, 2008.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-19 20:34+0200\n"
+"PO-Revision-Date: 2008-08-27 11:35-0300\n"
+"Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
+"Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "Preferências do PulseAudio"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Preferências do servidor de som"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "Veja e modifique as configurações do servidor de som local"
+
+#: ../src/paprefs.glade.h:1
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr "<span color=\"black\">Veja e modifique as configurações do seu servidor de som local</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>Preferências do PulseAudio</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all sound cards"
+msgstr "Adicionar dispositivo _virtual de saída para a reprodução simultânea em todas as placas de som"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on LAN to _browse for local sound devices"
+msgstr "Permitir que outras máquinas na LAN _naveguem nos dispositivos de som locais"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Criar um _dispositivo de áudio separado para o Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Não requer _autenticação"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Habilitar o _receptor Multicast/RTP"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Habilitar o r_emetente Multicast/RTP"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Habilitar o acesso a dispositivos de som locais via _rede"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "Ac_esso via rede"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "Enviar áudio a partir do _microfone local"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "Envio áudio a partir dos au_to-falantes locais"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "Saída sim_ultânea"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "_Retornar áudio para o auto-falante local"
+
