@@ -1,0 +1,97 @@
+# Hungarian translation of paprefs
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the pulseaudio package.
+#
+# Gabor Kelemen <kelemeng@gnome.hu>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: HEAD \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-08-29 01:16+0200\n"
+"PO-Revision-Date: 2008-08-29 01:38+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "PulseAudio beállításai"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Hangkiszolgáló beállításai"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "A helyi hangkiszolgáló beállításainak megjelenítése és módosítása"
+
+#: ../src/paprefs.glade.h:1
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr "<span color=\"black\">A helyi hangkiszolgáló beállításainak megjelenítése és módosítása</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio beállításai</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "_Virtuális kimeneti eszköz hozzáadása párhuzamos kimenet engedélyezéséhez minden helyi hangkártyán"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "A _helyi hálózat más gépei feltérképezhetik a helyi hangeszközöket"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "_Külön hangeszköz létrehozása a Multicast/RTP-hez"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "_Ne kérjen hitelesítést"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Multicast/RTP foga_dó engedélyezése"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Multicast/RTP küldő _engedélyezése"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Hálózati h_ozzáférés engedélyezése a helyi hangeszközökhöz"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "Hálózati ho_zzáférés"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "Hang küldése a helyi _mikrofonból"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "H_ang küldése a helyi hangszórókból"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "_Párhuzamos kimenet"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "Hang küldése a hel_yi hangszórókra"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "A _feltérképezhető hálózati eszközök legyenek helyileg elérhetők"
+
