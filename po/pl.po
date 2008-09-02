@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-01 18:46+0200\n"
-"PO-Revision-Date: 2008-07-01 19:32+0200\n"
+"POT-Creation-Date: 2008-09-02 09:15+0000\n"
+"PO-Revision-Date: 2008-09-02 19:00+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -43,34 +43,34 @@ msgstr ""
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
-"Dodaj _wirtualne urządzenie wyjścia dla jednoczesnego wyjścia na wszystkich "
+"_Wirtualne urządzenie wyjścia dla jednoczesnego wyjścia na wszystkich "
 "lokalnych kartach dźwiękowych"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr ""
-"Pozwól innym komputerom w sieci LAN na wykrywania lokalnych urządzeń "
-"dźwiękowych"
+"_Zezwolenie na wykrywanie lokalnych urządzeń dźwiękowych w sieci LAN przez "
+"inne komputery"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
-msgstr "Utwórz o_ddzielne urządzenie dźwiękowe dla multikastu/RTP"
+msgstr "O_ddzielne urządzenie dźwiękowe dla multikastu/RTP"
 
 #: ../src/paprefs.glade.h:6
 msgid "Don't require _authentication"
-msgstr "Nie wym_agaj uwierzytelniania"
+msgstr "Bez wymogu uwierzytelni_ania"
 
 #: ../src/paprefs.glade.h:7
 msgid "Enable Multicast/RTP _receiver"
-msgstr "Włącz odbio_rnik multikastu/RTP"
+msgstr "Odbio_rca multikastu/RTP"
 
 #: ../src/paprefs.glade.h:8
 msgid "Enable Multicast/RTP _sender"
-msgstr "Włącz wy_syłanie multikastu/RTP"
+msgstr "Nadawca m_ultikastu/RTP"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
-msgstr "Włącz dostęp sieciowy do lokalnego urządzenia dźwiękowego"
+msgstr "Dostęp sieciowy do lokal_nych urządzeń dźwiękowych"
 
 #: ../src/paprefs.glade.h:10
 msgid "Multicast/R_TP"
@@ -82,20 +82,20 @@ msgstr "Dostęp si_eciowy"
 
 #: ../src/paprefs.glade.h:13
 msgid "Send audio from local _microphone"
-msgstr "Wyślij dźwięk z lokalnego _mikrofonu"
+msgstr "Wysyłanie dźwięku z lokalnego _mikrofonu"
 
 #: ../src/paprefs.glade.h:14
 msgid "Send audio from local s_peakers"
-msgstr "Wyślij dźwięk z lokalnych gł_ośników"
+msgstr "Wysyłanie dźwięku z lokalnych gł_ośników"
 
 #: ../src/paprefs.glade.h:15
 msgid "Sim_ultaneous Output"
-msgstr "Jednoczesne wyjście"
+msgstr "_Jednoczesne wyjście"
 
 #: ../src/paprefs.glade.h:16
 msgid "_Loopback audio to local speakers"
-msgstr "Zwracaj dźwięk do _lokalnych głośników"
+msgstr "Zwracanie dźwięku do _lokalnych głośników"
 
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
-msgstr "_Wykrywalne sieciowe urządzenia dźwiękowe dostępne lokalnie"
+msgstr "Lo_kalne udostępnienie wykrytych sieciowych urządzeń dźwiękowych"
