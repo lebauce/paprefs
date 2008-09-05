@@ -1,0 +1,94 @@
+# Swedish translation for paprefs.
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the paprefs package.
+# Daniel Nylander <po@danielnylander.se>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-04 17:15+0000\n"
+"PO-Revision-Date: 2008-09-05 17:43+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "Inställningar för PulseAudio"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Inställningar för ljudserver"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "Visa och ändra konfigurationen för den lokala ljudservern"
+
+#: ../src/paprefs.glade.h:1
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr "<span color=\"black\">Visa och ändra konfigurationen för din lokala ljudservern</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>Inställningar för PulseAudio</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "Lägg till _virtuell utgångsenhet för simultan utmatning på alla lokala ljudkort"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "Tillåt andra datorer på lokala nätverket att _upptäcka lokala ljudenheter"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Skapa seperat ljud_enhet för Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Kräv inte _autentisering"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Aktivera Multicast/RTP-_mottagare"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Aktivera Multicast/RTP-_sändare"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Aktivera _nätverksåtkomst till lokala ljudenheter"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "N_ätverksåtkomst"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "Skicka ljud från lokal _mikrofon"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "Skicka ljud från lokala hö_gtalare"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "Sim_ultan utmatning"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "Skicka _tillbaka ljud till lokala högtalare"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "_Gör upptäckningsbara nätverksljudenheter tillgängliga lokalt"
+
