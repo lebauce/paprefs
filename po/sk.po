@@ -1,5 +1,5 @@
-# Slovak translations for papref package
-# This file is distributed under the same license as the papref package.
+# Slovak translations for paprefs package
+# This file is distributed under the same license as the paprefs package.
 #
 # Ondrej Šulek <feonsu@gmail.com>, 2008.
 msgid ""
