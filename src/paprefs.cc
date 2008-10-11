@@ -404,6 +404,7 @@ void MainWindow::readFromGConf() {
     anonymousAuthCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/remote-access/anonymous_enabled"));
 
     zeroconfDiscoverCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/zeroconf-discover/enabled"));
+    zeroconfRaopDiscoverCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/raop-discover/enabled"));
 
     rtpReceiveCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/rtp-recv/enabled"));
 
