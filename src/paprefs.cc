@@ -306,7 +306,7 @@ void MainWindow::writeToGConfZeroconfRaopDiscover() {
     changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/locked", true);
     gconf->change_set_commit(changeSet, true);
 
-    if (zeroconfDiscoverRaopCheckButton->get_active()) {
+    if (zeroconfRaopDiscoverCheckButton->get_active()) {
         changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/name0", Glib::ustring("module-raop-discover"));
         changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/args0", Glib::ustring(""));
 
