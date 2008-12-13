@@ -2,15 +2,15 @@
 # This file is distributed under the same license as the Paprefs package.
 # Nadilson dos Santos de Santana <nadilson@projetofedora.org>, 2008.
 # Igor Pires Soares <igor@projetofedora.org>, 2008.
+# Taylon Silmer <taylonsilva@gmail.com>, 2008.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-19 20:34+0200\n"
-"PO-Revision-Date: 2008-08-27 11:35-0300\n"
-"Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
+"POT-Creation-Date: 2008-12-02 01:16+0000\n"
+"PO-Revision-Date: 2008-12-13 00:53-0300\n"
+"Last-Translator: Taylon <taylonsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -41,12 +41,12 @@ msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>
 msgstr "<span size=\"18000\" color=\"black\"><b>Preferências do PulseAudio</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all sound cards"
-msgstr "Adicionar dispositivo _virtual de saída para a reprodução simultânea em todas as placas de som"
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "Adicionar dispositivo de saída _virtual para a reprodução simultânea em todas as placas de som locais"
 
 #: ../src/paprefs.glade.h:4
-msgid "Allow other machines on LAN to _browse for local sound devices"
-msgstr "Permitir que outras máquinas na LAN _naveguem nos dispositivos de som locais"
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "Permitir que outras máquinas na LAN _encontrem os dispositivos de som locais"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -91,4 +91,8 @@ msgstr "Saída sim_ultânea"
 #: ../src/paprefs.glade.h:16
 msgid "_Loopback audio to local speakers"
 msgstr "_Retornar áudio para o auto-falante local"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "_Tornar detectável a rede de dispositivos de som disponíveis localmente"
 
