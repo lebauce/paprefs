@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Mahrazi Mohd Kamal <mahrazi@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs.master-tx\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-02 01:16+0000\n"
+"PO-Revision-Date: 2009-01-08 16:22+0800\n"
+"Last-Translator: Mahrazi Mohd Kamal <mahrazi@gmail.com>\n"
+"Language-Team: Malay <ms@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Malay\n"
+"X-Poedit-Country: MALAYSIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "Keutamaan PulseAudio"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Keutamaan Pelayan Bunyi"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "Lihat dan ubah konfigurasi pelayan bunyi lokal"
+
+#: ../src/paprefs.glade.h:1
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr "<span color=\"black\">Lihat dan ubah konfigurasi pelayan bunyi lokalr</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>Keutamaan PulseAudio</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "Tambah peranti output maya untuk output pelbagai pada semua peranti kad bunyi"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "Benarkan mesin lain pada LAN untuk menjelajah peranti bunyi lokal"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Cipta peranti bunyi berasingan untuk Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Tidak perlu _authentikasi"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Benarkan pene_rima Multicast/RTP"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Benarkan penghantar Multica_st/RTP"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Benarkan capaian rangkaia_n kepada peranti bunyi lokal"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "Capaian Rangkaian"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "Hantar audio daripada _mikrofon lokal"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "Hantar audio daripada s_peaker local"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "O_utput Pelbagai"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "_Loopback audio kepada local speaker"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "Jadikan peranti bunyi rangkaian boleh jelajah wujud pada lokal"
+
