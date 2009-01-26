@@ -77,7 +77,7 @@ public:
     void writeToGConfCombine();
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
 
-    bool rtpRecvAvailable, rtpSendAvailable, zeroconfPublishAvailable, zeroconfDiscoverAvailable, remoteAvailable;
+    bool rtpRecvAvailable, rtpSendAvailable, zeroconfPublishAvailable, zeroconfDiscoverAvailable, zeroconfRaopDiscoverAvailable, remoteAvailable;
 };
 
 MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade::Xml>& x) :
@@ -152,6 +152,7 @@ void MainWindow::updateSensitive() {
     anonymousAuthCheckButton->set_sensitive(b && remoteAvailable);
 
     zeroconfDiscoverCheckButton->set_sensitive(zeroconfDiscoverAvailable);
+    zeroconfRaopDiscoverCheckButton->set_sensitive(zeroconfRaopDiscoverAvailable);
 
     rtpReceiveCheckButton->set_sensitive(rtpRecvAvailable);
     rtpSendCheckButton->set_sensitive(rtpSendAvailable);
@@ -434,6 +435,8 @@ void MainWindow::checkForModules() {
 
     zeroconfPublishAvailable = access(MODULESDIR "module-zeroconf-publish" SHREXT, F_OK) == 0;
     zeroconfDiscoverAvailable = access(MODULESDIR "module-zeroconf-discover" SHREXT, F_OK) == 0;
+
+    zeroconfRaopDiscoverAvailable = access(MODULESDIR "module-raop-discover" SHREXT, F_OK) == 0;
 
     rtpRecvAvailable = access(MODULESDIR "module-rtp-recv" SHREXT, F_OK) == 0;
     rtpSendAvailable = access(MODULESDIR "module-rtp-send" SHREXT, F_OK) == 0;
