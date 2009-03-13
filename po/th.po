@@ -1,0 +1,97 @@
+# Thai paprefs
+# Copyright (C) 2009
+# This file is distributed under the same license as the paprefs package.
+# Manatsawin Hanmongkolchai <manatsawin@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-03-13 07:18+0000\n"
+"PO-Revision-Date: 2009-03-13 15:22+0700\n"
+"Last-Translator: Manatsawin Hanmongkolchai <manatsawin@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: 0\n"
+"X-Poedit-Language: Thai\n"
+"X-Poedit-Country: THAILAND\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "ตั้งค่า PulseAudio"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "ตั้งค่าเซิร์ฟเวอร์เสียง"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "ดูและปรับแต่งเซิร์ฟเวอร์เสียงบนเครื่องของคุณ"
+
+#: ../src/paprefs.glade.h:1
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr "<span color=\"black\">ดูและปรับแต่งเซิร์ฟเวอร์เสียงบนเครื่องของคุณ</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>ตั้งค่า PulseAudio</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "_เพิ่มอุปกรณ์เอาต์พุตเสมือนสำหรับเล่นเสียงพร้อมกันบนการ์ดเสียงทุกใบในเครื่องนี้"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "_อนุญาตให้เครื่องอื่นๆ ในวงแลน_ค้นหาอุปกรณ์เสียงบนเครื่องได้"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "_สร้างอุปกรณ์เสียงต่างหากสำหรับ Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "_ไม่ต้องการการยึนยันตน"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "เปิดใช้ตัว_รับ Multicast/RTP"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "เปิดใช้_ตัวส่ง Multicast/RTP"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "เปิ_ดให้เข้าถึงอุปกรณ์เสียงบนเครื่องผ่านเครือข่ายได้"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "การเข้าถึง_ผ่านเครือข่าย"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "ส่งสัญญาณเสียงจากไ_มโครโฟนบนเครื่อง"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "ส่งสัญญาณเสียงจาก_ลำโพงบนเครื่อง"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "เอาต์พุต_พร้อมกัน"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "_วนเสียงไปยังลำโพงบนเครื่อง"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "_ทำให้อุปกรณ์เสียงที่ค้นพบบนเครือข่ายใช้ได้บนเครื่องนี้"
+
