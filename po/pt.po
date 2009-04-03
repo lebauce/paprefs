@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-03 08:28+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Rui Gouveia <rui.gouveia@globaltek.pt>\n"
+"Language-Team: pt <fedora-trans-pt@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: PORTUGAL\n"
+
+#: ../src/paprefs.desktop.in.h:1
+#: ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "Preferências do PulseAudio"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Preferências do Servidor de Som"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:1
+msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgstr ""
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>Preferências PulseAudio</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr ""
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr ""
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Não requer autenticação"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Activar receptor Multicast/RTP"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Activar r_emetente Multicast/RTP"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr ""
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "Acesso em Rede"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr ""
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "Saída de áudio Sim_ultânea"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr ""
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr ""
+
