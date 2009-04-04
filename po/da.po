@@ -1,0 +1,99 @@
+# Danish translation of paprefs
+# Copyright (C) 2009
+# This file is distributed under the same license as the paprefs package.
+# Kris Thomsen <lakristho@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-03 19:29+0000\n"
+"PO-Revision-Date: 2009-04-04 18:56+0200\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "Indstillinger til PulseAudio"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "Indstillinger til lydserver"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "Vis og redigér konfigurationen af den lokale lydserver"
+
+#: ../src/paprefs.glade.h:1
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr ""
+"<span color=\"black\">Vis og redigér konfigurationen af din lokale lydserver</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Indstillinger for PulseAudio</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Tilføj _virtuel uddataenhed til samtidig uddata på alle lokale lydkort"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "Tillad andre maskine på det lokale netværk at _finde lokale lydenheder"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Opret seperat lyd_enhed til Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "Undlad at kræve _godkendelse"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Aktivér Multicast/RTP-_modtager"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Aktivér Multicast/RTP-_sender"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "Aktivér _netværksadgang til lokale lydenheder"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "N_etværksadgang"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "Send lyd fra lokal m_ikrofon"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "Send lyd fra lokale _højtalere"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "Sam_tidig uddata"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "_Loopback lyd til lokale højtalere"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "_Opret opdagelsesbare netværkslydenheder tilgængeligt lokalt"
