@@ -1,0 +1,97 @@
+# translation of paprefs.master-tx.paprefs.po to marathi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs.master-tx.paprefs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-06 08:17+0000\n"
+"PO-Revision-Date: 2009-04-06 15:43+0530\n"
+"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
+"Language-Team: marathi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "PulseAudio आवड निवड"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "आवाज सर्वर आवड निवड"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "स्थानीय आवाज सर्वर वरील संयोजनाचे अवलोकन व संपादन करा"
+
+#: ../src/paprefs.glade.h:1
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr "<span color=\"black\">तुमच्या स्थानीय आवाज सर्वरची संयोजनाचे अवलोकन व संपादन करा</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio आवड निवड</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "सर्व स्थानीय आवाज कार्ड वरील सम आऊटपुट करीता आभासी साधन समावेष करा (_v)"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "LAN वरील इतर मशीन करीता स्थानीय आवाज साधन शोधण्यासाठी परवानगी द्या (_d)"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "Multicast/RTP करीता वेगळे ऑडिओ साधन बनवा (_d)"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "ओळख पटवणे आवश्यक नाही (_a)"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Multicast/RTP ग्राहक कार्यान्वीत करा (_r)"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Multicast/RTP पुरवठाकर्ता कार्यान्वीत करा (_s)"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "साथनीय आवाज साधन करीता जाळ प्रवेश कार्यान्वीत करा (_n)"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/RTP (_T)"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "जाळ प्रवेश (_e)"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "स्थानीय मायक्रोफोन पासून ऑडिओ पाठवा (_m)"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "स्थानीय स्पीकर पासून ऑडिओ पाठवा (_p)"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "एकाचवेळी आऊटपुट (_u)"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "स्थानीय स्पीकर करीता लुपबॅक ऑडिओ (_L)"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "स्थानीयरित्या शोधण्याजोगी जाळ आवाज साधन उपलब्ध करा (_M)"
+
