@@ -1,0 +1,98 @@
+# translation of paprefs.master-tx.paprefs.po to Tamil
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# I. Felix <ifelix@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: paprefs.master-tx.paprefs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-03 08:28+0000\n"
+"PO-Revision-Date: 2009-04-04 05:44+0530\n"
+"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
+
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+msgid "PulseAudio Preferences"
+msgstr "PulseAudio முன்னுரிமைகள்"
+
+#: ../src/paprefs.desktop.in.h:2
+msgid "Sound Server Preferences"
+msgstr "ஒலி சேவையக முன்னுரிமைகள்"
+
+#: ../src/paprefs.desktop.in.h:3
+msgid "View and modify the configuration of the local sound server"
+msgstr "உள்ளமை ஒலி சேவையகத்தின் கட்டமைப்பை பார்வையிடு மற்றும் மாற்று"
+
+#: ../src/paprefs.glade.h:1
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr "<span color=\"black\">உள்ளமை ஒலி சேவையகத்தின் கட்டமைப்பை பார்வையிடு மற்றும் மாற்று</span>"
+
+#: ../src/paprefs.glade.h:2
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio முன்னுரிமைகள்</b></span>"
+
+#: ../src/paprefs.glade.h:3
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "ஒரே நேர வெளிப்பாட்டிற்கு அனைத்து உள்ளமை அட்டைகளிலும் மெய்நிகர் வெளிப்பாடு சாதனத்தை சேர் (_v)"
+
+#: ../src/paprefs.glade.h:4
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr "LANஇல் உள்ள வேறு கணினிகளை உள்ளமை ஒலி சாதனங்களில் கண்டுபிடிக்க அனுமதி (_d)"
+
+#: ../src/paprefs.glade.h:5
+msgid "Create seperate audio _device for Multicast/RTP"
+msgstr "தனி ஆடியோ சாதனத்தை Multicast/RTPக்கு உருவாக்கு (_d)"
+
+#: ../src/paprefs.glade.h:6
+msgid "Don't require _authentication"
+msgstr "அங்கீகாரம் தேவையில்லை (_a)"
+
+#: ../src/paprefs.glade.h:7
+msgid "Enable Multicast/RTP _receiver"
+msgstr "Multicast/RTP பெறுநரை செயல்படுத்து (_r)"
+
+#: ../src/paprefs.glade.h:8
+msgid "Enable Multicast/RTP _sender"
+msgstr "Multicast/RTP அனுப்புனரை செயல்படுத்து (_s)"
+
+#: ../src/paprefs.glade.h:9
+msgid "Enable _network access to local sound devices"
+msgstr "பிணைய அணுகலை உள்ளமை ஒலி சாதனங்களுக்கு செயல்படுத்து (_n)"
+
+#: ../src/paprefs.glade.h:10
+msgid "Multicast/R_TP"
+msgstr "Multicast/R_TP"
+
+#: ../src/paprefs.glade.h:11
+msgid "N_etwork Access"
+msgstr "பிணைய அணுகல் (_e)"
+
+#: ../src/paprefs.glade.h:13
+msgid "Send audio from local _microphone"
+msgstr "ஆடியோவை உள்ளமை மைக்ரோஃபோனுக்கு அனுப்பு (_m)"
+
+#: ../src/paprefs.glade.h:14
+msgid "Send audio from local s_peakers"
+msgstr "ஆடியோவை உள்ளமை ஸ்பீக்கர்களுக்கு அனுப்பு (_p)"
+
+#: ../src/paprefs.glade.h:15
+msgid "Sim_ultaneous Output"
+msgstr "ஒரே நேர வெளிப்பாடு (_u)"
+
+#: ../src/paprefs.glade.h:16
+msgid "_Loopback audio to local speakers"
+msgstr "லூப்பேக் ஆடியோவிலிருந்து உள்ளமை ஸ்பீக்கர்களுக்கு (_L)"
+
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய பிணைய ஒலி சாதனங்களை உருவாக்கு (_M)"
+
