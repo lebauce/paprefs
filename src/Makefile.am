@@ -31,8 +31,7 @@ paprefs_SOURCES=paprefs.cc
 
 paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS)
 paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)
-paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""${libdir}/pulse-0.9/modules/"\" -DSHREXT=\"$(SHREXT)\"
-#paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""/usr/local/lib/pulse-0.9/modules/"\" -DSHREXT=\"$(SHREXT)\"
+paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""$(LIBPULSE_MODLIBEXECDIR)"\" -DSHREXT=\"$(SHREXT)\"
 
 EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
 

@@ -42,6 +42,10 @@ PKG_CHECK_MODULES(GUILIBS, [ gtkmm-2.4 libglademm-2.4 sigc++-2.0 gconfmm-2.6])
 AC_SUBST(GUILIBS_CFLAGS)
 AC_SUBST(GUILIBS_LIBS)
 
+PKG_CHECK_MODULES(LIBPULSE, libpulse)
+LIBPULSE_MODLIBEXECDIR=`pkg-config libpulse --variable modlibexecdir`
+AC_SUBST(LIBPULSE_MODLIBEXECDIR)
+
 # If using GCC specifiy some additional parameters
 if test "x$GCC" = "xyes" ; then
    CFLAGS="$CFLAGS -pipe -Wall -W -Wno-unused-parameter"
