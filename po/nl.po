@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-14 14:24+0000\n"
-"PO-Revision-Date: 2009-04-14 20:03+0200\n"
+"PO-Revision-Date: 2009-04-14 20:06+0200\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgstr "Stuur geluid vanaf locale _microfoon"
 
 #: ../src/paprefs.glade.h:16
 msgid "Send audio from local s_peakers"
-msgstr "Stuur geluid vanaf locale luid_spreker"
+msgstr "Stuur geluid vanaf locale luids_preker"
 
 #: ../src/paprefs.glade.h:17
 msgid "Sim_ultaneous Output"
