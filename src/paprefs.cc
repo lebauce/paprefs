@@ -43,6 +43,7 @@ public:
         *remoteAccessCheckButton,
         *zeroconfPublishCheckButton,
         *zeroconfDiscoverCheckButton,
+        *zeroconfRaopDiscoverCheckButton,
         *anonymousAuthCheckButton,
         *rtpReceiveCheckButton,
         *rtpSendCheckButton,
@@ -62,6 +63,7 @@ public:
     void updateSensitive();
     void onChangeRemoteAccess();
     void onChangeZeroconfDiscover();
+    void onChangeZeroconfRaopDiscover();
     void onChangeRtpReceive();
     void onChangeRtpSend();
     void onChangeCombine();
@@ -69,12 +71,13 @@ public:
     void checkForModules();
     void writeToGConfRemoteAccess();
     void writeToGConfZeroconfDiscover();
+    void writeToGConfZeroconfRaopDiscover();
     void writeToGConfRtpReceive();
     void writeToGConfRtpSend();
     void writeToGConfCombine();
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
 
-    bool rtpRecvAvailable, rtpSendAvailable, zeroconfPublishAvailable, zeroconfDiscoverAvailable, remoteAvailable;
+    bool rtpRecvAvailable, rtpSendAvailable, zeroconfPublishAvailable, zeroconfDiscoverAvailable, zeroconfRaopDiscoverAvailable, remoteAvailable;
 };
 
 MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade::Xml>& x) :
@@ -85,6 +88,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
 
     x->get_widget("remoteAccessCheckButton", remoteAccessCheckButton);
     x->get_widget("zeroconfDiscoverCheckButton", zeroconfDiscoverCheckButton);
+    x->get_widget("zeroconfRaopDiscoverCheckButton", zeroconfRaopDiscoverCheckButton);
     x->get_widget("zeroconfBrowseCheckButton", zeroconfPublishCheckButton);
     x->get_widget("anonymousAuthCheckButton", anonymousAuthCheckButton);
     x->get_widget("rtpReceiveCheckButton", rtpReceiveCheckButton);
@@ -115,6 +119,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     anonymousAuthCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeRemoteAccess));
 
     zeroconfDiscoverCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeZeroconfDiscover));
+    zeroconfRaopDiscoverCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeZeroconfRaopDiscover));
 
     rtpReceiveCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeRtpReceive));
 
@@ -147,6 +152,7 @@ void MainWindow::updateSensitive() {
     anonymousAuthCheckButton->set_sensitive(b && remoteAvailable);
 
     zeroconfDiscoverCheckButton->set_sensitive(zeroconfDiscoverAvailable);
+    zeroconfRaopDiscoverCheckButton->set_sensitive(zeroconfRaopDiscoverAvailable);
 
     rtpReceiveCheckButton->set_sensitive(rtpRecvAvailable);
     rtpSendCheckButton->set_sensitive(rtpSendAvailable);
@@ -173,6 +179,15 @@ void MainWindow::onChangeZeroconfDiscover() {
 
     updateSensitive();
     writeToGConfZeroconfDiscover();
+}
+
+void MainWindow::onChangeZeroconfRaopDiscover() {
+
+    if (ignoreChanges)
+        return;
+
+    updateSensitive();
+    writeToGConfZeroconfRaopDiscover();
 }
 
 void MainWindow::onChangeRtpReceive() {
@@ -286,6 +301,28 @@ void MainWindow::writeToGConfZeroconfDiscover() {
     gconf->suggest_sync();
 }
 
+void MainWindow::writeToGConfZeroconfRaopDiscover() {
+    Gnome::Conf::ChangeSet changeSet;
+
+    changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/locked", true);
+    gconf->change_set_commit(changeSet, true);
+
+    if (zeroconfRaopDiscoverCheckButton->get_active()) {
+        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/name0", Glib::ustring("module-raop-discover"));
+        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/args0", Glib::ustring(""));
+
+        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/enabled", true);
+    } else
+        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/enabled", false);
+
+    gconf->change_set_commit(changeSet, true);
+
+    changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/locked", false);
+    gconf->change_set_commit(changeSet, true);
+
+    gconf->suggest_sync();
+}
+
 void MainWindow::writeToGConfRtpReceive() {
     Gnome::Conf::ChangeSet changeSet;
 
@@ -368,6 +405,7 @@ void MainWindow::readFromGConf() {
     anonymousAuthCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/remote-access/anonymous_enabled"));
 
     zeroconfDiscoverCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/zeroconf-discover/enabled"));
+    zeroconfRaopDiscoverCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/raop-discover/enabled"));
 
     rtpReceiveCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/rtp-recv/enabled"));
 
@@ -397,6 +435,8 @@ void MainWindow::checkForModules() {
 
     zeroconfPublishAvailable = access(MODULESDIR "module-zeroconf-publish" SHREXT, F_OK) == 0;
     zeroconfDiscoverAvailable = access(MODULESDIR "module-zeroconf-discover" SHREXT, F_OK) == 0;
+
+    zeroconfRaopDiscoverAvailable = access(MODULESDIR "module-raop-discover" SHREXT, F_OK) == 0;
 
     rtpRecvAvailable = access(MODULESDIR "module-rtp-recv" SHREXT, F_OK) == 0;
     rtpSendAvailable = access(MODULESDIR "module-rtp-send" SHREXT, F_OK) == 0;
