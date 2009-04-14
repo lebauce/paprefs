@@ -19,7 +19,7 @@
 # along with paprefs. If not, see <http://www.gnu.org/licenses/>.
 
 AC_PREREQ(2.57)
-AC_INIT([paprefs],[0.9.7],[mzcncersf (at) 0pointer (dot) de])
+AC_INIT([paprefs],[0.9.8],[mzcncersf (at) 0pointer (dot) de])
 AC_CONFIG_SRCDIR([src/paprefs.cc])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([foreign 1.9 -Wall])
