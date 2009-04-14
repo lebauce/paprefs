@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HEAD \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-29 01:16+0200\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-08-29 01:38+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@fsf.hu>\n"
@@ -33,15 +33,22 @@ msgstr "A helyi hangkiszolgáló beállításainak megjelenítése és módosít
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span color=\"black\">A helyi hangkiszolgáló beállításainak megjelenítése és módosítása</span>"
+msgstr ""
+"<span color=\"black\">A helyi hangkiszolgáló beállításainak megjelenítése és "
+"módosítása</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio beállításai</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio beállításai</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "_Virtuális kimeneti eszköz hozzáadása párhuzamos kimenet engedélyezéséhez minden helyi hangkártyán"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"_Virtuális kimeneti eszköz hozzáadása párhuzamos kimenet engedélyezéséhez "
+"minden helyi hangkártyán"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -94,4 +101,3 @@ msgstr "Hang küldése a hel_yi hangszórókra"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "A _feltérképezhető hálózati eszközök legyenek helyileg elérhetők"
-

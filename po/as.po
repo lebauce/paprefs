@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs.as\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-06 02:20+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-06 16:36+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -18,61 +18,55 @@ msgstr ""
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
-msgstr "PulseAudio পছন্দ"
+msgstr "PulseAudio "
 
 #: ../src/paprefs.desktop.in.h:2
 msgid "Sound Server Preferences"
-msgstr "ধ্বনি সেৱকৰ পছন্দ"
+msgstr "  "
 
 #: ../src/paprefs.desktop.in.h:3
 msgid "View and modify the configuration of the local sound server"
-msgstr "স্থানীয় ধ্বনি সেৱকৰ বিন্যাস দৰ্শন কৰক আৰু সলনি কৰক"
+msgstr "        "
 
 #: ../src/paprefs.glade.h:1
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr ""
-"<span color=\"black\">স্থানীয় ধ্বনি সেৱকৰ বিন্যাস দৰ্শন কৰক আৰু সলনি কৰক<"
-"/span>"
+msgstr "<span color=\"black\">        </span>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio পছন্দ</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio </b></span>"
 
 #: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr ""
-"সকলো স্থানীয় ধ্বনি কাৰ্ডত একেলগে কৰা নিৰ্গমৰ কাৰণে ভাৰ্চুৱেল নিৰ্গম যন্ত্ৰ "
-"যোগ কৰক (_v)"
+msgstr "             (_v)"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr ""
-"LAN ত থকা অন্য যন্ত্ৰক স্থানীয় ধ্বনিৰ যন্ত্ৰ আৱিষ্কাৰ কৰিবলৈ অনুমতি দিয়ক "
-"(_d)"
+msgstr "LAN            (_d)"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
-msgstr "Multicast/RTP ৰ কাৰণে বেলেগকৈ অ'ডিঅ' যন্ত্ৰ সৃষ্টি কৰক (_d)"
+msgstr "Multicast/RTP    ''    (_d)"
 
 #: ../src/paprefs.glade.h:6
 msgid "Don't require _authentication"
-msgstr "প্ৰমাণীকৰণৰ প্ৰয়োজন নাই (_a)"
+msgstr "   (_a)"
 
 #: ../src/paprefs.glade.h:7
 msgid "Enable Multicast/RTP _receiver"
-msgstr "Multicast/RTP ৰিছিভাৰ সক্ৰিয় কৰক (_r)"
+msgstr "Multicast/RTP    (_r)"
 
 #: ../src/paprefs.glade.h:8
 msgid "Enable Multicast/RTP _sender"
-msgstr "Multicast/RTP ছেন্ডাৰ সক্ৰিয় কৰক (_s)"
+msgstr "Multicast/RTP    (_s)"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
-msgstr "স্থানীয় ধ্বনি যন্ত্ৰৰ কাৰণে নে'টৱৰ্ক অভিগম্যতা সক্ৰিয় কৰক (_n)"
+msgstr "    '    (_n)"
 
 #: ../src/paprefs.glade.h:10
 msgid "Multicast/R_TP"
@@ -80,26 +74,24 @@ msgstr "Multicast/R_TP"
 
 #: ../src/paprefs.glade.h:11
 msgid "N_etwork Access"
-msgstr "নে'টৱৰ্ক অভিগম্যতা (_e)"
+msgstr "'  (_e)"
 
 #: ../src/paprefs.glade.h:13
 msgid "Send audio from local _microphone"
-msgstr "স্থানীয় microphone ৰ পৰা অ'ডিঅ' পঠিয়াওক (_m)"
+msgstr " microphone   ''  (_m)"
 
 #: ../src/paprefs.glade.h:14
 msgid "Send audio from local s_peakers"
-msgstr "স্থানীয় speaker ৰ পৰা অ'ডিঅ' পঠিয়াওক (_p)"
+msgstr " speaker   ''  (_p)"
 
 #: ../src/paprefs.glade.h:15
 msgid "Sim_ultaneous Output"
-msgstr "একেলগে কৰা নিৰ্গম (_u)"
+msgstr "   (_u)"
 
 #: ../src/paprefs.glade.h:16
 msgid "_Loopback audio to local speakers"
-msgstr "স্থানীয় speaker লৈ অ'ডিঅ' লুপবেক কৰক (_L)"
+msgstr " speaker  ''   (_L)"
 
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
-msgstr ""
-"আৱিষ্কাৰ কৰিব পৰা নে'টৱৰ্ক ধ্বনি যন্ত্ৰক স্থানীয় ভাবে পোৱা সক্ৰিয় কৰক (_M)"
-
+msgstr "   '        (_M)"

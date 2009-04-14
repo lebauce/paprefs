@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-29 09:15+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-08-29 12:47+0100\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: German <fedora-trans-de@redhat.com>\n"
@@ -12,8 +12,7 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio-Einstellungen"
 
@@ -26,16 +25,25 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Anzeigen und Ändern der Konfiguration des lokalen Audio-Dienstes"
 
 #: ../src/paprefs.glade.h:1
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Anzeigen und Ändern der Konfiguration des lokalen Audio-Dienstes</span>"
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr ""
+"<span color=\"black\">Anzeigen und Ändern der Konfiguration des lokalen "
+"Audio-Dienstes</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio-Einstellungen</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio-Einstellungen</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "_Virtuelles Ausgabegerät zur simultanen Wiedergabe auf allen Soundkarten zur Verfügung hinzufügen"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"_Virtuelles Ausgabegerät zur simultanen Wiedergabe auf allen Soundkarten zur "
+"Verfügung hinzufügen"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -88,4 +96,3 @@ msgstr "Versendetes Audio durch lokale Lautsprecher _zurückschleifen"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "_Mache Netzwerk-Audio-Geräte im lokalen Netzwerk auffindbar"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-04 17:15+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-09-05 17:43+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -15,8 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "Inställningar för PulseAudio"
 
@@ -29,20 +28,31 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Visa och ändra konfigurationen för den lokala ljudservern"
 
 #: ../src/paprefs.glade.h:1
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Visa och ändra konfigurationen för din lokala ljudservern</span>"
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr ""
+"<span color=\"black\">Visa och ändra konfigurationen för din lokala "
+"ljudservern</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Inställningar för PulseAudio</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Inställningar för PulseAudio</b></"
+"span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Lägg till _virtuell utgångsenhet för simultan utmatning på alla lokala ljudkort"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Lägg till _virtuell utgångsenhet för simultan utmatning på alla lokala "
+"ljudkort"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Tillåt andra datorer på lokala nätverket att _upptäcka lokala ljudenheter"
+msgstr ""
+"Tillåt andra datorer på lokala nätverket att _upptäcka lokala ljudenheter"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -91,4 +101,3 @@ msgstr "Skicka _tillbaka ljud till lokala högtalare"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "_Gör upptäckningsbara nätverksljudenheter tillgängliga lokalt"
-

@@ -21,13 +21,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-04 09:15+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-10-05 01:36+0200\n"
 "Last-Translator: Xavier Queralt Mateu <xqueralt@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
@@ -46,24 +46,28 @@ msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
-"<span color=\"black\">Visualitzeu i modifiqueu la configuració del servidor de "
-"so local</span>"
+"<span color=\"black\">Visualitzeu i modifiqueu la configuració del servidor "
+"de so local</span>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr ""
-"<span size=\"18000\" color=\"black\"><b>Preferències del PulseAudio</b></span>"
+"<span size=\"18000\" color=\"black\"><b>Preferències del PulseAudio</b></"
+"span>"
 
 #: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
-"Afegeix un dispositiu _virtual per tenir la sortida simultània en totes les targetes de so locals"
+"Afegeix un dispositiu _virtual per tenir la sortida simultània en totes les "
+"targetes de so locals"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Permet que la resta de màquines de la xarxa _descobreixin les targetes de so locals"
+msgstr ""
+"Permet que la resta de màquines de la xarxa _descobreixin les targetes de so "
+"locals"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -111,5 +115,5 @@ msgstr "Redirigeix l'àudio als a_ltaveus locals"
 
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
-msgstr "Per_met descobrir els dispositius de so per xarxa disponibles localment"
-
+msgstr ""
+"Per_met descobrir els dispositius de so per xarxa disponibles localment"

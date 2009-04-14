@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-01 08:23+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-03 22:27+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -33,15 +33,21 @@ msgstr "ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚ
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span color=\"black\">ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚನೆಯನ್ನು ನೋಡಿ ಹಾಗು ಬದಲಾಯಿಸಿ</span>"
+msgstr ""
+"<span color=\"black\">ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚನೆಯನ್ನು ನೋಡಿ ಹಾಗು ಬದಲಾಯಿಸಿ</"
+"span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio ನ ಆದ್ಯತೆಗಳು</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio ನ ಆದ್ಯತೆಗಳು</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -94,4 +100,3 @@ msgstr "ಆಡಿಯೋವನ್ನು ಸ್ಥಳೀಯ ಸ್ಪೀಕರು�
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ ಜಾಲಬಂಧ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು(_M)"
-

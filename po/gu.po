@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-06 02:20+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-06 13:38+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -33,15 +33,19 @@ msgstr "સ્થાનિય સાઉન્ડ સર્વરનાં રૂ
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span color=\"black\">સ્થાનિય સાઉન્ડ સર્વરનાં રૂપરેખાંકનને દર્શાવો અને બદલો</span>"
+msgstr ""
+"<span color=\"black\">સ્થાનિય સાઉન્ડ સર્વરનાં રૂપરેખાંકનને દર્શાવો અને બદલો</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio પસંદગીઓ</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "બધા સ્થાનિક સાઉન્ડ કાર્ડો પર એકીસાથે આઉટપુટ માટે વર્ચ્યુઅલ આઉટપુટ ઉપકરણને ઉમેરો (_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"બધા સ્થાનિક સાઉન્ડ કાર્ડો પર એકીસાથે આઉટપુટ માટે વર્ચ્યુઅલ આઉટપુટ ઉપકરણને ઉમેરો (_v)"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -94,4 +98,3 @@ msgstr "સ્થાનિય સ્પીકરો માટે લુપબે
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "સ્થાનિય રીતે ઉપલ્બધ શોધી શકાય તેવા નેટવર્ક સાઉન્ડ ઉપકરણોને બનાવો (_M)"
-

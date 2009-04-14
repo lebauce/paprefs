@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-21 13:16+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-03-21 19:09+0100\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -32,22 +32,29 @@ msgstr "Visualizza e modifica la configurazione del server sonoro locale"
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span color=\"black\">Visualizzare e modificare la configurazione del server sonoro locale</span>"
+msgstr ""
+"<span color=\"black\">Visualizzare e modificare la configurazione del server "
+"sonoro locale</span>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Preferenze di PulseAudio</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Preferenze di PulseAudio</b></span>"
 
 # (ndt) mai vista un'opzione così lunga
 #: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Aggiungere dispositivo _virtuale per uscita contemporanea su tutte le schede locali"
+msgstr ""
+"Aggiungere dispositivo _virtuale per uscita contemporanea su tutte le schede "
+"locali"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Consentire ad altri computer nella LAN di scoprire i _dispositivi sonori locali"
+msgstr ""
+"Consentire ad altri computer nella LAN di scoprire i _dispositivi sonori "
+"locali"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"

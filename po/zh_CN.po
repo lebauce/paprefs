@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-03 08:28+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-03 19:14+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -35,11 +35,13 @@ msgid ""
 msgstr "<span color=\"black\">查看及修改本地声音服务器配置</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio 属性</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "在所有本地声卡中为模拟输出添加虚拟（_v）输出设备"
 
 #: ../src/paprefs.glade.h:4
@@ -93,4 +95,3 @@ msgstr "到本地音箱的回路（_L）音频"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "使可找到的网络声音设备在本地可用（_M）"
-

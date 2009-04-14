@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-02 01:16+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-12-13 00:53-0300\n"
 "Last-Translator: Taylon <taylonsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
@@ -19,8 +19,7 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "Preferências do PulseAudio"
 
@@ -33,20 +32,30 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Veja e modifique as configurações do servidor de som local"
 
 #: ../src/paprefs.glade.h:1
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Veja e modifique as configurações do seu servidor de som local</span>"
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr ""
+"<span color=\"black\">Veja e modifique as configurações do seu servidor de "
+"som local</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Preferências do PulseAudio</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Preferências do PulseAudio</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Adicionar dispositivo de saída _virtual para a reprodução simultânea em todas as placas de som locais"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Adicionar dispositivo de saída _virtual para a reprodução simultânea em "
+"todas as placas de som locais"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Permitir que outras máquinas na LAN _encontrem os dispositivos de som locais"
+msgstr ""
+"Permitir que outras máquinas na LAN _encontrem os dispositivos de som locais"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -94,5 +103,5 @@ msgstr "_Retornar áudio para o auto-falante local"
 
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
-msgstr "_Tornar detectável a rede de dispositivos de som disponíveis localmente"
-
+msgstr ""
+"_Tornar detectável a rede de dispositivos de som disponíveis localmente"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-03 08:28+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-04 05:44+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -34,15 +34,22 @@ msgstr "உள்ளமை ஒலி சேவையகத்தின் கட
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span color=\"black\">உள்ளமை ஒலி சேவையகத்தின் கட்டமைப்பை பார்வையிடு மற்றும் மாற்று</span>"
+msgstr ""
+"<span color=\"black\">உள்ளமை ஒலி சேவையகத்தின் கட்டமைப்பை பார்வையிடு மற்றும் மாற்று</"
+"span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio முன்னுரிமைகள்</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio முன்னுரிமைகள்</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "ஒரே நேர வெளிப்பாட்டிற்கு அனைத்து உள்ளமை அட்டைகளிலும் மெய்நிகர் வெளிப்பாடு சாதனத்தை சேர் (_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"ஒரே நேர வெளிப்பாட்டிற்கு அனைத்து உள்ளமை அட்டைகளிலும் மெய்நிகர் வெளிப்பாடு சாதனத்தை சேர் "
+"(_v)"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -95,4 +102,3 @@ msgstr "லூப்பேக் ஆடியோவிலிருந்து �
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய பிணைய ஒலி சாதனங்களை உருவாக்கு (_M)"
-

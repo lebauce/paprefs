@@ -2,19 +2,19 @@
 # Copyright (C) 2009 THE paprefs.master-tx'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the paprefs.master-tx package.
 # Geert Warrink <geert.warrink@onsnet.nu>, 2009.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-10 14:22+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-10 20:47+0200\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
@@ -32,21 +32,28 @@ msgstr "Bekijk en verander de instellingen van de locale geluidsserver"
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span·color=\"black\">Bekijk en verander de instellingen van je locale geluidsserver</span>"
+msgstr ""
+"<span·color=\"black\">Bekijk en verander de instellingen van je locale "
+"geluidsserver</span>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio voorkeuren</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio voorkeuren</b></span>"
 
 #: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Voeg _virtueel uitvoerapparaat toe voor gelijktijdige output op alle locale geluidskaarten"
+msgstr ""
+"Voeg _virtueel uitvoerapparaat toe voor gelijktijdige output op alle locale "
+"geluidskaarten"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Sta andere machines op het LAN toe om alle locale geluidsapparaten te ont_dekken"
+msgstr ""
+"Sta andere machines op het LAN toe om alle locale geluidsapparaten te "
+"ont_dekken"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -95,4 +102,3 @@ msgstr "_Loopback geluid naar locale luidsprekers"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "_Maak ontdekte netwerk geluidsapparaten locaal beschikbaar"
-

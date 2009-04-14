@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-03 08:28+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-07 02:14+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
@@ -34,16 +35,20 @@ msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
-"<span color=\"black\">స్థానిక శబ్దపు సేవికయొక్క ఆకృతీకరణను దర్శించుము మరియు "
-"సవరించుము</span>"
+"<span color=\"black\">స్థానిక శబ్దపు సేవికయొక్క ఆకృతీకరణను దర్శించుము మరియు సవరించుము</"
+"span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio అభీష్టాలు</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "అన్ని స్థానిక శబ్దపు కార్డులపైనా ఏకకాల అవుట్పుట్ కొరకు వర్చ్యువల్ అవుట్పుట్ పరికరమును జతచేయుము (_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"అన్ని స్థానిక శబ్దపు కార్డులపైనా ఏకకాల అవుట్పుట్ కొరకు వర్చ్యువల్ అవుట్పుట్ పరికరమును జతచేయుము "
+"(_v)"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -96,4 +101,3 @@ msgstr "స్థానిక స్పీకర్లకు పునరావ�
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "గుర్తించదగు నెట్వర్కు సౌండు పరికరములు స్థానికంగా అందుబాటులో వుండునట్లు చేయుము (_M)"
-

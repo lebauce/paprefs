@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 07:18+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-03-13 15:22+0700\n"
 "Last-Translator: Manatsawin Hanmongkolchai <manatsawin@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -18,8 +18,7 @@ msgstr ""
 "X-Poedit-Language: Thai\n"
 "X-Poedit-Country: THAILAND\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "ตั้งค่า PulseAudio"
 
@@ -32,15 +31,19 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "ดูและปรับแต่งเซิร์ฟเวอร์เสียงบนเครื่องของคุณ"
 
 #: ../src/paprefs.glade.h:1
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
 msgstr "<span color=\"black\">ดูและปรับแต่งเซิร์ฟเวอร์เสียงบนเครื่องของคุณ</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>ตั้งค่า PulseAudio</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "_เพิ่มอุปกรณ์เอาต์พุตเสมือนสำหรับเล่นเสียงพร้อมกันบนการ์ดเสียงทุกใบในเครื่องนี้"
 
 #: ../src/paprefs.glade.h:4
@@ -94,4 +97,3 @@ msgstr "_วนเสียงไปยังลำโพงบนเครื�
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "_ทำให้อุปกรณ์เสียงที่ค้นพบบนเครือข่ายใช้ได้บนเครื่องนี้"
-

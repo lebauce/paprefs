@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-02 01:16+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-01-08 16:22+0800\n"
 "Last-Translator: Mahrazi Mohd Kamal <mahrazi@gmail.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
@@ -18,8 +18,7 @@ msgstr ""
 "X-Poedit-Country: MALAYSIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "Keutamaan PulseAudio"
 
@@ -32,16 +31,23 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Lihat dan ubah konfigurasi pelayan bunyi lokal"
 
 #: ../src/paprefs.glade.h:1
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Lihat dan ubah konfigurasi pelayan bunyi lokalr</span>"
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr ""
+"<span color=\"black\">Lihat dan ubah konfigurasi pelayan bunyi lokalr</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Keutamaan PulseAudio</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Keutamaan PulseAudio</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Tambah peranti output maya untuk output pelbagai pada semua peranti kad bunyi"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Tambah peranti output maya untuk output pelbagai pada semua peranti kad bunyi"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -94,4 +100,3 @@ msgstr "_Loopback audio kepada local speaker"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "Jadikan peranti bunyi rangkaian boleh jelajah wujud pada lokal"
-

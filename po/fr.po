@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-29 01:21+0200\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-08-29 01:34+0200\n"
 "Last-Translator: Robert-André Mauchin <zebob.m@pengzone.org>\n"
 "Language-Team: Fedora French <fedora-trans-fr@redhat.com>\n"
@@ -34,7 +34,8 @@ msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
-"<span color=\"black\">Afficher et modifier la configuration du serveur de son local</span>"
+"<span color=\"black\">Afficher et modifier la configuration du serveur de "
+"son local</span>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
@@ -46,11 +47,14 @@ msgstr ""
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
-"Ajouter un périphérique de sortie _virtuel pour une sortie simultanée sur toutes les cartes sons locales"
+"Ajouter un périphérique de sortie _virtuel pour une sortie simultanée sur "
+"toutes les cartes sons locales"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Permettre aux autres machines sur le réseau local de _découvrir les périphériques de son locaux"
+msgstr ""
+"Permettre aux autres machines sur le réseau local de _découvrir les "
+"périphériques de son locaux"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -98,5 +102,6 @@ msgstr "_Bouclage du son vers les haut-parleurs locaux"
 
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
-msgstr "Ren_dre les périphériques de son découverts sur le réseau disponible localement"
-
+msgstr ""
+"Ren_dre les périphériques de son découverts sur le réseau disponible "
+"localement"

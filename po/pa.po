@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-13 01:16+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-12-13 11:32+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <punjabi-l10n@users.sf.net>\n"
@@ -36,11 +36,13 @@ msgid ""
 msgstr "<span color=\"black\">ਆਪਣੇ ਲੋਕਲ ਸਾਊਂਡ ਸਰਵਰ ਦੀ ਸੰਰਚਨਾ ਵੇਖੋ ਅਤੇ ਸੋਧੋ</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>ਪਲਸ-ਆਡੀਓ ਪਸੰਦ</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "ਸਭ ਲੋਕਲ ਸਾਊਂਡ ਕਾਰਡਾਂ ਉੱਤੇ ਇੱਕ ਨਾਲ ਆਉਟਪੁੱਟ ਲਈ ਵੁਰਚੁਅਲ ਆਉਟਪੁੱਤ ਜੰਤਰ ਸ਼ਾਮਲ ਕਰੋ(_v)"
 
 #: ../src/paprefs.glade.h:4
@@ -94,4 +96,3 @@ msgstr "ਲੋਕਲ ਸਪੀਕਰਾਂ ਤੋਂ ਲੂਪਬੈਕ ਆਡ�
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "ਖੋਜਣਯੋਗ ਨੈੱਟਵਰਕ ਆਡੀਓ ਜੰਤਰ ਲੋਕਲ ਉਪਲੱਬਧ ਬਣਾਉ(_M)"
-

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-19 20:34+0200\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-04-21 03:05+0300\n"
 "Last-Translator: Necmettin Begiter <necmettin.begiter@gmail.com>\n"
 "Language-Team: Turkish <yerellestirme@kde.org.tr>\n"
@@ -16,8 +16,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio Tercihleri"
 
@@ -30,20 +29,31 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Yerel ses sunucusunun yapılandırmasına bak ve değiştir"
 
 #: ../src/paprefs.glade.h:1
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Yerel ses sunucunuzun yapılandırmasına bakın ve değiştirin</span>"
+msgid ""
+"<span color=\"black\">View and modify the configuration of your local sound "
+"server</span>"
+msgstr ""
+"<span color=\"black\">Yerel ses sunucunuzun yapılandırmasına bakın ve "
+"değiştirin</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio Tercihleri</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Tercihleri</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all sound cards"
-msgstr "Tüm ses kartlarından eşzamanlı çıktı almak için _sanal çıktı aygıtı ekle"
+#, fuzzy
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Tüm ses kartlarından eşzamanlı çıktı almak için _sanal çıktı aygıtı ekle"
 
 #: ../src/paprefs.glade.h:4
-msgid "Allow other machines on LAN to _browse for local sound devices"
-msgstr "Yerel ağdaki diğer makinaların yerel ses aygıtlarına gözatmasına _izin ver"
+#, fuzzy
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr ""
+"Yerel ağdaki diğer makinaların yerel ses aygıtlarına gözatmasına _izin ver"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -89,3 +99,6 @@ msgstr "Eş_zamanlı Çıktı"
 msgid "_Loopback audio to local speakers"
 msgstr "Çıktıyı yerel hoparlörlere _yönlendir"
 
+#: ../src/paprefs.glade.h:17
+msgid "_Make discoverable network sound devices available locally"
+msgstr ""

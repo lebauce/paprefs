@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs.or\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-01 08:23+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-01 19:44+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
 msgid "PulseAudio Preferences"
@@ -34,16 +35,18 @@ msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
-"<span color=\"black\">ସ୍ଥାନୀୟ ଧ୍ୱନି ସର୍ଭରର ସଂରଚନାକୁ ଦେଖନ୍ତୁ ଏବଂ ପରିବର୍ତ୍ତନ "
-"କରନ୍ତୁ</span>"
+"<span color=\"black\">ସ୍ଥାନୀୟ ଧ୍ୱନି ସର୍ଭରର ସଂରଚନାକୁ ଦେଖନ୍ତୁ ଏବଂ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio ପସନ୍ଦଗୁଡ଼ିକ</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "ସମସ୍ତ ସ୍ଥାନୀୟ ଧ୍ୱନି କାର୍ଡଗୁଡ଼ିକରେ ଏକା ସଙ୍ଗରେ ନିର୍ଗମ ପାଇଁ ଆଭାସୀ ନିର୍ଗମ ଉପକରଣ ଯୋଗ କରନ୍ତୁ (_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"ସମସ୍ତ ସ୍ଥାନୀୟ ଧ୍ୱନି କାର୍ଡଗୁଡ଼ିକରେ ଏକା ସଙ୍ଗରେ ନିର୍ଗମ ପାଇଁ ଆଭାସୀ ନିର୍ଗମ ଉପକରଣ ଯୋଗ କରନ୍ତୁ (_v)"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -96,4 +99,3 @@ msgstr "ସ୍ଥାନୀୟ ସ୍ପିକରରେ ଧ୍ୱନି ଚକ୍
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ ନେଟୱର୍କ ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ (_M)"
-

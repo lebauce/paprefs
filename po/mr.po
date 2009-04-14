@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-06 08:17+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-06 15:43+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
@@ -33,14 +33,18 @@ msgstr "स्थानीय आवाज सर्वर वरील सं�
 msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
-msgstr "<span color=\"black\">तुमच्या स्थानीय आवाज सर्वरची संयोजनाचे अवलोकन व संपादन करा</span>"
+msgstr ""
+"<span color=\"black\">तुमच्या स्थानीय आवाज सर्वरची संयोजनाचे अवलोकन व संपादन करा</"
+"span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio आवड निवड</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "सर्व स्थानीय आवाज कार्ड वरील सम आऊटपुट करीता आभासी साधन समावेष करा (_v)"
 
 #: ../src/paprefs.glade.h:4
@@ -94,4 +98,3 @@ msgstr "स्थानीय स्पीकर करीता लुपबॅ
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "स्थानीयरित्या शोधण्याजोगी जाळ आवाज साधन उपलब्ध करा (_M)"
-

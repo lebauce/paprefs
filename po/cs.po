@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-12 01:15+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-10-12 20:30+0200\n"
 "Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -39,11 +39,14 @@ msgstr ""
 "serveru</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Předvolby PulseAudio</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Předvolby PulseAudio</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "_Přidat virtuální výstupní zařízení pro simultánní výstup na všech místních "
 "zvukových kartách"
@@ -99,4 +102,3 @@ msgstr "Zpětná sm_yčka zvuku do místních reproduktorů"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "Zpřístupnit prozkou_matelná síťová zvuková zařízení místně"
-

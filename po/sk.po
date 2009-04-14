@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-29 01:16+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2008-10-03 20:54+0200\n"
 "Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -51,8 +51,7 @@ msgstr ""
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr ""
-"Povoliť iným strojom v sieti LAN preskúmať lokálne zvukové zaria_denia"
+msgstr "Povoliť iným strojom v sieti LAN preskúmať lokálne zvukové zaria_denia"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -101,4 +100,3 @@ msgstr "_Loopback zvuk do lokálnych reproduktorov"
 #: ../src/paprefs.glade.h:17
 msgid "_Make discoverable network sound devices available locally"
 msgstr "Sprístupniť preskú_mateľné sieťové zvukové zariadenia lokálne"
-

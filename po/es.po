@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-07 02:18+0000\n"
+"POT-Creation-Date: 2009-04-14 14:15+0200\n"
 "PO-Revision-Date: 2009-04-07 15:55+1000\n"
 "Last-Translator: Gladys Guerrero Lozano <gguerrer@redhat.com>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
@@ -35,18 +35,22 @@ msgstr ""
 "sonido local</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Preferencias de PulseAudio</b></span>"
+msgid ""
+"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr ""
+"<span size=\"18000\" color=\"black\"><b>Preferencias de PulseAudio</b></span>"
 
 #: ../src/paprefs.glade.h:3
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "Agregar un dispositivo de salida _virtual para salida simultánea en todas "
 "las placas de sonido locales"
 
 #: ../src/paprefs.glade.h:4
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Permitir a otras máquinas en la red _descubrir dispositivos de sonido locales"
+msgstr ""
+"Permitir a otras máquinas en la red _descubrir dispositivos de sonido locales"
 
 #: ../src/paprefs.glade.h:5
 msgid "Create seperate audio _device for Multicast/RTP"
@@ -97,4 +101,3 @@ msgid "_Make discoverable network sound devices available locally"
 msgstr ""
 "_Hacer visibles desde la red a los dispositivos de sonido disponibles "
 "localmente"
-
