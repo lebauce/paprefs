@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-20 14:36+0000\n"
-"PO-Revision-Date: 2009-04-20 19:49+0200\n"
+"PO-Revision-Date: 2009-04-21 16:21+0200\n"
 "Last-Translator: mario_santagiuliana <mario at marionline.it>\n"
 "Language-Team: Italian <fedora-trans-it at redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -117,5 +117,6 @@ msgstr "Riprodurre l'audio sugli altoparlanti _locali"
 
 #: ../src/paprefs.glade.h:19
 msgid "_Make discoverable network sound devices available locally"
-msgstr "Rendere i dispositivi sonori via rete disponibili localmente"
+msgstr "Rendere i dispositivi sonori via rete disponibili local_mente"
+
 
