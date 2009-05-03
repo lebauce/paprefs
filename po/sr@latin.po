@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
-"PO-Revision-Date: 2008-10-05 16:18-0000\n"
+"POT-Creation-Date: 2009-05-03 19:40+0000\n"
+"PO-Revision-Date: 2009-05-03 23:06+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio postavke"
 
@@ -31,73 +31,85 @@ msgstr "Pregledajte i izmenite postavke lokalnog zvučnog servera"
 
 #: ../src/paprefs.glade.h:1
 msgid ""
+"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr ""
+"<i>Apple i Airtunes su zaštitni znaci Apple Inc., registrovani u SAD i "
+"drugim zemljama.</i>"
+
+#: ../src/paprefs.glade.h:2
+msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
 "<span color=\"black\">Pregledajte i izmenite postavke svog lokalnog zvučnog "
 "servera</span>"
 
-#: ../src/paprefs.glade.h:2
+#: ../src/paprefs.glade.h:3
 msgid ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio postavke</b></span>"
 
-#: ../src/paprefs.glade.h:3
+#: ../src/paprefs.glade.h:4
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "Dodaj _virtualni izlazni uređaj za simultani izlaz na svim lokalnim zvučnim "
 "karticama"
 
-#: ../src/paprefs.glade.h:4
+#: ../src/paprefs.glade.h:5
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr ""
 "Dozvoli drugim mašinama u lokalnoj mreži da _pronađu lokalni zvučni uređaj"
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:6
 msgid "Create seperate audio _device for Multicast/RTP"
 msgstr "Napravi zaseban audio _uređaj za višesmerno slanje/RTP"
 
-#: ../src/paprefs.glade.h:6
+#: ../src/paprefs.glade.h:7
 msgid "Don't require _authentication"
 msgstr "Ne zahtevaj _autentifikaciju"
 
-#: ../src/paprefs.glade.h:7
+#: ../src/paprefs.glade.h:8
 msgid "Enable Multicast/RTP _receiver"
 msgstr "Omogući višesmerni/RTP prije_mnik"
 
-#: ../src/paprefs.glade.h:8
+#: ../src/paprefs.glade.h:9
 msgid "Enable Multicast/RTP _sender"
 msgstr "Omogući višesmerni/RTP pre_dajnik"
 
-#: ../src/paprefs.glade.h:9
+#: ../src/paprefs.glade.h:10
 msgid "Enable _network access to local sound devices"
 msgstr "Omogući _mrežni pristup lokalnom zvučnom uređaju"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:11
+msgid "Make discoverable Apple Air_tunes sound devices available locally"
+msgstr "Učini vidljive Apple Air_tunes zvučne uređaje dostupnim lokalno"
+
+#: ../src/paprefs.glade.h:12
 msgid "Multicast/R_TP"
 msgstr "Višesmerno emitovanje/R_TP"
 
-#: ../src/paprefs.glade.h:11
+#: ../src/paprefs.glade.h:13
 msgid "N_etwork Access"
 msgstr "Mr_ežni pristup"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:15
 msgid "Send audio from local _microphone"
 msgstr "Slanje zvuka sa lokalnog _mikrofona"
 
-#: ../src/paprefs.glade.h:14
+#: ../src/paprefs.glade.h:16
 msgid "Send audio from local s_peakers"
 msgstr "Slanje zvuka iz lokalnih z_vučnika"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:17
 msgid "Sim_ultaneous Output"
 msgstr "Sim_ultani izlaz"
 
-#: ../src/paprefs.glade.h:16
+#: ../src/paprefs.glade.h:18
 msgid "_Loopback audio to local speakers"
 msgstr "_Povratna petlja zvuka u lokalne zvučnike"
 
-#: ../src/paprefs.glade.h:17
+#: ../src/paprefs.glade.h:19
 msgid "_Make discoverable network sound devices available locally"
 msgstr "_Učini vidljive mrežne zvučne uređaje dostupnim lokalno"
