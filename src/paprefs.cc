@@ -36,7 +36,6 @@ public:
     MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade::Xml>& x);
     static MainWindow* create();
 
-    Gtk::EventBox *titleEventBox;
     Gtk::Button *closeButton;
 
     Gtk::CheckButton
@@ -48,7 +47,9 @@ public:
         *rtpReceiveCheckButton,
         *rtpSendCheckButton,
         *rtpLoopbackCheckButton,
-        *combineCheckButton;
+        *combineCheckButton,
+        *upnpMediaServerCheckButton,
+        *upnpNullSinkCheckButton;
 
     Gtk::RadioButton
         *rtpMikeRadioButton,
@@ -60,30 +61,44 @@ public:
     bool ignoreChanges;
 
     void onCloseButtonClicked();
+
     void updateSensitive();
+
     void onChangeRemoteAccess();
     void onChangeZeroconfDiscover();
     void onChangeZeroconfRaopDiscover();
     void onChangeRtpReceive();
     void onChangeRtpSend();
     void onChangeCombine();
+    void onChangeUpnp();
+
     void readFromGConf();
+
     void checkForModules();
+
     void writeToGConfRemoteAccess();
     void writeToGConfZeroconfDiscover();
     void writeToGConfZeroconfRaopDiscover();
     void writeToGConfRtpReceive();
     void writeToGConfRtpSend();
     void writeToGConfCombine();
+    void writeToGConfUPnP();
+
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
 
-    bool rtpRecvAvailable, rtpSendAvailable, zeroconfPublishAvailable, zeroconfDiscoverAvailable, zeroconfRaopDiscoverAvailable, remoteAvailable;
+    bool
+        rtpRecvAvailable,
+        rtpSendAvailable,
+        zeroconfPublishAvailable,
+        zeroconfDiscoverAvailable,
+        zeroconfRaopDiscoverAvailable,
+        remoteAvailable,
+        upnpAvailable;
 };
 
 MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade::Xml>& x) :
     Gtk::Window(cobject), ignoreChanges(true) {
 
-    x->get_widget("titleEventBox", titleEventBox);
     x->get_widget("closeButton", closeButton);
 
     x->get_widget("remoteAccessCheckButton", remoteAccessCheckButton);
@@ -95,13 +110,12 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     x->get_widget("rtpSendCheckButton", rtpSendCheckButton);
     x->get_widget("rtpLoopbackCheckButton", rtpLoopbackCheckButton);
     x->get_widget("combineCheckButton", combineCheckButton);
+    x->get_widget("upnpMediaServerCheckButton", upnpMediaServerCheckButton);
+    x->get_widget("upnpNullSinkCheckButton", upnpNullSinkCheckButton);
 
     x->get_widget("rtpMikeRadioButton", rtpMikeRadioButton);
     x->get_widget("rtpSpeakerRadioButton", rtpSpeakerRadioButton);
     x->get_widget("rtpNullSinkRadioButton", rtpNullSinkRadioButton);
-
-    Gdk::Color c("white");
-    titleEventBox->modify_bg(Gtk::STATE_NORMAL, c);
 
     checkForModules();
 
@@ -130,6 +144,9 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     rtpNullSinkRadioButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onChangeRtpSend));
 
     combineCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeCombine));
+
+    upnpMediaServerCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeUpnp));
+    upnpNullSinkCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeUpnp));
 }
 
 MainWindow* MainWindow::create() {
@@ -161,6 +178,9 @@ void MainWindow::updateSensitive() {
     rtpMikeRadioButton->set_sensitive(b && rtpSendAvailable);
     rtpSpeakerRadioButton->set_sensitive(b && rtpSendAvailable);
     rtpNullSinkRadioButton->set_sensitive(b && rtpSendAvailable);
+
+    upnpMediaServerCheckButton->set_sensitive(upnpAvailable);
+    upnpNullSinkCheckButton->set_sensitive(upnpAvailable && upnpMediaServerCheckButton->get_active());
 }
 
 void MainWindow::onChangeRemoteAccess() {
@@ -208,12 +228,19 @@ void MainWindow::onChangeRtpSend() {
 }
 
 void MainWindow::onChangeCombine() {
-    Gnome::Conf::ChangeSet changeSet;
-
     if (ignoreChanges)
         return;
 
     writeToGConfCombine();
+}
+
+void MainWindow::onChangeUpnp() {
+
+    if (ignoreChanges)
+        return;
+
+    updateSensitive();
+    writeToGConfUPnP();
 }
 
 void MainWindow::writeToGConfCombine() {
@@ -361,7 +388,11 @@ void MainWindow::writeToGConfRtpSend() {
     if (rtpSendCheckButton->get_active()) {
         if (!mikeEnabled && !speakerEnabled) {
             changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name0", Glib::ustring("module-null-sink"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args0", Glib::ustring("sink_name=rtp format=s16be channels=2 rate=44100 description=\"RTP Multicast Sink\""));
+            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args0", Glib::ustring("sink_name=rtp "
+                                                                                "format=s16be "
+                                                                                "channels=2 "
+                                                                                "rate=44100 "
+                                                                                "sink_properties=\"device.description='RTP Multicast' device.bus='network' device.icon_name='network-server'\""));
 
             changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name1", Glib::ustring("module-rtp-send"));
             changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args1", Glib::ustring(loopbackEnabled ? "source=rtp.monitor loop=1" : "source=rtp.monitor loop=0"));
@@ -386,6 +417,42 @@ void MainWindow::writeToGConfRtpSend() {
     gconf->change_set_commit(changeSet, true);
 
     changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/locked", false);
+    gconf->change_set_commit(changeSet, true);
+
+    gconf->suggest_sync();
+}
+
+void MainWindow::writeToGConfUPnP() {
+    Gnome::Conf::ChangeSet changeSet;
+
+    changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/locked", true);
+    gconf->change_set_commit(changeSet, true);
+
+    if (upnpMediaServerCheckButton->get_active()) {
+        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/name0", Glib::ustring("module-rygel-media-server"));
+        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/args0", Glib::ustring(""));
+
+        if (upnpNullSinkCheckButton->get_active()) {
+            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/name1", Glib::ustring("module-null-sink"));
+            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/args1", Glib::ustring("sink_name=upnp "
+                                                                                         "format=s16be "
+                                                                                         "channels=2 "
+                                                                                         "rate=44100 "
+                                                                                         "sink_properties=\"device.description='DLNA/UPnP Streaming' device.bus='network' device.icon_name='network-server'\""));
+            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/null-sink-enabled", true);
+        } else {
+            changeSet.unset(PA_GCONF_PATH_MODULES"/upnp-media-server/name1");
+            changeSet.unset(PA_GCONF_PATH_MODULES"/upnp-media-server/args1");
+            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/null-sink-enabled", false);
+        }
+
+        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/enabled", true);
+    }  else
+        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/enabled", false);
+
+    gconf->change_set_commit(changeSet, true);
+
+    changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/locked", false);
     gconf->change_set_commit(changeSet, true);
 
     gconf->suggest_sync();
@@ -422,6 +489,9 @@ void MainWindow::readFromGConf() {
 
     combineCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/combine/enabled"));
 
+    upnpMediaServerCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/upnp-media-server/enabled"));
+    upnpNullSinkCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/upnp-media-server/null-sink-enabled"));
+
     ignoreChanges = FALSE;
 
     updateSensitive();
@@ -440,6 +510,11 @@ void MainWindow::checkForModules() {
 
     rtpRecvAvailable = access(MODULESDIR "module-rtp-recv" SHREXT, F_OK) == 0;
     rtpSendAvailable = access(MODULESDIR "module-rtp-send" SHREXT, F_OK) == 0;
+
+    upnpAvailable =
+        access(MODULESDIR "module-rygel-media-server" SHREXT, F_OK) == 0//  &&
+        // g_find_program_in_path("rygel")
+        ;
 }
 
 int main(int argc, char *argv[]) {
