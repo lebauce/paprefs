@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-04-14 16:44+0200\n"
+"PO-Revision-Date: 2009-08-25 16:29+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,12 +26,11 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Wyświetlanie i modyfikacja konfiguracji lokalnego serwera dźwięku"
 
 #: ../src/paprefs.glade.h:1
-#, fuzzy
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple i Airtunes są znakami handlowymi firmy Apple Inc., zarejestrowanymi "
+"<i>Apple i AirTunes są znakami handlowymi firmy Apple Inc., zarejestrowanymi "
 "w Stanach Zjednoczonych i innych państwach.</i>"
 
 #: ../src/paprefs.glade.h:2
@@ -48,29 +47,24 @@ msgstr ""
 "inne komputery"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
 msgstr "O_ddzielne urządzenie dźwiękowe dla multikastu/RTP"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "O_ddzielne urządzenie dźwiękowe dla multikastu/RTP"
+msgstr "Oddzielne urządzenie dźwiękowe dla mediów strumieniowych DLNA/UPnP"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
-msgstr "Bez wymogu uwierzytelni_ania"
+msgstr "Bez wymogu uwie_rzytelnienia"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
-msgstr "Odbio_rca multikastu/RTP"
+msgstr "Odbior_ca multikastu/RTP"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
-msgstr "Nadawca m_ultikastu/RTP"
+msgstr "N_adawca multikastu/RTP"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
@@ -78,63 +72,46 @@ msgstr "Dostęp sieciowy do lokal_nych urządzeń dźwiękowych"
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "Zainstaluj..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "Lokalne udostępnienie wykrytych urządzeń dźwiękowych Apple Air_tunes"
+msgstr "Lokalne udostępnienie wykrytych urządzeń dźwiękowych Apple Air_Tunes"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "Lo_kalne udostępnienie wykrytych sieciowych urządzeń dźwiękowych"
+msgstr ""
+"Lokalne udostępnienie wykrytych sieciowych urządzeń dźwiękowych_PulseAudio"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
 msgstr ""
+"_Udostępnianie lokalnych urządzeń dźwiękowych jako serwer mediów DLNA/UPnP"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multikast/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
 msgstr "Dostęp si_eciowy"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "Dostęp si_eciowy"
+msgstr "_Serwer sieciowy"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Wysyłanie dźwięku z lokalnego _mikrofonu"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
-msgstr "Wysyłanie dźwięku z lokalnych gł_ośników"
+msgstr "Wysyłanie dźwięku z lokalnych głośni_ków"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
-msgstr "_Jednoczesne wyjście"
+msgstr "Jedn_oczesne wyjście"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
-msgstr "Zwracanie dźwięku do _lokalnych głośników"
-
-#~ msgid ""
-#~ "<span color=\"black\">View and modify the configuration of your local "
-#~ "sound server</span>"
-#~ msgstr ""
-#~ "<span color=\"black\">Wyświetlanie i modyfikacja konfiguracji lokalnego "
-#~ "serwera dźwięku</span>"
-
-#~ msgid ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-#~ msgstr ""
-#~ "<span size=\"18000\" color=\"black\"><b>Preferencje PulseAudio</b></span>"
+msgstr "_Zwracanie dźwięku do lokalnych głośników"
