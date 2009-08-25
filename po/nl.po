@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
-"PO-Revision-Date: 2009-04-10 20:47+0200\n"
+"POT-Creation-Date: 2009-04-14 14:24+0000\n"
+"PO-Revision-Date: 2009-04-14 20:06+0200\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio voorkeuren"
 
@@ -30,75 +30,87 @@ msgstr "Bekijk en verander de instellingen van de locale geluidsserver"
 
 #: ../src/paprefs.glade.h:1
 msgid ""
+"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr "<i>Apple en Airtunes zijn merknamen van Apple Inc., geregistreerd in de U.S. "
+"en andere  landen.</i>"
+
+#: ../src/paprefs.glade.h:2
+msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
 "<span·color=\"black\">Bekijk en verander de instellingen van je locale "
 "geluidsserver</span>"
 
-#: ../src/paprefs.glade.h:2
+#: ../src/paprefs.glade.h:3
 msgid ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 msgstr ""
 "<span size=\"18000\" color=\"black\"><b>PulseAudio voorkeuren</b></span>"
 
-#: ../src/paprefs.glade.h:3
+#: ../src/paprefs.glade.h:4
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "Voeg _virtueel uitvoerapparaat toe voor gelijktijdige output op alle locale "
 "geluidskaarten"
 
-#: ../src/paprefs.glade.h:4
+#: ../src/paprefs.glade.h:5
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr ""
 "Sta andere machines op het LAN toe om alle locale geluidsapparaten te "
 "ont_dekken"
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:6
 msgid "Create seperate audio _device for Multicast/RTP"
 msgstr "Maak een afzonderlijk au_dioapparaat voor Multicast/RTP"
 
-#: ../src/paprefs.glade.h:6
+#: ../src/paprefs.glade.h:7
 msgid "Don't require _authentication"
 msgstr "Vereis geen _authenticatie"
 
-#: ../src/paprefs.glade.h:7
+#: ../src/paprefs.glade.h:8
 msgid "Enable Multicast/RTP _receiver"
 msgstr "Zet Multicast/RTP ontvange_r aan"
 
-#: ../src/paprefs.glade.h:8
+#: ../src/paprefs.glade.h:9
 msgid "Enable Multicast/RTP _sender"
 msgstr "Zet Multica_st/RTP zender aan"
 
-#: ../src/paprefs.glade.h:9
+#: ../src/paprefs.glade.h:10
 msgid "Enable _network access to local sound devices"
 msgstr "Zet _netwerktoegang aan voor locale geluidsapparaten"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:11
+msgid "Make discoverable Apple Air_tunes sound devices available locally"
+msgstr "_Maak ontdekte Aplle Air_tunes geluidsapparaten locaal beschikbaar"
+
+#: ../src/paprefs.glade.h:12
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:11
+#: ../src/paprefs.glade.h:13
 msgid "N_etwork Access"
 msgstr "N_etwerktoegang"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:15
 msgid "Send audio from local _microphone"
 msgstr "Stuur geluid vanaf locale _microfoon"
 
-#: ../src/paprefs.glade.h:14
+#: ../src/paprefs.glade.h:16
 msgid "Send audio from local s_peakers"
-msgstr "Stuur geluid vanaf locale luid_spreker"
+msgstr "Stuur geluid vanaf locale luids_preker"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:17
 msgid "Sim_ultaneous Output"
 msgstr "Gelijktijdige _uitvoer"
 
-#: ../src/paprefs.glade.h:16
+#: ../src/paprefs.glade.h:18
 msgid "_Loopback audio to local speakers"
 msgstr "_Loopback geluid naar locale luidsprekers"
 
-#: ../src/paprefs.glade.h:17
+#: ../src/paprefs.glade.h:19
 msgid "_Make discoverable network sound devices available locally"
 msgstr "_Maak ontdekte netwerk geluidsapparaten locaal beschikbaar"
+

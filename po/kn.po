@@ -1,14 +1,14 @@
-# translation of paprefs.master-tx.paprefs.kn.po to Kannada
+# translation of paprefs.master-tx.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Shankar Prasad <svenkate@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: paprefs.master-tx.paprefs.kn\n"
+"Project-Id-Version: paprefs.master-tx.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
-"PO-Revision-Date: 2009-04-03 22:27+0530\n"
+"POT-Creation-Date: 2009-04-23 08:32+0000\n"
+"PO-Revision-Date: 2009-04-23 17:44+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio ನ ಆದ್ಯತೆಗಳು"
 
@@ -31,72 +31,79 @@ msgstr "ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚ
 
 #: ../src/paprefs.glade.h:1
 msgid ""
+"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr "<i>Apple ಹಾಗು Airtunes ಎನ್ನುವವು Apple Inc. ನ ಟ್ರೇಡ್‌ಮಾರ್ಕುಗಳಾಗಿದ್ದು, U.S. ಹಾಗು ಇತರೆ ದೇಶಗಳಲ್ಲಿ ನೋಂದಾಯಿಸಲ್ಪಟ್ಟಿವೆ.</i>"
+
+#: ../src/paprefs.glade.h:2
+msgid ""
 "<span color=\"black\">View and modify the configuration of your local sound "
 "server</span>"
 msgstr ""
 "<span color=\"black\">ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚನೆಯನ್ನು ನೋಡಿ ಹಾಗು ಬದಲಾಯಿಸಿ</"
 "span>"
 
-#: ../src/paprefs.glade.h:2
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio ನ ಆದ್ಯತೆಗಳು</b></span>"
-
 #: ../src/paprefs.glade.h:3
-msgid ""
-"Add _virtual output device for simultaneous output on all local sound cards"
-msgstr ""
-"ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
+msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio ನ ಆದ್ಯತೆಗಳು</b></span>"
 
 #: ../src/paprefs.glade.h:4
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
+
+#: ../src/paprefs.glade.h:5
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "LAN ನಲ್ಲಿನ ಇತರೆ ಗಣಕಗಳು ಸ್ಥಳೀಯ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಪತ್ತೆ ಹಚ್ಚಲು ಅನುಮತಿಸು(_d)"
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:6
 msgid "Create seperate audio _device for Multicast/RTP"
 msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಗಾಗಿ ಪ್ರತ್ಯೇಕವಾದ ಆಡಿಯೋ ಸಾಧನವನ್ನು ನಿರ್ಮಿಸು(_d)"
 
-#: ../src/paprefs.glade.h:6
+#: ../src/paprefs.glade.h:7
 msgid "Don't require _authentication"
 msgstr "ದೃಢೀಕರಣದ ಅಗತ್ಯವಿಲ್ಲ(_a)"
 
-#: ../src/paprefs.glade.h:7
+#: ../src/paprefs.glade.h:8
 msgid "Enable Multicast/RTP _receiver"
 msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಸ್ವೀಕರಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸು(_s)"
 
-#: ../src/paprefs.glade.h:8
+#: ../src/paprefs.glade.h:9
 msgid "Enable Multicast/RTP _sender"
 msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಕಳುಹಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸು(_s)"
 
-#: ../src/paprefs.glade.h:9
+#: ../src/paprefs.glade.h:10
 msgid "Enable _network access to local sound devices"
 msgstr "ಸ್ಥಳೀಯ ಧ್ವನಿ ಸಾಧನಗಳಿಗೆ ಜಾಲಬಂಧ ನಿಲುಕಣೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು(_n)"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:11
+msgid "Make discoverable Apple Air_tunes sound devices available locally"
+msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ Apple Air_tunes ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
+
+#: ../src/paprefs.glade.h:12
 msgid "Multicast/R_TP"
 msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/R_TP"
 
-#: ../src/paprefs.glade.h:11
+#: ../src/paprefs.glade.h:13
 msgid "N_etwork Access"
 msgstr "ಜಾಲಬಂಧ ನಿಲುಕಣೆ(_e)"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:15
 msgid "Send audio from local _microphone"
 msgstr "ಸ್ಥಳೀಯ  ಮೈಕ್ರೋಫೋನಿನಿಂದ ಆಡಿಯೋವನ್ನು ಕಳುಹಿಸು(_m)"
 
-#: ../src/paprefs.glade.h:14
+#: ../src/paprefs.glade.h:16
 msgid "Send audio from local s_peakers"
 msgstr "ಸ್ಥಳೀಯ ಸ್ಪೀಕರುಗಳಿಂದ ಆಡಿಯೋವನ್ನು ಕಳುಹಿಸು(_p)"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:17
 msgid "Sim_ultaneous Output"
 msgstr "ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್(_u)"
 
-#: ../src/paprefs.glade.h:16
+#: ../src/paprefs.glade.h:18
 msgid "_Loopback audio to local speakers"
 msgstr "ಆಡಿಯೋವನ್ನು ಸ್ಥಳೀಯ ಸ್ಪೀಕರುಗಳಿಗೆ ಲೂಪ್‌ಬ್ಯಾಕ್‌ ಮಾಡು(_L)"
 
-#: ../src/paprefs.glade.h:17
+#: ../src/paprefs.glade.h:19
 msgid "_Make discoverable network sound devices available locally"
 msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ ಜಾಲಬಂಧ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು(_M)"
+
