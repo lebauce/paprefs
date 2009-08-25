@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-06-01 08:43+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Poedit-Language: Thai\n"
 "X-Poedit-Country: THAILAND\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "ปรับแต่ง PulseAudio"
 
@@ -32,38 +32,42 @@ msgstr "ดูและปรับค่าเซิร์ฟเวอร์เ
 
 #: ../src/paprefs.glade.h:1
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
-msgstr "<span color=\"black\">ดูและปรับค่าเซิร์ฟเวอร์เสียงบนเครื่องของคุณ</span>"
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr ""
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>ปรับแต่ง PulseAudio</b></span>"
-
-#: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "_เพิ่มอุปกรณ์เอาต์พุตเสมือนสำหรับเล่นเสียงพร้อมกันบนการ์ดเสียงทุกใบในเครื่องนี้"
 
-#: ../src/paprefs.glade.h:4
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "อนุญาตให้เครื่องอื่นๆ ในวงแลน_ค้นหาอุปกรณ์เสียงในเครื่องได้"
 
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
+msgstr "_สร้างอุปกรณ์เสียงต่างหากสำหรับ Multicast/RTP"
+
 #: ../src/paprefs.glade.h:5
-msgid "Create seperate audio _device for Multicast/RTP"
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
 msgstr "_สร้างอุปกรณ์เสียงต่างหากสำหรับ Multicast/RTP"
 
 #: ../src/paprefs.glade.h:6
-msgid "Don't require _authentication"
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "ไ_ม่ต้องยืนยันตัวบุคคล"
 
 #: ../src/paprefs.glade.h:7
-msgid "Enable Multicast/RTP _receiver"
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "เปิดใช้ตัว_รับ Multicast/RTP"
 
 #: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _sender"
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "เปิดใช้_ตัวส่ง Multicast/RTP"
 
 #: ../src/paprefs.glade.h:9
@@ -71,29 +75,62 @@ msgid "Enable _network access to local sound devices"
 msgstr "เ_ปิดให้เข้าถึงอุปกรณ์เสียงบนเครื่องผ่านเครือข่ายได้"
 
 #: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
+#: ../src/paprefs.glade.h:11
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
+msgstr "_ทำให้อุปกรณ์เสียงที่ค้นพบในเครือข่ายใช้ได้ในเครื่องนี้"
+
+#: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "_ทำให้อุปกรณ์เสียงที่ค้นพบในเครือข่ายใช้ได้ในเครื่องนี้"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:11
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "การเข้าถึง_ผ่านเครือข่าย"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "การเข้าถึง_ผ่านเครือข่าย"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "ส่งสัญญาณเสียงจากไ_มโครโฟนในเครื่อง"
 
-#: ../src/paprefs.glade.h:14
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "ส่งสัญญาณเสียงจาก_ลำโพงในเครื่อง"
 
-#: ../src/paprefs.glade.h:15
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "เอาต์พุต_พร้อมกัน"
 
-#: ../src/paprefs.glade.h:16
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "_วนสัญญาณเสียงกลับเข้าสู่ลำโพงในเครื่อง"
 
-#: ../src/paprefs.glade.h:17
-msgid "_Make discoverable network sound devices available locally"
-msgstr "_ทำให้อุปกรณ์เสียงที่ค้นพบในเครือข่ายใช้ได้ในเครื่องนี้"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr "<span color=\"black\">ดูและปรับค่าเซิร์ฟเวอร์เสียงบนเครื่องของคุณ</span>"
+
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>ปรับแต่ง PulseAudio</b></span>"

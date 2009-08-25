@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-04-03 19:14+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio 属性"
 
@@ -30,38 +30,42 @@ msgstr "查看及修改本地声音服务器配置"
 
 #: ../src/paprefs.glade.h:1
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
-msgstr "<span color=\"black\">查看及修改本地声音服务器配置</span>"
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr ""
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio 属性</b></span>"
-
-#: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "在所有本地声卡中为模拟输出添加虚拟（_v）输出设备"
 
-#: ../src/paprefs.glade.h:4
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "允许 LAN 中的其它机器发现（_d）本地声音设备"
 
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
+msgstr "为多广播/RTP 创建独立音频设备（_d）"
+
 #: ../src/paprefs.glade.h:5
-msgid "Create seperate audio _device for Multicast/RTP"
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
 msgstr "为多广播/RTP 创建独立音频设备（_d）"
 
 #: ../src/paprefs.glade.h:6
-msgid "Don't require _authentication"
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "不需要验证（_a）"
 
 #: ../src/paprefs.glade.h:7
-msgid "Enable Multicast/RTP _receiver"
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "启用多广播/RTP 接收器（_r）"
 
 #: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _sender"
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "启用多广播/RTP 发射器（_s）"
 
 #: ../src/paprefs.glade.h:9
@@ -69,29 +73,61 @@ msgid "Enable _network access to local sound devices"
 msgstr "启用到本地声音设备的网络访问（_n）"
 
 #: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
+#: ../src/paprefs.glade.h:11
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
+msgstr "使可找到的网络声音设备在本地可用（_M）"
+
+#: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "使可找到的网络声音设备在本地可用（_M）"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "多广播/RTP（_T）"
 
-#: ../src/paprefs.glade.h:11
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "网络访问（_e）"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "网络访问（_e）"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "从本地麦克风（_m）发送音频"
 
-#: ../src/paprefs.glade.h:14
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "从本地音箱（_p）发送音频"
 
-#: ../src/paprefs.glade.h:15
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "模拟（_u）输出"
 
-#: ../src/paprefs.glade.h:16
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "到本地音箱的回路（_L）音频"
 
-#: ../src/paprefs.glade.h:17
-msgid "_Make discoverable network sound devices available locally"
-msgstr "使可找到的网络声音设备在本地可用（_M）"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr "<span color=\"black\">查看及修改本地声音服务器配置</span>"
+
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr "<span size=\"18000\" color=\"black\"><b>PulseAudio 属性</b></span>"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-13 08:36+0000\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr ""
 
@@ -30,78 +30,83 @@ msgstr ""
 
 #: ../src/paprefs.glade.h:1
 msgid ""
-"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
 
 #: ../src/paprefs.glade.h:2
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
-msgstr ""
-
-#: ../src/paprefs.glade.h:3
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr ""
-
-#: ../src/paprefs.glade.h:4
-msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr ""
 
+#: ../src/paprefs.glade.h:4
+msgid "Create separate audio device _for Multicast/RTP"
+msgstr ""
+
+#: ../src/paprefs.glade.h:5
+msgid "Create separate audio device for DLNA/UPnP media streaming"
+msgstr ""
+
 #: ../src/paprefs.glade.h:6
-msgid "Create seperate audio _device for Multicast/RTP"
+msgid "Don't _require authentication"
 msgstr ""
 
 #: ../src/paprefs.glade.h:7
-msgid "Don't require _authentication"
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr ""
 
 #: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _receiver"
+msgid "Enable Multicast/RTP s_ender"
 msgstr ""
 
 #: ../src/paprefs.glade.h:9
-msgid "Enable Multicast/RTP _sender"
-msgstr ""
-
-#: ../src/paprefs.glade.h:10
 msgid "Enable _network access to local sound devices"
 msgstr ""
 
+#: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
 #: ../src/paprefs.glade.h:11
-msgid "Make discoverable Apple Air_tunes sound devices available locally"
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr ""
 
 #: ../src/paprefs.glade.h:12
-msgid "Multicast/R_TP"
+msgid "Make discoverable _PulseAudio network sound devices available locally"
 msgstr ""
 
 #: ../src/paprefs.glade.h:13
-msgid "N_etwork Access"
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
+msgid "Multicast/R_TP"
 msgstr ""
 
 #: ../src/paprefs.glade.h:15
-msgid "Send audio from local _microphone"
+msgid "Network _Access"
 msgstr ""
 
 #: ../src/paprefs.glade.h:16
-msgid "Send audio from local s_peakers"
-msgstr ""
-
-#: ../src/paprefs.glade.h:17
-msgid "Sim_ultaneous Output"
+msgid "Network _Server"
 msgstr ""
 
 #: ../src/paprefs.glade.h:18
-msgid "_Loopback audio to local speakers"
+msgid "Send audio from local _microphone"
 msgstr ""
 
 #: ../src/paprefs.glade.h:19
-msgid "_Make discoverable network sound devices available locally"
+msgid "Send audio from local spea_kers"
+msgstr ""
+
+#: ../src/paprefs.glade.h:20
+msgid "Simultaneous _Output"
+msgstr ""
+
+#: ../src/paprefs.glade.h:21
+msgid "_Loop back audio to local speakers"
 msgstr ""

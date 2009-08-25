@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 16:36+0200\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-04-14 16:44+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "Preferencje PulseAudio"
 
@@ -26,8 +26,9 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Wyświetlanie i modyfikacja konfiguracji lokalnego serwera dźwięku"
 
 #: ../src/paprefs.glade.h:1
+#, fuzzy
 msgid ""
-"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
 "<i>Apple i Airtunes są znakami handlowymi firmy Apple Inc., zarejestrowanymi "
@@ -35,79 +36,105 @@ msgstr ""
 
 #: ../src/paprefs.glade.h:2
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
-msgstr ""
-"<span color=\"black\">Wyświetlanie i modyfikacja konfiguracji lokalnego "
-"serwera dźwięku</span>"
-
-#: ../src/paprefs.glade.h:3
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr ""
-"<span size=\"18000\" color=\"black\"><b>Preferencje PulseAudio</b></span>"
-
-#: ../src/paprefs.glade.h:4
-msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "_Wirtualne urządzenie wyjścia dla jednoczesnego wyjścia na wszystkich "
 "lokalnych kartach dźwiękowych"
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr ""
 "_Zezwolenie na wykrywanie lokalnych urządzeń dźwiękowych w sieci LAN przez "
 "inne komputery"
 
-#: ../src/paprefs.glade.h:6
-msgid "Create seperate audio _device for Multicast/RTP"
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
 msgstr "O_ddzielne urządzenie dźwiękowe dla multikastu/RTP"
 
-#: ../src/paprefs.glade.h:7
-msgid "Don't require _authentication"
+#: ../src/paprefs.glade.h:5
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
+msgstr "O_ddzielne urządzenie dźwiękowe dla multikastu/RTP"
+
+#: ../src/paprefs.glade.h:6
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "Bez wymogu uwierzytelni_ania"
 
-#: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _receiver"
+#: ../src/paprefs.glade.h:7
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Odbio_rca multikastu/RTP"
 
-#: ../src/paprefs.glade.h:9
-msgid "Enable Multicast/RTP _sender"
+#: ../src/paprefs.glade.h:8
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "Nadawca m_ultikastu/RTP"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
 msgstr "Dostęp sieciowy do lokal_nych urządzeń dźwiękowych"
 
+#: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
 #: ../src/paprefs.glade.h:11
-msgid "Make discoverable Apple Air_tunes sound devices available locally"
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr "Lokalne udostępnienie wykrytych urządzeń dźwiękowych Apple Air_tunes"
 
 #: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "Lo_kalne udostępnienie wykrytych sieciowych urządzeń dźwiękowych"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multikast/R_TP"
 
-#: ../src/paprefs.glade.h:13
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "Dostęp si_eciowy"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "Dostęp si_eciowy"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Wysyłanie dźwięku z lokalnego _mikrofonu"
 
-#: ../src/paprefs.glade.h:16
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "Wysyłanie dźwięku z lokalnych gł_ośników"
 
-#: ../src/paprefs.glade.h:17
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "_Jednoczesne wyjście"
 
-#: ../src/paprefs.glade.h:18
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "Zwracanie dźwięku do _lokalnych głośników"
 
-#: ../src/paprefs.glade.h:19
-msgid "_Make discoverable network sound devices available locally"
-msgstr "Lo_kalne udostępnienie wykrytych sieciowych urządzeń dźwiękowych"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">Wyświetlanie i modyfikacja konfiguracji lokalnego "
+#~ "serwera dźwięku</span>"
+
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>Preferencje PulseAudio</b></span>"

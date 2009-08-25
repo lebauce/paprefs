@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-27 15:29+0000\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-07-28 00:18+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -15,8 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:14
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "Inställningar för PulseAudio"
 
@@ -29,74 +28,115 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Visa och ändra konfigurationen för den lokala ljudservern"
 
 #: ../src/paprefs.glade.h:1
-msgid "<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. and other countries.</i>"
-msgstr "<i>Apple och Airtunes är varumärken för Apple Inc., registrerade i USA och andra länder.</i>"
+#, fuzzy
+msgid ""
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr ""
+"<i>Apple och Airtunes är varumärken för Apple Inc., registrerade i USA och "
+"andra länder.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Visa och ändra konfigurationen för din lokala ljudservern</span>"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Lägg till _virtuell utgångsenhet för simultan utmatning på alla lokala "
+"ljudkort"
 
 #: ../src/paprefs.glade.h:3
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Inställningar för PulseAudio</b></span>"
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr ""
+"Tillåt andra datorer på lokala nätverket att _upptäcka lokala ljudenheter"
 
 #: ../src/paprefs.glade.h:4
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Lägg till _virtuell utgångsenhet för simultan utmatning på alla lokala ljudkort"
-
-#: ../src/paprefs.glade.h:5
-msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Tillåt andra datorer på lokala nätverket att _upptäcka lokala ljudenheter"
-
-#: ../src/paprefs.glade.h:6
-msgid "Create seperate audio _device for Multicast/RTP"
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
 msgstr "Skapa seperat ljud_enhet för Multicast/RTP"
 
-#: ../src/paprefs.glade.h:7
-msgid "Don't require _authentication"
+#: ../src/paprefs.glade.h:5
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
+msgstr "Skapa seperat ljud_enhet för Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "Kräv inte _autentisering"
 
-#: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _receiver"
+#: ../src/paprefs.glade.h:7
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Aktivera Multicast/RTP-_mottagare"
 
-#: ../src/paprefs.glade.h:9
-msgid "Enable Multicast/RTP _sender"
+#: ../src/paprefs.glade.h:8
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "Aktivera Multicast/RTP-_sändare"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
 msgstr "Aktivera _nätverksåtkomst till lokala ljudenheter"
 
+#: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
 #: ../src/paprefs.glade.h:11
-msgid "Make discoverable Apple Air_tunes sound devices available locally"
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr "Gör upptäckningsbara Apple Air_tunes-ljudenheter tillgängliga lokalt"
 
 #: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "_Gör upptäckningsbara nätverksljudenheter tillgängliga lokalt"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:13
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "N_ätverksåtkomst"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "N_ätverksåtkomst"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Skicka ljud från lokal _mikrofon"
 
-#: ../src/paprefs.glade.h:16
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "Skicka ljud från lokala hö_gtalare"
 
-#: ../src/paprefs.glade.h:17
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "Sim_ultan utmatning"
 
-#: ../src/paprefs.glade.h:18
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "Skicka _tillbaka ljud till lokala högtalare"
 
-#: ../src/paprefs.glade.h:19
-msgid "_Make discoverable network sound devices available locally"
-msgstr "_Gör upptäckningsbara nätverksljudenheter tillgängliga lokalt"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">Visa och ändra konfigurationen för din lokala "
+#~ "ljudservern</span>"
 
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>Inställningar för PulseAudio</b></"
+#~ "span>"

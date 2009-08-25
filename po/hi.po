@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-05 02:50+0000\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-06-05 11:24+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
@@ -15,9 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "पल्सऑडियो वरीयता"
 
@@ -30,78 +31,109 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "स्थानीय साउंड सर्वर के विन्यास को देखें व बदलें"
 
 #: ../src/paprefs.glade.h:1
+#, fuzzy
 msgid ""
-"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
-msgstr "<i>Apple और Airtunes Apple Inc के ट्रेडमार्क हैं., जो कि संयुक्ति राज्य और दूसरे देशों में पंजीकृत हैं.</i>"
+msgstr ""
+"<i>Apple और Airtunes Apple Inc के ट्रेडमार्क हैं., जो कि संयुक्ति राज्य और दूसरे देशों में "
+"पंजीकृत हैं.</i>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
-msgstr "<span color=\"black\">अपने स्थानीय साउंड सर्वर का विन्यास देखें व बदलें</span>"
-
-#: ../src/paprefs.glade.h:3
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>पल्सऑडियो वरीयता</b></span>"
-
-#: ../src/paprefs.glade.h:4
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "सभी स्थानीय साउंड कार्ड पर एक साथ आउटपुट के लिए आभासी आउटपुट युक्ति जोड़ें (_v)"
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "LAN पर दूसरे मशीन को स्थानीय साउंड युक्ति में खोजने की अनुमति दें (_d)"
 
-#: ../src/paprefs.glade.h:6
-msgid "Create seperate audio _device for Multicast/RTP"
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
 msgstr "अलग ध्वनि युक्ति को मल्टीकास्ट/RTP के लिए बनाएँ"
 
-#: ../src/paprefs.glade.h:7
-msgid "Don't require _authentication"
+#: ../src/paprefs.glade.h:5
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
+msgstr "अलग ध्वनि युक्ति को मल्टीकास्ट/RTP के लिए बनाएँ"
+
+#: ../src/paprefs.glade.h:6
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "सत्यापन जरूरी नहीं होता है (_a)"
 
-#: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _receiver"
+#: ../src/paprefs.glade.h:7
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "मल्टीकास्ट/RTP प्राप्तकर्ता सक्रिय करें (_r)"
 
-#: ../src/paprefs.glade.h:9
-msgid "Enable Multicast/RTP _sender"
+#: ../src/paprefs.glade.h:8
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "मल्टीकास्ट/RTP प्रेषक सक्रिय करें (_s)"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
 msgstr "स्थानीय ध्वनि युक्ति में संजाल पहुँच सक्रिय करें (_n)"
 
+#: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
 #: ../src/paprefs.glade.h:11
-msgid "Make discoverable Apple Air_tunes sound devices available locally"
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr "खोजने योग्य Apple एयरट्यून्स ध्वनि युक्ति स्थानीय रूप से उपलब्ध है"
 
 #: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "खोजने योग्य संजाल ध्वनि युक्ति को स्थानीय रूप उपलब्ध करें (_M)"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "मल्टीकास्ट/RTP (_T)"
 
-#: ../src/paprefs.glade.h:13
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "संजाल पहुँच (_e)"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "संजाल पहुँच (_e)"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "स्थानीय माइक्रोफोन से ध्वनि भेजें (_m)"
 
-#: ../src/paprefs.glade.h:16
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "स्थानीय स्पीकर से ध्वनि भेजें (_p)"
 
-#: ../src/paprefs.glade.h:17
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "समकालिक आउटपुट (_u)"
 
-#: ../src/paprefs.glade.h:18
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "स्थानीय स्पीकर में लूपबैक ध्वनि (_L)"
 
-#: ../src/paprefs.glade.h:19
-msgid "_Make discoverable network sound devices available locally"
-msgstr "खोजने योग्य संजाल ध्वनि युक्ति को स्थानीय रूप उपलब्ध करें (_M)"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">अपने स्थानीय साउंड सर्वर का विन्यास देखें व बदलें</span>"
 
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr "<span size=\"18000\" color=\"black\"><b>पल्सऑडियो वरीयता</b></span>"

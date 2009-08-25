@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-15 14:20+0000\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-04-15 17:14+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:14
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "Indstillinger til PulseAudio"
 
@@ -28,8 +28,9 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Vis og redigér konfigurationen af den lokale lydserver"
 
 #: ../src/paprefs.glade.h:1
+#, fuzzy
 msgid ""
-"<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. "
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
 "<i>Apple og Airtune er varemærker af Apple Inc., registreret i USA, og andre "
@@ -37,76 +38,102 @@ msgstr ""
 
 #: ../src/paprefs.glade.h:2
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
-msgstr ""
-"<span color=\"black\">Vis og redigér konfigurationen af din lokale "
-"lydserver</span>"
-
-#: ../src/paprefs.glade.h:3
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr ""
-"<span size=\"18000\" color=\"black\"><b>Indstillinger for PulseAudio</b></"
-"span>"
-
-#: ../src/paprefs.glade.h:4
-msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "Tilføj _virtuel uddataenhed til samtidig uddata på alle lokale lydkort"
 
-#: ../src/paprefs.glade.h:5
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "Tillad andre maskine på det lokale netværk at _finde lokale lydenheder"
 
-#: ../src/paprefs.glade.h:6
-msgid "Create seperate audio _device for Multicast/RTP"
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
 msgstr "Opret seperat lyd_enhed til Multicast/RTP"
 
-#: ../src/paprefs.glade.h:7
-msgid "Don't require _authentication"
+#: ../src/paprefs.glade.h:5
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
+msgstr "Opret seperat lyd_enhed til Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "Undlad at kræve _godkendelse"
 
-#: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _receiver"
+#: ../src/paprefs.glade.h:7
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Aktivér Multicast/RTP-_modtager"
 
-#: ../src/paprefs.glade.h:9
-msgid "Enable Multicast/RTP _sender"
+#: ../src/paprefs.glade.h:8
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "Aktivér Multicast/RTP-_sender"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
 msgstr "Aktivér _netværksadgang til lokale lydenheder"
 
+#: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
 #: ../src/paprefs.glade.h:11
-msgid "Make discoverable Apple Air_tunes sound devices available locally"
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr "Gør opdagelsesbare Apple Air_tunes-lydenheder tilgængelige lokalt"
 
 #: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "_Opret opdagelsesbare netværkslydenheder tilgængeligt lokalt"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:13
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "N_etværksadgang"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "N_etværksadgang"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Send lyd fra lokal m_ikrofon"
 
-#: ../src/paprefs.glade.h:16
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "Send lyd fra lokale _højtalere"
 
-#: ../src/paprefs.glade.h:17
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "Sam_tidig uddata"
 
-#: ../src/paprefs.glade.h:18
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "_Loopback lyd til lokale højtalere"
 
-#: ../src/paprefs.glade.h:19
-msgid "_Make discoverable network sound devices available locally"
-msgstr "_Opret opdagelsesbare netværkslydenheder tilgængeligt lokalt"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">Vis og redigér konfigurationen af din lokale "
+#~ "lydserver</span>"
+
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>Indstillinger for PulseAudio</b></"
+#~ "span>"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-18 14:29+0000\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-04-18 14:27-0300\n"
 "Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
@@ -14,8 +14,7 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:14
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "Preferencias de PulseAudio"
 
@@ -28,74 +27,118 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Ver y modificar la configuración del servidor de sonido local"
 
 #: ../src/paprefs.glade.h:1
-msgid "<i>Apple and Airtunes are trademarks of Apple Inc., registered in the U.S. and other countries.</i>"
-msgstr "<i>Apple y Airtunes son marcas comerciales de Apple Inc., registradas en los EEUU y en otros países.</i>"
+#, fuzzy
+msgid ""
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr ""
+"<i>Apple y Airtunes son marcas comerciales de Apple Inc., registradas en los "
+"EEUU y en otros países.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "<span color=\"black\">View and modify the configuration of your local sound server</span>"
-msgstr "<span color=\"black\">Ver y modificar la configuración de su servidor de sonido local</span>"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Agregar un dispositivo de salida _virtual para salida simultánea en todas "
+"las placas de sonido locales"
 
 #: ../src/paprefs.glade.h:3
-msgid "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr "<span size=\"18000\" color=\"black\"><b>Preferencias de PulseAudio</b></span>"
+msgid "Allow other machines on the LAN to _discover local sound devices"
+msgstr ""
+"Permitir a otras máquinas en la red _descubrir dispositivos de sonido locales"
 
 #: ../src/paprefs.glade.h:4
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Agregar un dispositivo de salida _virtual para salida simultánea en todas las placas de sonido locales"
-
-#: ../src/paprefs.glade.h:5
-msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Permitir a otras máquinas en la red _descubrir dispositivos de sonido locales"
-
-#: ../src/paprefs.glade.h:6
-msgid "Create seperate audio _device for Multicast/RTP"
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
 msgstr "Crear un _dispositivo de audio separado para Multicast/RTP"
 
-#: ../src/paprefs.glade.h:7
-msgid "Don't require _authentication"
+#: ../src/paprefs.glade.h:5
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
+msgstr "Crear un _dispositivo de audio separado para Multicast/RTP"
+
+#: ../src/paprefs.glade.h:6
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "No pedir _autenticación"
 
-#: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _receiver"
+#: ../src/paprefs.glade.h:7
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Habilitar _receptor de Multicast/RTP"
 
-#: ../src/paprefs.glade.h:9
-msgid "Enable Multicast/RTP _sender"
+#: ../src/paprefs.glade.h:8
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "Habilitar _remitente Multicast/RTP"
 
-#: ../src/paprefs.glade.h:10
+#: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
 msgstr "Habilitar el acceso desde la red a dispositivos de sonido locales"
 
+#: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
 #: ../src/paprefs.glade.h:11
-msgid "Make discoverable Apple Air_tunes sound devices available locally"
-msgstr "Hacer detectables los dispositivos Air_tunes de Apple disponibles localmente"
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
+msgstr ""
+"Hacer detectables los dispositivos Air_tunes de Apple disponibles localmente"
 
 #: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr ""
+"_Hacer visibles desde la red a los dispositivos de sonido disponibles "
+"localmente"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:13
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "Acceso desde la Red"
 
-#: ../src/paprefs.glade.h:15
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "Acceso desde la Red"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Enviar audio desde el _micrófono local"
 
-#: ../src/paprefs.glade.h:16
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "Enviar audio desde los _parlantes locales"
 
-#: ../src/paprefs.glade.h:17
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "Salida Sim_ultánea"
 
-#: ../src/paprefs.glade.h:18
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "_Reenviar audio a los parlantes locales"
 
-#: ../src/paprefs.glade.h:19
-msgid "_Make discoverable network sound devices available locally"
-msgstr "_Hacer visibles desde la red a los dispositivos de sonido disponibles localmente"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">Ver y modificar la configuración de su servidor de "
+#~ "sonido local</span>"
 
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>Preferencias de PulseAudio</b></"
+#~ "span>"

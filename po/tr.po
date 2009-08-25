@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2008-04-21 03:05+0300\n"
 "Last-Translator: Necmettin Begiter <necmettin.begiter@gmail.com>\n"
 "Language-Team: Turkish <yerellestirme@kde.org.tr>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "PulseAudio Tercihleri"
 
@@ -30,45 +30,46 @@ msgstr "Yerel ses sunucusunun yapılandırmasına bak ve değiştir"
 
 #: ../src/paprefs.glade.h:1
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
 msgstr ""
-"<span color=\"black\">Yerel ses sunucunuzun yapılandırmasına bakın ve "
-"değiştirin</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Tercihleri</b></span>"
-
-#: ../src/paprefs.glade.h:3
 #, fuzzy
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "Tüm ses kartlarından eşzamanlı çıktı almak için _sanal çıktı aygıtı ekle"
 
-#: ../src/paprefs.glade.h:4
+#: ../src/paprefs.glade.h:3
 #, fuzzy
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr ""
 "Yerel ağdaki diğer makinaların yerel ses aygıtlarına gözatmasına _izin ver"
 
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
+msgstr "Multicast/RTP için ayrı _ses aygıtı oluştur"
+
 #: ../src/paprefs.glade.h:5
-msgid "Create seperate audio _device for Multicast/RTP"
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
 msgstr "Multicast/RTP için ayrı _ses aygıtı oluştur"
 
 #: ../src/paprefs.glade.h:6
-msgid "Don't require _authentication"
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "Kimlik denetimi _kullanma"
 
 #: ../src/paprefs.glade.h:7
-msgid "Enable Multicast/RTP _receiver"
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Multicast/RTP _alıcısını aç"
 
 #: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _sender"
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "Multicast/RTP _göndericisini aç"
 
 #: ../src/paprefs.glade.h:9
@@ -76,29 +77,62 @@ msgid "Enable _network access to local sound devices"
 msgstr "Yerel ses aygıtlarına ağ _erişimini aç"
 
 #: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
+#: ../src/paprefs.glade.h:11
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
+msgstr ""
+
+#: ../src/paprefs.glade.h:12
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr ""
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:11
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "Ağ E_rişimi"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "Ağ E_rişimi"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Sesi yerel _mikrofondan gönder"
 
-#: ../src/paprefs.glade.h:14
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "Sesi yerel _hoparlörlerden gönder"
 
-#: ../src/paprefs.glade.h:15
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "Eş_zamanlı Çıktı"
 
-#: ../src/paprefs.glade.h:16
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "Çıktıyı yerel hoparlörlere _yönlendir"
 
-#: ../src/paprefs.glade.h:17
-msgid "_Make discoverable network sound devices available locally"
-msgstr ""
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">Yerel ses sunucunuzun yapılandırmasına bakın ve "
+#~ "değiştirin</span>"
+
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Tercihleri</b></span>"

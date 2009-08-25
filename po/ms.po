@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-14 14:15+0200\n"
+"POT-Creation-Date: 2009-08-25 02:13+0200\n"
 "PO-Revision-Date: 2009-01-08 16:22+0800\n"
 "Last-Translator: Mahrazi Mohd Kamal <mahrazi@gmail.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Poedit-Country: MALAYSIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:12
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "Keutamaan PulseAudio"
 
@@ -32,41 +32,43 @@ msgstr "Lihat dan ubah konfigurasi pelayan bunyi lokal"
 
 #: ../src/paprefs.glade.h:1
 msgid ""
-"<span color=\"black\">View and modify the configuration of your local sound "
-"server</span>"
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
 msgstr ""
-"<span color=\"black\">Lihat dan ubah konfigurasi pelayan bunyi lokalr</span>"
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-msgstr ""
-"<span size=\"18000\" color=\"black\"><b>Keutamaan PulseAudio</b></span>"
-
-#: ../src/paprefs.glade.h:3
 msgid ""
 "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "Tambah peranti output maya untuk output pelbagai pada semua peranti kad bunyi"
 
-#: ../src/paprefs.glade.h:4
+#: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "Benarkan mesin lain pada LAN untuk menjelajah peranti bunyi lokal"
 
+#: ../src/paprefs.glade.h:4
+#, fuzzy
+msgid "Create separate audio device _for Multicast/RTP"
+msgstr "Cipta peranti bunyi berasingan untuk Multicast/RTP"
+
 #: ../src/paprefs.glade.h:5
-msgid "Create seperate audio _device for Multicast/RTP"
+#, fuzzy
+msgid "Create separate audio device for DLNA/UPnP media streaming"
 msgstr "Cipta peranti bunyi berasingan untuk Multicast/RTP"
 
 #: ../src/paprefs.glade.h:6
-msgid "Don't require _authentication"
+#, fuzzy
+msgid "Don't _require authentication"
 msgstr "Tidak perlu _authentikasi"
 
 #: ../src/paprefs.glade.h:7
-msgid "Enable Multicast/RTP _receiver"
+#, fuzzy
+msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Benarkan pene_rima Multicast/RTP"
 
 #: ../src/paprefs.glade.h:8
-msgid "Enable Multicast/RTP _sender"
+#, fuzzy
+msgid "Enable Multicast/RTP s_ender"
 msgstr "Benarkan penghantar Multica_st/RTP"
 
 #: ../src/paprefs.glade.h:9
@@ -74,29 +76,64 @@ msgid "Enable _network access to local sound devices"
 msgstr "Benarkan capaian rangkaia_n kepada peranti bunyi lokal"
 
 #: ../src/paprefs.glade.h:10
+msgid "Install..."
+msgstr ""
+
+#: ../src/paprefs.glade.h:11
+#, fuzzy
+msgid "Make discoverable Apple A_irTunes sound devices available locally"
+msgstr "Jadikan peranti bunyi rangkaian boleh jelajah wujud pada lokal"
+
+#: ../src/paprefs.glade.h:12
+#, fuzzy
+msgid "Make discoverable _PulseAudio network sound devices available locally"
+msgstr "Jadikan peranti bunyi rangkaian boleh jelajah wujud pada lokal"
+
+#: ../src/paprefs.glade.h:13
+msgid "Make local sound devices available as DLNA/_UPnP Media Server"
+msgstr ""
+
+#: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
-#: ../src/paprefs.glade.h:11
-msgid "N_etwork Access"
+#: ../src/paprefs.glade.h:15
+#, fuzzy
+msgid "Network _Access"
 msgstr "Capaian Rangkaian"
 
-#: ../src/paprefs.glade.h:13
+#: ../src/paprefs.glade.h:16
+#, fuzzy
+msgid "Network _Server"
+msgstr "Capaian Rangkaian"
+
+#: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Hantar audio daripada _mikrofon lokal"
 
-#: ../src/paprefs.glade.h:14
-msgid "Send audio from local s_peakers"
+#: ../src/paprefs.glade.h:19
+#, fuzzy
+msgid "Send audio from local spea_kers"
 msgstr "Hantar audio daripada s_peaker local"
 
-#: ../src/paprefs.glade.h:15
-msgid "Sim_ultaneous Output"
+#: ../src/paprefs.glade.h:20
+#, fuzzy
+msgid "Simultaneous _Output"
 msgstr "O_utput Pelbagai"
 
-#: ../src/paprefs.glade.h:16
-msgid "_Loopback audio to local speakers"
+#: ../src/paprefs.glade.h:21
+#, fuzzy
+msgid "_Loop back audio to local speakers"
 msgstr "_Loopback audio kepada local speaker"
 
-#: ../src/paprefs.glade.h:17
-msgid "_Make discoverable network sound devices available locally"
-msgstr "Jadikan peranti bunyi rangkaian boleh jelajah wujud pada lokal"
+#~ msgid ""
+#~ "<span color=\"black\">View and modify the configuration of your local "
+#~ "sound server</span>"
+#~ msgstr ""
+#~ "<span color=\"black\">Lihat dan ubah konfigurasi pelayan bunyi lokalr</"
+#~ "span>"
+
+#~ msgid ""
+#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
+#~ msgstr ""
+#~ "<span size=\"18000\" color=\"black\"><b>Keutamaan PulseAudio</b></span>"
