@@ -27,6 +27,8 @@
 #include <libglademm.h>
 #include <gconfmm.h>
 #include <libintl.h>
+#include <dbus/dbus-glib.h>
+#include <gdk/gdkx.h>
 
 #define PA_GCONF_ROOT "/system/pulseaudio"
 #define PA_GCONF_PATH_MODULES PA_GCONF_ROOT"/modules"
@@ -36,7 +38,15 @@ public:
     MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade::Xml>& x);
     static MainWindow* create();
 
-    Gtk::Button *closeButton;
+    Gtk::Button
+        *closeButton,
+        *zeroconfDiscoverInstallButton,
+        *zeroconfRaopDiscoverInstallButton,
+        *remoteInstallButton,
+        *zeroconfPublishInstallButton,
+        *upnpInstallButton,
+        *rtpRecvInstallButton,
+        *rtpSendInstallButton;
 
     Gtk::CheckButton
         *remoteAccessCheckButton,
@@ -72,6 +82,14 @@ public:
     void onChangeCombine();
     void onChangeUpnp();
 
+    void onZeroconfDiscoverInstallButtonClicked();
+    void onZeroconfRaopDiscoverInstallButtonClicked();
+    void onRemoteInstallButtonClicked();
+    void onZeroconfPublishInstallButtonClicked();
+    void upnpInstallButtonClicked();
+    void rtpRecvInstallButtonClicked();
+    void rtpSendInstallButtonClicked();
+
     void readFromGConf();
 
     void checkForModules();
@@ -85,6 +103,8 @@ public:
     void writeToGConfUPnP();
 
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
+
+    void installFiles(const char *a, const char *b);
 
     bool
         rtpRecvAvailable,
@@ -100,6 +120,13 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     Gtk::Window(cobject), ignoreChanges(true) {
 
     x->get_widget("closeButton", closeButton);
+    x->get_widget("zeroconfDiscoverInstallButton", zeroconfDiscoverInstallButton);
+    x->get_widget("zeroconfRaopDiscoverInstallButton", zeroconfRaopDiscoverInstallButton);
+    x->get_widget("remoteInstallButton", remoteInstallButton);
+    x->get_widget("zeroconfPublishInstallButton", zeroconfPublishInstallButton);
+    x->get_widget("upnpInstallButton", upnpInstallButton);
+    x->get_widget("rtpRecvInstallButton", rtpRecvInstallButton);
+    x->get_widget("rtpSendInstallButton", rtpSendInstallButton);
 
     x->get_widget("remoteAccessCheckButton", remoteAccessCheckButton);
     x->get_widget("zeroconfDiscoverCheckButton", zeroconfDiscoverCheckButton);
@@ -147,6 +174,14 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
 
     upnpMediaServerCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeUpnp));
     upnpNullSinkCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onChangeUpnp));
+
+    zeroconfDiscoverInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onZeroconfDiscoverInstallButtonClicked));
+    zeroconfRaopDiscoverInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onZeroconfRaopDiscoverInstallButtonClicked));
+    remoteInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onRemoteInstallButtonClicked));
+    zeroconfPublishInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onZeroconfPublishInstallButtonClicked));
+    upnpInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::upnpInstallButtonClicked));
+    rtpRecvInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::rtpRecvInstallButtonClicked));
+    rtpSendInstallButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::rtpSendInstallButtonClicked));
 }
 
 MainWindow* MainWindow::create() {
@@ -181,6 +216,41 @@ void MainWindow::updateSensitive() {
 
     upnpMediaServerCheckButton->set_sensitive(upnpAvailable);
     upnpNullSinkCheckButton->set_sensitive(upnpAvailable && upnpMediaServerCheckButton->get_active());
+
+    if (zeroconfDiscoverAvailable)
+        zeroconfDiscoverInstallButton->hide();
+    else
+        zeroconfDiscoverInstallButton->show();
+
+    if (zeroconfRaopDiscoverAvailable)
+        zeroconfRaopDiscoverInstallButton->hide();
+    else
+        zeroconfRaopDiscoverInstallButton->show();
+
+    if (remoteAvailable)
+        remoteInstallButton->hide();
+    else
+        remoteInstallButton->show();
+
+    if (zeroconfPublishAvailable)
+        zeroconfPublishInstallButton->hide();
+    else
+        zeroconfPublishInstallButton->show();
+
+    if (upnpAvailable)
+        upnpInstallButton->hide();
+    else
+        upnpInstallButton->show();
+
+    if (rtpRecvAvailable)
+        rtpRecvInstallButton->hide();
+    else
+        rtpRecvInstallButton->show();
+
+    if (rtpSendAvailable)
+        rtpSendInstallButton->hide();
+    else
+        rtpSendInstallButton->show();
 }
 
 void MainWindow::onChangeRemoteAccess() {
@@ -241,6 +311,68 @@ void MainWindow::onChangeUpnp() {
 
     updateSensitive();
     writeToGConfUPnP();
+}
+
+void MainWindow::installFiles(const char *a, const char *b = NULL) {
+    DBusGConnection *connection;
+    DBusGProxy *proxy;
+    gboolean ret;
+    GError *error = NULL;
+    const gchar *packages[] = {a, b, NULL};
+
+    connection = dbus_g_bus_get(DBUS_BUS_SESSION, NULL);
+
+    proxy = dbus_g_proxy_new_for_name(connection,
+                                      "org.freedesktop.PackageKit",
+                                      "/org/freedesktop/PackageKit",
+                                      "org.freedesktop.PackageKit.Modify");
+
+    ret = dbus_g_proxy_call(
+            proxy, "InstallProvideFiles", &error,
+            G_TYPE_UINT, GDK_WINDOW_XID(get_window()->gobj()),
+            G_TYPE_STRV, packages,
+            G_TYPE_STRING, "show-confirm-search,hide-finished",
+            G_TYPE_INVALID, G_TYPE_INVALID);
+
+    if (!ret) {
+        g_warning("Installation failed: %s", error->message);
+        g_error_free(error);
+    }
+
+    g_object_unref(proxy);
+    dbus_g_connection_unref(connection);
+
+    checkForModules();
+    updateSensitive();
+}
+
+void MainWindow::onZeroconfDiscoverInstallButtonClicked() {
+    installFiles(MODULESDIR "module-zeroconf-discover" SHREXT);
+}
+
+void MainWindow::onZeroconfRaopDiscoverInstallButtonClicked() {
+    installFiles(MODULESDIR "module-raop-discover" SHREXT);
+}
+
+void MainWindow::onRemoteInstallButtonClicked() {
+    installFiles(MODULESDIR "module-esound-protocol-tcp" SHREXT,
+                 MODULESDIR "module-native-protocol-tcp" SHREXT);
+}
+
+void MainWindow::onZeroconfPublishInstallButtonClicked() {
+    installFiles(MODULESDIR "module-zeroconf-publish" SHREXT);
+}
+
+void MainWindow::upnpInstallButtonClicked() {
+    installFiles("/usr/bin/rygel", MODULESDIR "module-rygel-media-server" SHREXT);
+}
+
+void MainWindow::rtpRecvInstallButtonClicked() {
+    installFiles(MODULESDIR "module-rtp-recv" SHREXT);
+}
+
+void MainWindow::rtpSendInstallButtonClicked() {
+    installFiles(MODULESDIR "module-rtp-send" SHREXT);
 }
 
 void MainWindow::writeToGConfCombine() {
@@ -512,9 +644,8 @@ void MainWindow::checkForModules() {
     rtpSendAvailable = access(MODULESDIR "module-rtp-send" SHREXT, F_OK) == 0;
 
     upnpAvailable =
-        access(MODULESDIR "module-rygel-media-server" SHREXT, F_OK) == 0//  &&
-        // g_find_program_in_path("rygel")
-        ;
+        access(MODULESDIR "module-rygel-media-server" SHREXT, F_OK) == 0 &&
+        g_find_program_in_path("rygel");
 }
 
 int main(int argc, char *argv[]) {
