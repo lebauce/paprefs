@@ -4,6 +4,7 @@
 #  paprefs package.
 #
 # Xavier Queralt Mateu <xqueralt@gmail.com>, 2008.
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2009.
 #
 # This file is translated according to the glossary and style guide of
 #   Softcatalà. If you plan to modify this file, please read first the page
@@ -21,9 +22,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2008-10-05 01:36+0200\n"
-"Last-Translator: Xavier Queralt Mateu <xqueralt@gmail.com>\n"
+"POT-Creation-Date: 2009-08-28 08:44+0000\n"
+"PO-Revision-Date: 2009-08-28 09:36+0200\n"
+"Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,6 +47,8 @@ msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
+"<i>Apple i AirTunes són marques d'Apple Inc., registrades en els EE. UU. "
+"i altres països.</i>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
@@ -61,84 +64,72 @@ msgstr ""
 "locals"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
 msgstr "Crea _dispositius d'àudio separats per a Multicast/RTP"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "Crea _dispositius d'àudio separats per a Multicast/RTP"
+msgstr "Crea dispositius d'àudio separats per a la transmissió multimèdia DLNA/UPnP"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
 msgstr "No demanis _autenticació"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Habilita el _receptor multicast/RTP"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
 msgstr "Habilita l'emi_sor multicast/RTP"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
-msgstr "Habilita l'accès a la xarxa per als dispositius de so locals"
+msgstr "Habilita l'accès a la _xarxa per als dispositius de so locals"
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "Instal·la..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr ""
-"Per_met descobrir els dispositius de so per xarxa disponibles localment"
+"Permet descobrir els dispositius de so Apple A_irTunes disponibles localment"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
 msgstr ""
-"Per_met descobrir els dispositius de so per xarxa disponibles localment"
+"Fes disponibles localment els dispositius de xarxa descobribles del _Pulseaudio"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
+msgstr "Fes disponibles els dispositius de so local com a servidor multimèdia DLNA/_UPnP"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
-msgstr "Accès d_e xarxa"
+msgstr "_Accès de xarxa"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "Accès d_e xarxa"
+msgstr "_Servidor de xarxa"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Envia l'àudio del _micròfon local"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
 msgstr "Envia l'àudio dels altaveu_s locals"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
 msgstr "Sortida sim_ultània"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
 msgstr "Redirigeix l'àudio als a_ltaveus locals"
 
