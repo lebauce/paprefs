@@ -1,14 +1,14 @@
-# translation of paprefs.master-tx.paprefs.po to Tamil
+# translation of paprefs.master-tx.ta.po to Tamil
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # I. Felix <ifelix@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: paprefs.master-tx.paprefs\n"
+"Project-Id-Version: paprefs.master-tx.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-04-04 05:44+0530\n"
+"POT-Creation-Date: 2009-08-31 08:47+0000\n"
+"PO-Revision-Date: 2009-08-31 22:46+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
 "\n"
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
@@ -35,10 +36,11 @@ msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"Add _virtual output device for simultaneous output on all local sound cards"
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "ஒரே நேர வெளிப்பாட்டிற்கு அனைத்து உள்ளமை அட்டைகளிலும் மெய்நிகர் வெளிப்பாடு சாதனத்தை சேர் "
 "(_v)"
@@ -48,29 +50,24 @@ msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "LANஇல் உள்ள வேறு கணினிகளை உள்ளமை ஒலி சாதனங்களில் கண்டுபிடிக்க அனுமதி (_d)"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
-msgstr "தனி ஆடியோ சாதனத்தை Multicast/RTPக்கு உருவாக்கு (_d)"
+msgstr "தனி ஆடியோ சாதனத்தை Multicast/RTPக்கு உருவாக்கு (_f)"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "தனி ஆடியோ சாதனத்தை Multicast/RTPக்கு உருவாக்கு (_d)"
+msgstr "தனி ஆடியோ சாதனத்தை DLNA/UPnP மீடியா ஸ்ட்ரீமிங்கிற்கு உருவாக்கு"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
-msgstr "அங்கீகாரம் தேவையில்லை (_a)"
+msgstr "அங்கீகாரம் தேவையில்லை (_r)"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
-msgstr "Multicast/RTP பெறுநரை செயல்படுத்து (_r)"
+msgstr "Multicast/RTP பெறுநரை செயல்படுத்து (_c)"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
-msgstr "Multicast/RTP அனுப்புனரை செயல்படுத்து (_s)"
+msgstr "Multicast/RTP அனுப்புனரை செயல்படுத்து (_e)"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
@@ -78,63 +75,45 @@ msgstr "பிணைய அணுகலை உள்ளமை ஒலி சா�
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "நிறுவு..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய பிணைய ஒலி சாதனங்களை உருவாக்கு (_M)"
+msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய Apple A_irTunes ஒலி சாதனங்களை உருவாக்கு"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய பிணைய ஒலி சாதனங்களை உருவாக்கு (_M)"
+msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய _PulseAudio பிணைய ஒலி சாதனங்களை உருவாக்கு"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
+msgstr " DLNA/_UPnP Media Serverக்கு உள்ளமை ஒலி சாதனங்களை இருக்கும்படி செய்யவும்"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
-msgstr "பிணைய அணுகல் (_e)"
+msgstr "பிணைய அணுகல் (_A)"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "பிணைய அணுகல் (_e)"
+msgstr "பிணைய சேவையகம் (_S)"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "ஆடியோவை உள்ளமை மைக்ரோஃபோனுக்கு அனுப்பு (_m)"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
-msgstr "ஆடியோவை உள்ளமை ஸ்பீக்கர்களுக்கு அனுப்பு (_p)"
+msgstr "ஆடியோவை உள்ளமை ஸ்பீக்கர்களிலிருந்து அனுப்பு (_k)"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
-msgstr "ஒரே நேர வெளிப்பாடு (_u)"
+msgstr "ஒரே நேர வெளிப்பாடு (_O)"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
 msgstr "லூப்பேக் ஆடியோவிலிருந்து உள்ளமை ஸ்பீக்கர்களுக்கு (_L)"
 
-#~ msgid ""
-#~ "<span color=\"black\">View and modify the configuration of your local "
-#~ "sound server</span>"
-#~ msgstr ""
-#~ "<span color=\"black\">உள்ளமை ஒலி சேவையகத்தின் கட்டமைப்பை பார்வையிடு மற்றும் "
-#~ "மாற்று</span>"
-
-#~ msgid ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-#~ msgstr ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio முன்னுரிமைகள்</b></span>"
