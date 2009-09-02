@@ -7,15 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.or\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-04-24 12:20+0530\n"
+"POT-Creation-Date: 2009-09-01 04:46+0000\n"
+"PO-Revision-Date: 2009-09-02 17:36+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"\n"
+"\n"
+"\n"
+"\n"
 "\n"
 "\n"
 
@@ -32,48 +36,40 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "ସ୍ଥାନୀୟ ଧ୍ୱନି ସର୍ଭରର ସଂରଚନାକୁ ଦେଖନ୍ତୁ ଏବଂ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
 #: ../src/paprefs.glade.h:1
-#, fuzzy
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple ଏବଂ Airtunes ଗୁଡ଼ିକ Apple Inc.ର ବାଣିଜ୍ୟ ଚିହ୍ନ, U.S. ଏବଂ ଅନ୍ୟାନ୍ୟ ଦେଶରେ "
+"<i>Apple ଏବଂ AirTunes ଗୁଡ଼ିକ Apple Inc.ର ବାଣିଜ୍ୟ ଚିହ୍ନ, U.S. ଏବଂ ଅନ୍ୟାନ୍ୟ ଦେଶରେ "
 "ପଞ୍ଜିକୃତ।</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"Add _virtual output device for simultaneous output on all local sound cards"
-msgstr ""
-"ସମସ୍ତ ସ୍ଥାନୀୟ ଧ୍ୱନି କାର୍ଡଗୁଡ଼ିକରେ ଏକା ସଙ୍ଗରେ ନିର୍ଗମ ପାଇଁ ଆଭାସୀ ନିର୍ଗମ ଉପକରଣ ଯୋଗ କରନ୍ତୁ (_v)"
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "ସମସ୍ତ ସ୍ଥାନୀୟ ଧ୍ୱନି କାର୍ଡଗୁଡ଼ିକରେ ଏକା ସଙ୍ଗରେ ନିର୍ଗମ ପାଇଁ ଆଭାସୀ ନିର୍ଗମ ଉପକରଣ ଯୋଗ କରନ୍ତୁ (_v)"
 
 #: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "ସ୍ଥାନୀୟ ଧ୍ୱନି ଉପକରଣକୁ ଆବିଷ୍କାର କରିବା ପାଇଁ LANରେ ଥିବା ଅନ୍ୟ ୟନ୍ତ୍ରଗୁଡ଼ିକୁ ଅନୁମତି ଦିଅନ୍ତୁ (_d)"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
-msgstr "Multicast/RTP ପାଇଁ ପୃଥକ ଧ୍ୱନି ଉପକରଣ ନିର୍ମାଣ କରନ୍ତୁ (_d)"
+msgstr "Multicast/RTP ପାଇଁ ପୃଥକ ଧ୍ୱନି ଉପକରଣ ନିର୍ମାଣ କରନ୍ତୁ (_f)"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "Multicast/RTP ପାଇଁ ପୃଥକ ଧ୍ୱନି ଉପକରଣ ନିର୍ମାଣ କରନ୍ତୁ (_d)"
+msgstr "DLNA/UPnP ସଞ୍ଚାର ମାଧ୍ଯମ ପାଇଁ ପୃଥକ ଧ୍ୱନି ଉପକରଣ ନିର୍ମାଣ କରନ୍ତୁ"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
-msgstr "ବୈଧିକରଣ ଆବଶ୍ୟକ ନାହିଁ (_a)"
+msgstr "ବୈଧିକରଣ ଆବଶ୍ୟକ ନାହିଁ (_r)"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
-msgstr "Multicast/RTP ଗ୍ରାହକଙ୍କୁ ସକ୍ରିୟ କରନ୍ତୁ (_r)"
+msgstr "Multicast/RTP ଗ୍ରାହକଙ୍କୁ ସକ୍ରିୟ କରନ୍ତୁ (_c)"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
-msgstr "Multicast/RTP ପ୍ରେରକଙ୍କୁ ସକ୍ରିୟ କରନ୍ତୁ (_s)"
+msgstr "Multicast/RTP ପ୍ରେରକଙ୍କୁ ସକ୍ରିୟ କରନ୍ତୁ (_e)"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
@@ -81,63 +77,45 @@ msgstr "ସ୍ଥାନୀୟ ଧ୍ୱନି ଉପକରଣରେ ନେଟୱ
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "ସ୍ଥାପନ କରନ୍ତୁ..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ Apple Air_tunes ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ"
+msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ Apple Air tunes ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ (_i)"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ ନେଟୱର୍କ ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ (_M)"
+msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ PulseAudio ନେଟୱର୍କ ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ (_P)"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
+msgstr "ସ୍ଥାନୀୟ ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ DLNA/_UPnP ମେଡ଼ିଆ ସର୍ଭର ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/RTP (_T)"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
-msgstr "ନେଟୱର୍କ ଅଭିଗମ୍ୟତା (_e)"
+msgstr "ନେଟୱର୍କ ଅଭିଗମ୍ୟତା (_A)"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "ନେଟୱର୍କ ଅଭିଗମ୍ୟତା (_e)"
+msgstr "ନେଟୱର୍କ ସର୍ଭର (_S)"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "ସ୍ଥାନୀୟ ମାଇକ୍ରୋଫୋନରୁ ଧ୍ୱନି ପଠାନ୍ତୁ (_m)"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
-msgstr "ସ୍ଥାନୀୟ ସ୍ପିକରରୁ ଧ୍ୱନି ପଠାନ୍ତୁ (_p)"
+msgstr "ସ୍ଥାନୀୟ ସ୍ପିକରଗୁଡ଼ିକରୁ ଧ୍ୱନି ପଠାନ୍ତୁ (_k)"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
-msgstr "ସମକାଳୀନ ନିର୍ଗମ (_u)"
+msgstr "ଏକକାଳୀନ ଫଳାଫଳ (_O)"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
-msgstr "ସ୍ଥାନୀୟ ସ୍ପିକରରେ ଧ୍ୱନି ଚକ୍ର (_L)"
+msgstr "ସ୍ଥାନୀୟ ସ୍ପିକରଗୁଡ଼ିକ ପାଇଁ ଧ୍ୱନି ଚକ୍ର (_L)"
 
-#~ msgid ""
-#~ "<span color=\"black\">View and modify the configuration of your local "
-#~ "sound server</span>"
-#~ msgstr ""
-#~ "<span color=\"black\">ସ୍ଥାନୀୟ ଧ୍ୱନି ସର୍ଭରର ସଂରଚନାକୁ ଦେଖନ୍ତୁ ଏବଂ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</"
-#~ "span>"
-
-#~ msgid ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-#~ msgstr ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio ପସନ୍ଦଗୁଡ଼ିକ</b></span>"
