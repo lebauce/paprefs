@@ -2,13 +2,14 @@
 # Copyright (C) 2006 Lennart Poettering
 # This file is distributed under the same license as the paprefs package.
 # Ferenc Pravda <pravda013@gmail.com>, 2008.
+# Miloš Komarčević <kmilos@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-05-03 23:06+0100\n"
+"POT-Creation-Date: 2009-09-06 16:54+0000\n"
+"PO-Revision-Date: 2009-09-06 22:10+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -30,12 +31,11 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Pregledajte i izmenite postavke lokalnog zvučnog servera"
 
 #: ../src/paprefs.glade.h:1
-#, fuzzy
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple i Airtunes su zaštitni znaci Apple Inc., registrovani u SAD i "
+"<i>Apple i AirTunes su zaštitni znaci Apple Inc., registrovani u SAD i "
 "drugim zemljama.</i>"
 
 #: ../src/paprefs.glade.h:2
@@ -51,27 +51,22 @@ msgstr ""
 "Dozvoli drugim mašinama u lokalnoj mreži da _pronađu lokalni zvučni uređaj"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
 msgstr "Napravi zaseban audio _uređaj za višesmerno slanje/RTP"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "Napravi zaseban audio _uređaj za višesmerno slanje/RTP"
+msgstr "Napravi zaseban audio uređaj za DLNA/UPnP medijsko strujanje"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
 msgstr "Ne zahtevaj _autentifikaciju"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
 msgstr "Omogući višesmerni/RTP prije_mnik"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
 msgstr "Omogući višesmerni/RTP pre_dajnik"
 
@@ -81,63 +76,44 @@ msgstr "Omogući _mrežni pristup lokalnom zvučnom uređaju"
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "Instaliraj..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "Učini vidljive Apple Air_tunes zvučne uređaje dostupnim lokalno"
+msgstr "Učini vidljive Apple A_irTunes zvučne uređaje dostupnim lokalno"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "_Učini vidljive mrežne zvučne uređaje dostupnim lokalno"
+msgstr "Učini vidljive _PulseAudio mrežne zvučne uređaje dostupnim lokalno"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
+msgstr "Učini lokalne zvučne uređaje dostupnim kao DLNA/_UPnP medijski server"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Višesmerno emitovanje/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
 msgstr "Mr_ežni pristup"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "Mr_ežni pristup"
+msgstr "Mrežni _server"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Slanje zvuka sa lokalnog _mikrofona"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
-msgstr "Slanje zvuka iz lokalnih z_vučnika"
+msgstr "Slanje zvuka iz lokalnih zvučni_ka"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
 msgstr "Sim_ultani izlaz"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
 msgstr "_Povratna petlja zvuka u lokalne zvučnike"
-
-#~ msgid ""
-#~ "<span color=\"black\">View and modify the configuration of your local "
-#~ "sound server</span>"
-#~ msgstr ""
-#~ "<span color=\"black\">Pregledajte i izmenite postavke svog lokalnog "
-#~ "zvučnog servera</span>"
-
-#~ msgid ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-#~ msgstr ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio postavke</b></span>"
