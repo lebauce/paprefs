@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-04-23 17:44+0530\n"
+"POT-Creation-Date: 2009-09-01 04:46+0000\n"
+"PO-Revision-Date: 2009-09-07 17:38+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,48 +30,40 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚನೆಯನ್ನು ನೋಡಿ ಹಾಗು ಬದಲಾಯಿಸಿ"
 
 #: ../src/paprefs.glade.h:1
-#, fuzzy
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple ಹಾಗು Airtunes ಎನ್ನುವವು Apple Inc. ನ ಟ್ರೇಡ್‌ಮಾರ್ಕುಗಳಾಗಿದ್ದು, U.S. ಹಾಗು "
+"<i>Apple ಹಾಗು AirTunes ಎನ್ನುವವು Apple Inc. ನ ಟ್ರೇಡ್‌ಮಾರ್ಕುಗಳಾಗಿದ್ದು, U.S. ಹಾಗು "
 "ಇತರೆ ದೇಶಗಳಲ್ಲಿ ನೋಂದಾಯಿಸಲ್ಪಟ್ಟಿವೆ.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"Add _virtual output device for simultaneous output on all local sound cards"
-msgstr ""
-"ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgstr "ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
 
 #: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "LAN ನಲ್ಲಿನ ಇತರೆ ಗಣಕಗಳು ಸ್ಥಳೀಯ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಪತ್ತೆ ಹಚ್ಚಲು ಅನುಮತಿಸು(_d)"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
-msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಗಾಗಿ ಪ್ರತ್ಯೇಕವಾದ ಆಡಿಯೋ ಸಾಧನವನ್ನು ನಿರ್ಮಿಸು(_d)"
+msgstr "ಬಹುಪ್ರಸರಣ/RTP ಗಾಗಿ ಪ್ರತ್ಯೇಕವಾದ ಆಡಿಯೋ ಸಾಧನವನ್ನು ನಿರ್ಮಿಸು(_f)"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಗಾಗಿ ಪ್ರತ್ಯೇಕವಾದ ಆಡಿಯೋ ಸಾಧನವನ್ನು ನಿರ್ಮಿಸು(_d)"
+msgstr "DLNA/UPnP ಮಾಧ್ಯಮ ಸ್ಟ್ರೀಮಿಂಗ್‌ಗಾಗಿ ಪ್ರತ್ಯೇಕವಾದ ಆಡಿಯೋ ಸಾಧನವನ್ನು ನಿರ್ಮಿಸಿ"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
-msgstr "ದೃಢೀಕರಣದ ಅಗತ್ಯವಿಲ್ಲ(_a)"
+msgstr "ದೃಢೀಕರಣದ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ(_r)"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
-msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಸ್ವೀಕರಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸು(_s)"
+msgstr "ಬಹುಪ್ರಸರಣ/RTP ಸ್ವೀಕರಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸು(_c)"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
-msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/RTP ಕಳುಹಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸು(_s)"
+msgstr "ಬಹುಪ್ರಸರಣ/RTP ಕಳುಹಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸು(_e)"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
@@ -79,64 +71,45 @@ msgstr "ಸ್ಥಳೀಯ ಧ್ವನಿ ಸಾಧನಗಳಿಗೆ ಜಾಲ
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "ಅನುಸ್ಥಾಪಿಸು..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr ""
-"ಪತ್ತೆಹಚ್ಚಬಹುದಾದ Apple Air_tunes ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
+msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ Apple Air_Tunes ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ ಜಾಲಬಂಧ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು(_M)"
+msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ  _PulseAudio ಜಾಲಬಂಧ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
+msgstr "ಸ್ಥಳೀಯ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು DLNA/_UPnP ಮೀಡಿಯಾ ಪರಿಚಾರಕವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
-msgstr "ಮಲ್ಟಿಕ್ಯಾಸ್ಟ್‍/R_TP"
+msgstr "ಬಹುಪ್ರಸರಣ/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
-msgstr "ಜಾಲಬಂಧ ನಿಲುಕಣೆ(_e)"
+msgstr "ಜಾಲಬಂಧ ನಿಲುಕಣೆ(_A)"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "ಜಾಲಬಂಧ ನಿಲುಕಣೆ(_e)"
+msgstr "ಜಾಲಬಂಧ ಪರಿಚಾರಕ(_S)"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "ಸ್ಥಳೀಯ  ಮೈಕ್ರೋಫೋನಿನಿಂದ ಆಡಿಯೋವನ್ನು ಕಳುಹಿಸು(_m)"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
-msgstr "ಸ್ಥಳೀಯ ಸ್ಪೀಕರುಗಳಿಂದ ಆಡಿಯೋವನ್ನು ಕಳುಹಿಸು(_p)"
+msgstr "ಸ್ಥಳೀಯ ಸ್ಪೀಕರುಗಳಿಂದ ಆಡಿಯೋವನ್ನು ಕಳುಹಿಸು(_k)"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
-msgstr "ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್(_u)"
+msgstr "ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್(_O)"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
 msgstr "ಆಡಿಯೋವನ್ನು ಸ್ಥಳೀಯ ಸ್ಪೀಕರುಗಳಿಗೆ ಲೂಪ್‌ಬ್ಯಾಕ್‌ ಮಾಡು(_L)"
 
-#~ msgid ""
-#~ "<span color=\"black\">View and modify the configuration of your local "
-#~ "sound server</span>"
-#~ msgstr ""
-#~ "<span color=\"black\">ಸ್ಥಳೀಯ ಧ್ವನಿ ಪರಿಚಾರಕದ ಸಂರಚನೆಯನ್ನು ನೋಡಿ ಹಾಗು ಬದಲಾಯಿಸಿ</"
-#~ "span>"
-
-#~ msgid ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-#~ msgstr ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio ನ ಆದ್ಯತೆಗಳು</b></span>"
