@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-04-23 19:37+0530\n"
+"POT-Creation-Date: 2009-09-08 14:53+0000\n"
+"PO-Revision-Date: 2009-09-09 17:08+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 
@@ -32,17 +32,15 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "స్థానిక శబ్దపు సేవికయొక్క ఆకృతీకరణను దర్శించుము మరియు సవరించుము"
 
 #: ../src/paprefs.glade.h:1
-#, fuzzy
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple మరియు Airtunes అనునవి Apple Inc. యొక్క వ్యాపారగుర్తులు, U.S నందు నమోదైనవి. "
-"మరియు యితర దేశములనందు.</i>"
+"<i>Apple మరియు AirTunes అనునవి Apple Inc. యొక్క వ్యాపారగుర్తులు, U.S నందు "
+"మరియు యితర దేశములనందు నమోదైనవి.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid ""
-"Add _virtual output device for simultaneous output on all local sound cards"
+msgid "Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "అన్ని స్థానిక శబ్దపు కార్డులపైనా ఏకకాల అవుట్పుట్ కొరకు వర్చ్యువల్ అవుట్పుట్ పరికరమును జతచేయుము "
 "(_v)"
@@ -52,29 +50,24 @@ msgid "Allow other machines on the LAN to _discover local sound devices"
 msgstr "స్థానిక శబ్దపు పరికరములను LAN నందలి యితర మిషన్లు గుర్తించుటకు అనుమతించుము (_d)"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
-msgstr "Multicast/RTP కొరకు వేరే ఆడియో పరికరమును సృష్టించుము (_d)"
+msgstr "Multicast/RTP కొరకు వేరే ఆడియో పరికరమును సృష్టించుము (_f)"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "Multicast/RTP కొరకు వేరే ఆడియో పరికరమును సృష్టించుము (_d)"
+msgstr "DLNA/UPnP మాధ్యమ స్ట్రీమింగ్ కొరకు వేరే ఆడియో పరికరమును సృష్టించుము"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
-msgstr "దృవీకరణము అవసరము లేదు (_a)"
+msgstr "దృవీకరణము అవసరము లేదు (_r)"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
-msgstr "Multicast/RTP స్వీకరణిని చేతనముచేయి (_r)"
+msgstr "Multicast/RTP స్వీకరణిని చేతనముచేయి (_c)"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
-msgstr "Multicast/RTP పంపుదానిని చేతనముచేయి"
+msgstr "Multicast/RTP పంపుదానిని చేతనముచేయి (_e)"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
@@ -82,64 +75,51 @@ msgstr "స్థానిక సౌండు పరికరములకు న
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "సంస్థాపించుము..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
 msgstr ""
-"గుర్తించదగు Apple Air_tunes సౌండు పరికరములు స్థానికంగా అందుబాటులో వుండునట్లు చేయుము"
+"స్థానికంగా అందుబాటులోవున్న Apple A_irTunes సౌండు పరికరములు కనుగొనబటునట్లు "
+"వుంచుము"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "గుర్తించదగు నెట్వర్కు సౌండు పరికరములు స్థానికంగా అందుబాటులో వుండునట్లు చేయుము (_M)"
+msgstr ""
+"స్థానికంగా అందుబాటులోవున్న _PulseAudio నెట్వర్కు శబ్ధ పరికరములు కనుగొనబడునట్లు "
+"వుంచుము"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
 msgstr ""
+"స్థానిక శబ్ధ పరికరములు DLNA/_UPnP మాధ్యమ సేవికవలె అందుబాటులోవుండునట్లు "
+"చేయుము"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
-msgstr "నెట్వర్కు యాక్సిస్ (_e)"
+msgstr "నెట్వర్కు యాక్సిస్ (_A)"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "నెట్వర్కు యాక్సిస్ (_e)"
+msgstr "నెట్వర్కు సేవిక (_S)"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "స్థానిక మైక్రోఫోన్‌ నుండి ఆడియోను పంపుము (_m)"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
-msgstr "స్థానిక స్పీకర్లనుండి ఆడియోను పంపుము (_p)"
+msgstr "స్థానిక స్పీకర్లనుండి ఆడియోను పంపుము (_k)"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
-msgstr "ఏకకాల అవుట్పుట్ (_u)"
+msgstr "ఏకకాల అవుట్పుట్ (_O)"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
-msgstr "స్థానిక స్పీకర్లకు పునరావృత ఆడియో (_L)"
+msgstr "స్థానిక స్పీకర్లకు లూప్‌బ్యాక్ ఆడియో (_L)"
 
-#~ msgid ""
-#~ "<span color=\"black\">View and modify the configuration of your local "
-#~ "sound server</span>"
-#~ msgstr ""
-#~ "<span color=\"black\">స్థానిక శబ్దపు సేవికయొక్క ఆకృతీకరణను దర్శించుము మరియు సవరించుము</"
-#~ "span>"
-
-#~ msgid ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
-#~ msgstr ""
-#~ "<span size=\"18000\" color=\"black\"><b>PulseAudio అభీష్టాలు</b></span>"
