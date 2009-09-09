@@ -5,15 +5,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 02:13+0200\n"
-"PO-Revision-Date: 2009-05-04 13:51+0200\n"
+"POT-Creation-Date: 2009-09-08 08:43+0000\n"
+"PO-Revision-Date: 2009-09-08 19:37+0200\n"
 "Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 0.3\n"
+"X-Generator: Lokalize 1.0\n"
 
 #: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
@@ -28,13 +28,12 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Zobraziť a upraviť konfiguráciu lokálneho zvukového servera"
 
 #: ../src/paprefs.glade.h:1
-#, fuzzy
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple a Airtunes sú ochranné známky Apple Inc., registrované v U.S a "
-"ostatných krajinách.</i>"
+"<i>Apple a AirTunes sú obchodné známky Apple Inc., registrované v U.S a "
+"ďalších krajinách.</i>"
 
 #: ../src/paprefs.glade.h:2
 msgid ""
@@ -45,32 +44,28 @@ msgstr ""
 
 #: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Povoliť iným strojom v sieti LAN preskúmať lokálne zvukové zaria_denia"
+msgstr ""
+"Povoliť iným _počítačom v sieti LAN preskúmať lokálne zvukové zariadenia"
 
 #: ../src/paprefs.glade.h:4
-#, fuzzy
 msgid "Create separate audio device _for Multicast/RTP"
 msgstr "Vytvoriť o_ddelené zvukové zariadenie pre Multicast/RTP"
 
 #: ../src/paprefs.glade.h:5
-#, fuzzy
 msgid "Create separate audio device for DLNA/UPnP media streaming"
-msgstr "Vytvoriť o_ddelené zvukové zariadenie pre Multicast/RTP"
+msgstr "Vytvoriť o_ddelené zvukové zariadenie pre streamované médiá DLNA/UPnP"
 
 #: ../src/paprefs.glade.h:6
-#, fuzzy
 msgid "Don't _require authentication"
-msgstr "Nevyžadov_ať overenie totožnosti"
+msgstr "Nevyžadov_ať overenie"
 
 #: ../src/paprefs.glade.h:7
-#, fuzzy
 msgid "Enable Multicast/RTP re_ceiver"
-msgstr "Povoliť Multicast/RTP p_ríjemcu"
+msgstr "Povoliť p_ríjemcu Multicast/RTP"
 
 #: ../src/paprefs.glade.h:8
-#, fuzzy
 msgid "Enable Multicast/RTP s_ender"
-msgstr "Povoliť Multicast/RTP odo_sielateľa"
+msgstr "Povoliť _odosielateľa Multicast/RTP"
 
 #: ../src/paprefs.glade.h:9
 msgid "Enable _network access to local sound devices"
@@ -78,54 +73,48 @@ msgstr "Povoliť prístup zo siete na lokál_ne zvukové zariadenia"
 
 #: ../src/paprefs.glade.h:10
 msgid "Install..."
-msgstr ""
+msgstr "Inštalovať..."
 
 #: ../src/paprefs.glade.h:11
-#, fuzzy
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "Sprístupniť preskúmateľné Apple Air_tunes zvukové zariadenia lokálne"
+msgstr "Sprístupniť preskúmateľné zvukové zariadenia Apple _AirTunes lokálne"
 
 #: ../src/paprefs.glade.h:12
-#, fuzzy
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "Sprístupniť preskú_mateľné sieťové zvukové zariadenia lokálne"
+msgstr ""
+"Sprístupniť preskú_mateľné sieťové zvukové zariadenia PulseAudio lokálne"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
+msgstr "Sprístupniť lokálnu zvukové zariadenia ako _média server DLNA/UPnP"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
 msgstr "Multicast/R_TP"
 
 #: ../src/paprefs.glade.h:15
-#, fuzzy
 msgid "Network _Access"
-msgstr "Prístup zo si_ete"
+msgstr "Si_eťový prístup"
 
 #: ../src/paprefs.glade.h:16
-#, fuzzy
 msgid "Network _Server"
-msgstr "Prístup zo si_ete"
+msgstr "Sieťový _server"
 
 #: ../src/paprefs.glade.h:18
 msgid "Send audio from local _microphone"
 msgstr "Poslať zvuk z lokálneho _mikrofónu"
 
 #: ../src/paprefs.glade.h:19
-#, fuzzy
 msgid "Send audio from local spea_kers"
 msgstr "Poslať zvuk z lokálnych re_produktorov"
 
 #: ../src/paprefs.glade.h:20
-#, fuzzy
 msgid "Simultaneous _Output"
 msgstr "Sim_ultánny výstup"
 
 #: ../src/paprefs.glade.h:21
-#, fuzzy
 msgid "_Loop back audio to local speakers"
-msgstr "_Loopback zvuk do lokálnych reproduktorov"
+msgstr "Zvuková s_lučka do lokálnych reproduktorov"
 
 #~ msgid ""
 #~ "<span color=\"black\">View and modify the configuration of your local "
