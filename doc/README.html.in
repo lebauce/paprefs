@@ -38,6 +38,9 @@ General Public License for more details.</p>
 
 <h2><a name="news">News</a></h2>
 
+<div class="news-date">Thu Sep 10 2009: </div> <p class="news-text"><a
+href="@PACKAGE_URL@paprefs-0.9.9.tar.gz">Version 0.9.9</a> released; more translations, add uPNP enabling support, add PackageKit support</p>
+
 <div class="news-date">Tue Apr 14 2009: </div> <p class="news-text"><a
 href="@PACKAGE_URL@paprefs-0.9.8.tar.gz">Version 0.9.8</a> released; more translations, add RAOP enabling support</p>
 
@@ -86,6 +89,8 @@ source code configuration.</p>
 href="http://pulseaudio.org/">PulseAudio</a> (version 0.9.5). The
 module <tt>module-gconf</tt> must be loaded in the daemon.</p>
 
+<p>There is an implicit dependency on PackageKit. If you don't install PackageKit the 'Install' buttons in the UI for installing necessary PulseAudio plugins won't work.</p>
+
 <h2><a name="installation">Installation</a></h2>
 
 <p>As this package is made with the GNU autotools you should run
@@ -111,7 +116,7 @@ compilation and <tt>make install</tt> (as root) for installation of
 <pre>git clone git://git.0pointer.de/paprefs</pre>
 
 <hr/>
-<address class="grey">Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;, April 2009</address>
+<address class="grey">Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;, September 2009</address>
 
 </body>
 </html>
