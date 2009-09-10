@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-07 14:47+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-09-07 22:45+0530\n"
 "Last-Translator: \n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
@@ -39,7 +39,8 @@ msgstr ""
 "and other countries.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "ਸਭ ਲੋਕਲ ਸਾਊਂਡ ਕਾਰਡਾਂ ਉੱਤੇ ਇੱਕ ਨਾਲ ਆਉਟਪੁੱਟ ਲਈ ਵੁਰਚੁਅਲ ਆਉਟਪੁੱਟ ਜੰਤਰ ਸ਼ਾਮਲ ਕਰੋ(_v)"
 
 #: ../src/paprefs.glade.h:3

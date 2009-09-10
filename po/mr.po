@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-01 08:42+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-09-01 15:57+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
@@ -34,10 +34,12 @@ msgstr "स्थानीय आवाज सर्व्हर वरील �
 msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
-msgstr "<i>Apple व AirTunes Apple Inc. चे व्यापारचिन्ह आहे, U.S. व इतर देशात पंजीकृत.</i>"
+msgstr ""
+"<i>Apple व AirTunes Apple Inc. चे व्यापारचिन्ह आहे, U.S. व इतर देशात पंजीकृत.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr "सर्व स्थानीय आवाज कार्ड वरील सम आऊटपुट करीता आभासी साधन समावेष करा (_v)"
 
 #: ../src/paprefs.glade.h:3
@@ -111,4 +113,3 @@ msgstr "एकाचवेळी आऊटपुट (_O)"
 #: ../src/paprefs.glade.h:21
 msgid "_Loop back audio to local speakers"
 msgstr "स्थानीय स्पीकर्स् करीता लुप बॅक आवाज (_L)"
-

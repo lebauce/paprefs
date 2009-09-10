@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-28 19:54+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-08-29 01:05+0200\n"
 "Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -54,8 +54,8 @@ msgstr "Vytvořit o_ddělené zvukové zařízení pro Multicast/RTP"
 #: ../src/paprefs.glade.h:5
 msgid "Create separate audio device for DLNA/UPnP media streaming"
 msgstr ""
-"Vytvořit oddělené zvukové zařízení pro multimediální proudové vysílání "
-"DLNA/UPnP"
+"Vytvořit oddělené zvukové zařízení pro multimediální proudové vysílání DLNA/"
+"UPnP"
 
 #: ../src/paprefs.glade.h:6
 msgid "Don't _require authentication"
@@ -117,4 +117,3 @@ msgstr "Sim_ultánní výstup"
 #: ../src/paprefs.glade.h:21
 msgid "_Loop back audio to local speakers"
 msgstr "Zpětná sm_yčka zvuku do místních reproduktorů"
-

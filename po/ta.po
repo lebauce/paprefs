@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-31 08:47+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-08-31 22:46+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -40,7 +40,8 @@ msgstr ""
 "and other countries.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "ஒரே நேர வெளிப்பாட்டிற்கு அனைத்து உள்ளமை அட்டைகளிலும் மெய்நிகர் வெளிப்பாடு சாதனத்தை சேர் "
 "(_v)"
@@ -83,7 +84,8 @@ msgstr "உள்ளமைவாக கிடைக்க கண்டுபி�
 
 #: ../src/paprefs.glade.h:12
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய _PulseAudio பிணைய ஒலி சாதனங்களை உருவாக்கு"
+msgstr ""
+"உள்ளமைவாக கிடைக்க கண்டுபிடிக்கக்கூடிய _PulseAudio பிணைய ஒலி சாதனங்களை உருவாக்கு"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
@@ -116,4 +118,3 @@ msgstr "ஒரே நேர வெளிப்பாடு (_O)"
 #: ../src/paprefs.glade.h:21
 msgid "_Loop back audio to local speakers"
 msgstr "லூப்பேக் ஆடியோவிலிருந்து உள்ளமை ஸ்பீக்கர்களுக்கு (_L)"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-01 04:46+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-09-07 17:38+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -38,8 +38,10 @@ msgstr ""
 "ಇತರೆ ದೇಶಗಳಲ್ಲಿ ನೋಂದಾಯಿಸಲ್ಪಟ್ಟಿವೆ.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಧ್ವನಿ ಕಾರ್ಡುಗಳಲ್ಲಿನ ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್‌ಗಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್ ಸಾಧನವನ್ನು ಸೇರಿಸು(_v)"
 
 #: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -75,11 +77,13 @@ msgstr "ಅನುಸ್ಥಾಪಿಸು..."
 
 #: ../src/paprefs.glade.h:11
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ Apple Air_Tunes ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
+msgstr ""
+"ಪತ್ತೆಹಚ್ಚಬಹುದಾದ Apple Air_Tunes ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
 
 #: ../src/paprefs.glade.h:12
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "ಪತ್ತೆಹಚ್ಚಬಹುದಾದ  _PulseAudio ಜಾಲಬಂಧ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
+msgstr ""
+"ಪತ್ತೆಹಚ್ಚಬಹುದಾದ  _PulseAudio ಜಾಲಬಂಧ ಧ್ವನಿ ಸಾಧನಗಳನ್ನು ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡು"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
@@ -112,4 +116,3 @@ msgstr "ಏಕಕಾಲದ ಔಟ್‌ಪುಟ್(_O)"
 #: ../src/paprefs.glade.h:21
 msgid "_Loop back audio to local speakers"
 msgstr "ಆಡಿಯೋವನ್ನು ಸ್ಥಳೀಯ ಸ್ಪೀಕರುಗಳಿಗೆ ಲೂಪ್‌ಬ್ಯಾಕ್‌ ಮಾಡು(_L)"
-

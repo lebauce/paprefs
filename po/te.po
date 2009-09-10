@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-08 14:53+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-09-09 17:08+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 
@@ -36,11 +37,12 @@ msgid ""
 "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
 "and other countries.</i>"
 msgstr ""
-"<i>Apple మరియు AirTunes అనునవి Apple Inc. యొక్క వ్యాపారగుర్తులు, U.S నందు "
-"మరియు యితర దేశములనందు నమోదైనవి.</i>"
+"<i>Apple మరియు AirTunes అనునవి Apple Inc. యొక్క వ్యాపారగుర్తులు, U.S నందు మరియు యితర "
+"దేశములనందు నమోదైనవి.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
 msgstr ""
 "అన్ని స్థానిక శబ్దపు కార్డులపైనా ఏకకాల అవుట్పుట్ కొరకు వర్చ్యువల్ అవుట్పుట్ పరికరమును జతచేయుము "
 "(_v)"
@@ -79,21 +81,16 @@ msgstr "సంస్థాపించుము..."
 
 #: ../src/paprefs.glade.h:11
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr ""
-"స్థానికంగా అందుబాటులోవున్న Apple A_irTunes సౌండు పరికరములు కనుగొనబటునట్లు "
-"వుంచుము"
+msgstr "స్థానికంగా అందుబాటులోవున్న Apple A_irTunes సౌండు పరికరములు కనుగొనబటునట్లు వుంచుము"
 
 #: ../src/paprefs.glade.h:12
 msgid "Make discoverable _PulseAudio network sound devices available locally"
 msgstr ""
-"స్థానికంగా అందుబాటులోవున్న _PulseAudio నెట్వర్కు శబ్ధ పరికరములు కనుగొనబడునట్లు "
-"వుంచుము"
+"స్థానికంగా అందుబాటులోవున్న _PulseAudio నెట్వర్కు శబ్ధ పరికరములు కనుగొనబడునట్లు వుంచుము"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr ""
-"స్థానిక శబ్ధ పరికరములు DLNA/_UPnP మాధ్యమ సేవికవలె అందుబాటులోవుండునట్లు "
-"చేయుము"
+msgstr "స్థానిక శబ్ధ పరికరములు DLNA/_UPnP మాధ్యమ సేవికవలె అందుబాటులోవుండునట్లు చేయుము"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
@@ -122,4 +119,3 @@ msgstr "ఏకకాల అవుట్పుట్ (_O)"
 #: ../src/paprefs.glade.h:21
 msgid "_Loop back audio to local speakers"
 msgstr "స్థానిక స్పీకర్లకు లూప్‌బ్యాక్ ఆడియో (_L)"
-

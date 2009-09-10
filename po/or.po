@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.or\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-01 04:46+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-09-02 17:36+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -44,8 +45,10 @@ msgstr ""
 "ପଞ୍ଜିକୃତ।</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "ସମସ୍ତ ସ୍ଥାନୀୟ ଧ୍ୱନି କାର୍ଡଗୁଡ଼ିକରେ ଏକା ସଙ୍ଗରେ ନିର୍ଗମ ପାଇଁ ଆଭାସୀ ନିର୍ଗମ ଉପକରଣ ଯୋଗ କରନ୍ତୁ (_v)"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"ସମସ୍ତ ସ୍ଥାନୀୟ ଧ୍ୱନି କାର୍ଡଗୁଡ଼ିକରେ ଏକା ସଙ୍ଗରେ ନିର୍ଗମ ପାଇଁ ଆଭାସୀ ନିର୍ଗମ ଉପକରଣ ଯୋଗ କରନ୍ତୁ (_v)"
 
 #: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
@@ -85,7 +88,8 @@ msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ Apple Air tunes ଧ୍ୱନି �
 
 #: ../src/paprefs.glade.h:12
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "ଉଦ୍ଭାବନ ଯୋଗ୍ୟ PulseAudio ନେଟୱର୍କ ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ (_P)"
+msgstr ""
+"ଉଦ୍ଭାବନ ଯୋଗ୍ୟ PulseAudio ନେଟୱର୍କ ଧ୍ୱନି ଉପକରଣଗୁଡ଼ିକୁ ସ୍ଥାନୀୟ ଭାବରେ ଉପଲବ୍ଧ କରାନ୍ତୁ (_P)"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
@@ -118,4 +122,3 @@ msgstr "ଏକକାଳୀନ ଫଳାଫଳ (_O)"
 #: ../src/paprefs.glade.h:21
 msgid "_Loop back audio to local speakers"
 msgstr "ସ୍ଥାନୀୟ ସ୍ପିକରଗୁଡ଼ିକ ପାଇଁ ଧ୍ୱନି ଚକ୍ର (_L)"
-

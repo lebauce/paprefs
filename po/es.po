@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paprefs.master-tx.es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 08:39+0000\n"
+"POT-Creation-Date: 2009-09-10 03:48+0200\n"
 "PO-Revision-Date: 2009-08-25 11:46-0300\n"
 "Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
@@ -14,8 +14,7 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/paprefs.desktop.in.h:1
-#: ../src/paprefs.glade.h:17
+#: ../src/paprefs.desktop.in.h:1 ../src/paprefs.glade.h:17
 msgid "PulseAudio Preferences"
 msgstr "Preferencias de PulseAudio"
 
@@ -28,16 +27,24 @@ msgid "View and modify the configuration of the local sound server"
 msgstr "Ver y modificar la configuración del servidor de sonido local"
 
 #: ../src/paprefs.glade.h:1
-msgid "<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. and other countries.</i>"
-msgstr "<i>Apple y Airtunes son marcas comerciales de Apple Inc., registradas en los EEUU y en otros países.</i>"
+msgid ""
+"<i>Apple and AirTunes are trademarks of Apple Inc., registered in the U.S. "
+"and other countries.</i>"
+msgstr ""
+"<i>Apple y Airtunes son marcas comerciales de Apple Inc., registradas en los "
+"EEUU y en otros países.</i>"
 
 #: ../src/paprefs.glade.h:2
-msgid "Add _virtual output device for simultaneous output on all local sound cards"
-msgstr "Agregar un dispositivo de salida _virtual para salida simultánea en todas las placas de sonido locales"
+msgid ""
+"Add _virtual output device for simultaneous output on all local sound cards"
+msgstr ""
+"Agregar un dispositivo de salida _virtual para salida simultánea en todas "
+"las placas de sonido locales"
 
 #: ../src/paprefs.glade.h:3
 msgid "Allow other machines on the LAN to _discover local sound devices"
-msgstr "Permitir a otras máquinas en la red _descubrir dispositivos de sonido locales"
+msgstr ""
+"Permitir a otras máquinas en la red _descubrir dispositivos de sonido locales"
 
 #: ../src/paprefs.glade.h:4
 msgid "Create separate audio device _for Multicast/RTP"
@@ -69,15 +76,20 @@ msgstr "Instalar..."
 
 #: ../src/paprefs.glade.h:11
 msgid "Make discoverable Apple A_irTunes sound devices available locally"
-msgstr "Hacer detectables los dispositivos Air_tunes de Apple disponibles localmente"
+msgstr ""
+"Hacer detectables los dispositivos Air_tunes de Apple disponibles localmente"
 
 #: ../src/paprefs.glade.h:12
 msgid "Make discoverable _PulseAudio network sound devices available locally"
-msgstr "Hacer visibles los dispositivos de sonido de red de _PulseAudio disponibles localmente"
+msgstr ""
+"Hacer visibles los dispositivos de sonido de red de _PulseAudio disponibles "
+"localmente"
 
 #: ../src/paprefs.glade.h:13
 msgid "Make local sound devices available as DLNA/_UPnP Media Server"
-msgstr "Poner los dispositivos de sonido locales disponibles como Servidor de Medios DLNA/_UPnP"
+msgstr ""
+"Poner los dispositivos de sonido locales disponibles como Servidor de Medios "
+"DLNA/_UPnP"
 
 #: ../src/paprefs.glade.h:14
 msgid "Multicast/R_TP"
@@ -113,9 +125,9 @@ msgstr "_Devolver el audio a los parlantes locales"
 #~ msgstr ""
 #~ "<span color=\"black\">Ver y modificar la configuración de su servidor de "
 #~ "sonido local</span>"
+
 #~ msgid ""
 #~ "<span size=\"18000\" color=\"black\"><b>PulseAudio Preferences</b></span>"
 #~ msgstr ""
 #~ "<span size=\"18000\" color=\"black\"><b>Preferencias de PulseAudio</b></"
 #~ "span>"
-
