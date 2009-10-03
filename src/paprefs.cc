@@ -104,6 +104,7 @@ public:
 
     void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
 
+    void showInstallButton(Gtk::Button *button, bool available);
     void installFiles(const char *a, const char *b);
 
     bool
@@ -217,40 +218,13 @@ void MainWindow::updateSensitive() {
     upnpMediaServerCheckButton->set_sensitive(upnpAvailable);
     upnpNullSinkCheckButton->set_sensitive(upnpAvailable && upnpMediaServerCheckButton->get_active());
 
-    if (zeroconfDiscoverAvailable)
-        zeroconfDiscoverInstallButton->hide();
-    else
-        zeroconfDiscoverInstallButton->show();
-
-    if (zeroconfRaopDiscoverAvailable)
-        zeroconfRaopDiscoverInstallButton->hide();
-    else
-        zeroconfRaopDiscoverInstallButton->show();
-
-    if (remoteAvailable)
-        remoteInstallButton->hide();
-    else
-        remoteInstallButton->show();
-
-    if (zeroconfPublishAvailable)
-        zeroconfPublishInstallButton->hide();
-    else
-        zeroconfPublishInstallButton->show();
-
-    if (upnpAvailable)
-        upnpInstallButton->hide();
-    else
-        upnpInstallButton->show();
-
-    if (rtpRecvAvailable)
-        rtpRecvInstallButton->hide();
-    else
-        rtpRecvInstallButton->show();
-
-    if (rtpSendAvailable)
-        rtpSendInstallButton->hide();
-    else
-        rtpSendInstallButton->show();
+    showInstallButton(zeroconfDiscoverInstallButton, zeroconfDiscoverAvailable);
+    showInstallButton(zeroconfRaopDiscoverInstallButton, zeroconfRaopDiscoverAvailable);
+    showInstallButton(remoteInstallButton, remoteAvailable);
+    showInstallButton(zeroconfPublishInstallButton, zeroconfPublishAvailable);
+    showInstallButton(upnpInstallButton, upnpAvailable);
+    showInstallButton(rtpRecvInstallButton, rtpRecvAvailable);
+    showInstallButton(rtpSendInstallButton, rtpSendAvailable);
 }
 
 void MainWindow::onChangeRemoteAccess() {
@@ -311,6 +285,13 @@ void MainWindow::onChangeUpnp() {
 
     updateSensitive();
     writeToGConfUPnP();
+}
+
+void MainWindow::showInstallButton(Gtk::Button *button, bool available) {
+  if (available)
+    button->hide();
+  else
+    button->show();
 }
 
 void MainWindow::installFiles(const char *a, const char *b = NULL) {
