@@ -29,9 +29,9 @@ desktop_DATA=$(desktop_in_files:.desktop.in=.desktop)
 
 paprefs_SOURCES=paprefs.cc
 
-paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS)
-paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS)
-paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODULESDIR=\""$(LIBPULSE_MODLIBEXECDIR)/"\" -DSHREXT=\"$(SHREXT)\"
+paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS) $(LIBPULSE_LIBS)
+paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS) $(LIBPULSE_CFLAGS)
+paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODLIBDIR=\""$(LIBPULSE_MODLIBDIR)/"\" -DSHREXT=\"$(SHREXT)\"
 
 EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
 

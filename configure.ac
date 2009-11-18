@@ -43,8 +43,8 @@ AC_SUBST(GUILIBS_CFLAGS)
 AC_SUBST(GUILIBS_LIBS)
 
 PKG_CHECK_MODULES(LIBPULSE, libpulse)
-LIBPULSE_MODLIBEXECDIR=`pkg-config libpulse --variable modlibexecdir`
-AC_SUBST(LIBPULSE_MODLIBEXECDIR)
+LIBPULSE_MODLIBDIR=`pkg-config libpulse --variable libdir`
+AC_SUBST(LIBPULSE_MODLIBDIR)
 
 # If using GCC specifiy some additional parameters
 if test "x$GCC" = "xyes" ; then
