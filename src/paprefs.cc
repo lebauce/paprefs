@@ -28,6 +28,7 @@
 #include <gconfmm.h>
 #include <libintl.h>
 #include <dbus/dbus-glib.h>
+#include <dbus/dbus.h>
 #include <gdk/gdkx.h>
 
 #define PA_GCONF_ROOT "/system/pulseaudio"
@@ -92,6 +93,7 @@ public:
 
     void readFromGConf();
 
+    void checkForPackageKit();
     void checkForModules();
 
     void writeToGConfRemoteAccess();
@@ -108,6 +110,7 @@ public:
     void installFiles(const char *a, const char *b);
 
     bool
+        packageKitAvailable,
         rtpRecvAvailable,
         rtpSendAvailable,
         zeroconfPublishAvailable,
@@ -145,6 +148,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     x->get_widget("rtpSpeakerRadioButton", rtpSpeakerRadioButton);
     x->get_widget("rtpNullSinkRadioButton", rtpNullSinkRadioButton);
 
+    checkForPackageKit();
     checkForModules();
 
     gconf = Gnome::Conf::Client::get_default_client();
@@ -288,7 +292,7 @@ void MainWindow::onChangeUpnp() {
 }
 
 void MainWindow::showInstallButton(Gtk::Button *button, bool available) {
-  if (available)
+  if (available || !packageKitAvailable)
     button->hide();
   else
     button->show();
@@ -628,6 +632,23 @@ void MainWindow::checkForModules() {
         access(MODULESDIR "module-rygel-media-server" SHREXT, F_OK) == 0 &&
         g_find_program_in_path("rygel");
 }
+
+void MainWindow::checkForPackageKit() {
+
+    DBusError err;
+    dbus_error_init(&err);
+    DBusConnection *sessionBus = dbus_bus_get(DBUS_BUS_SESSION, &err);
+
+    if(dbus_error_is_set(&err)) {
+        g_warning("Error connecting to DBus: %s", err.message);
+        packageKitAvailable = FALSE;
+    } else {
+        packageKitAvailable = dbus_bus_name_has_owner(sessionBus, "org.freedesktop.PackageKit", NULL);
+        dbus_connection_unref(sessionBus);
+    }
+    dbus_error_free(&err);
+}
+
 
 int main(int argc, char *argv[]) {
 
