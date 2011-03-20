@@ -639,14 +639,7 @@ void MainWindow::readFromGConf() {
 gchar * MainWindow::modulePath(const gchar *name) {
   gchar *path, *pulsedir, *c;
 
-  pulsedir = g_strdup_printf ("pulse-%s", pa_get_library_version ());
-
-  for (c = pulsedir + strlen ("pulse-"); *c != '\0'; c++) {
-    if (*c == '-') {
-      *c = '\0';
-      break;
-    }
-  }
+  pulsedir = g_strdup_printf ("pulse-%d.%d", PA_MAJOR, PA_MINOR);
 
   path = g_build_filename (MODLIBDIR, pulsedir, "modules", name, NULL);
   g_free (pulsedir);
