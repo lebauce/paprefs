@@ -22,7 +22,7 @@ AC_PREREQ(2.57)
 AC_INIT([paprefs],[0.9.9],[mzcncersf (at) 0pointer (dot) de])
 AC_CONFIG_SRCDIR([src/paprefs.cc])
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([foreign 1.9 -Wall])
+AM_INIT_AUTOMAKE([foreign 1.11 -Wall dist-xz tar-ustar])
 
 AC_SUBST(PACKAGE_URL, [http://0pointer.de/lennart/projects/paprefs/])
 
