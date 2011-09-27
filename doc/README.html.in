@@ -38,6 +38,9 @@ General Public License for more details.</p>
 
 <h2><a name="news">News</a></h2>
 
+<div class="news-date">Tue Sep 27 2011: </div> <p class="news-text"><a
+href="@PACKAGE_URL@paprefs-0.9.10.tar.xz">Version 0.9.10</a> released; minor tidyups, should no longer require recompiling with each new PA version.</p>
+
 <div class="news-date">Thu Sep 10 2009: </div> <p class="news-text"><a
 href="@PACKAGE_URL@paprefs-0.9.9.tar.gz">Version 0.9.9</a> released; more translations, add uPNP enabling support, add PackageKit support</p>
 
