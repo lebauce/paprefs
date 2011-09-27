@@ -24,7 +24,7 @@ AC_CONFIG_SRCDIR([src/paprefs.cc])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([foreign 1.11 -Wall dist-xz tar-ustar])
 
-AC_SUBST(PACKAGE_URL, [http://0pointer.de/lennart/projects/paprefs/])
+AC_SUBST(PACKAGE_URL, [http://freedesktop.org/software/pulseaudio/paprefs/])
 
 if type -p stow > /dev/null && test -d /usr/local/stow ; then
    AC_MSG_NOTICE([*** Found /usr/local/stow: default install prefix set to /usr/local/stow/${PACKAGE_NAME}-${PACKAGE_VERSION} ***])
