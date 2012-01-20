@@ -637,17 +637,25 @@ void MainWindow::readFromGConf() {
 }
 
 gchar * MainWindow::modulePath(const gchar *name) {
-  gchar *path, *pulsedir, *c, **versions;
+  gchar *path, *c, **versions;
 
   versions = g_strsplit(pa_get_library_version(), ".", 3);
-  if (versions[0] && versions[1])
-    pulsedir = g_strdup_printf ("pulse-%s.%s", versions[0], versions[1]);
-  else
-    pulsedir = g_strdup_printf ("pulse-%d.%d", PA_MAJOR, PA_MINOR);
-  g_strfreev(versions);
+  if (versions[0] && versions[1]) {
+      gchar *pulsedir, *search;
 
-  path = g_build_filename (MODLIBDIR, pulsedir, "modules", name, NULL);
-  g_free (pulsedir);
+      /* Remove the "/pulse-x.y/modules" suffix so we can dynamically inject
+       * it again with runtime library version numbers */
+      pulsedir = g_strdup_printf ("%s", MODDIR);
+      if ((search = g_strrstr (pulsedir, G_DIR_SEPARATOR_S))) {
+          *search = '\0';
+          if ((search = g_strrstr (pulsedir, G_DIR_SEPARATOR_S)))
+              *search = '\0';
+      }
+      path = g_strdup_printf ("%s" G_DIR_SEPARATOR_S "pulse-%s.%s" G_DIR_SEPARATOR_S "modules" G_DIR_SEPARATOR_S "%s", pulsedir, versions[0], versions[1], name);
+      g_free (pulsedir);
+  } else
+      path = g_build_filename (MODDIR, name, NULL);
+  g_strfreev(versions);
 
   return path;
 }
