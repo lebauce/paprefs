@@ -60,8 +60,7 @@ href="@PACKAGE_URL@paprefs-0.9.5.tar.gz">Version 0.9.5</a> released; initial rel
 
 <p>PulseAudio Preferences (<tt>paprefs</tt>) is a simple GTK
 based configuration dialog for the <a
-href="http://0pointer.de/lennart/projects/pulseaudio/">PulseAudio
-sound server</a>.</p>
+href="http://pulseaudio.org/">PulseAudio sound server</a>.</p>
 
 <p>Please note that this program can only configure local servers, and
 requires that a special module <tt>module-gconf</tt> is loaded in the
@@ -114,9 +113,9 @@ compilation and <tt>make install</tt> (as root) for installation of
 
 <p>The current release is <a href="@PACKAGE_URL@paprefs-@PACKAGE_VERSION@.tar.gz">@PACKAGE_VERSION@</a></p>
 
-<p>Get <tt>paprefs</tt>'s development sources from the <a href="http://git-scm.org/">GIT</a> <a href="git://git.0pointer.de/paprefs">repository</a> (<a href="http://git.0pointer.de/?p=paprefs.git">gitweb</a>): </p>
+<p>Get <tt>paprefs</tt>'s development sources from the <a href="http://git-scm.org/">GIT</a> <a href="git://anongit.freedesktop.org/pulseaudio/paprefs">repository</a> (<a href="http://cgit.freedesktop.org/pulseaudio/paprefs">web interface</a>): </p>
 
-<pre>git clone git://git.0pointer.de/paprefs</pre>
+<pre>git clone git://anongit.freedesktop.org/pulseaudio/paprefs</pre>
 
 <hr/>
 <address class="grey">Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;, September 2009</address>
