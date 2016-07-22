@@ -30,10 +30,16 @@ desktop_DATA=$(desktop_in_files:.desktop.in=.desktop)
 paprefs_SOURCES=paprefs.cc
 
 paprefs_LDADD=$(AM_LDADD) $(GUILIBS_LIBS) $(LIBPULSE_LIBS)
-paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS) $(LIBPULSE_CFLAGS)
+paprefs_CXXFLAGS=$(AM_CXXFLAGS) $(GUILIBS_CFLAGS) $(LIBPULSE_CFLAGS) $(GSETTINGS_CFLAGS)
 paprefs_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/paprefs.glade\" -DLOCALEDIR=\"$(localedir)\" -DMODDIR=\""$(LIBPULSE_MODLIBEXECDIR)"\" -DSHREXT=\"$(SHREXT)\"
 
-EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
+gsettings_SCHEMAS = org.freedesktop.paprefs.gschema.xml
+@GSETTINGS_RULES@
+
+convertdir = $(datadir)/GConf/gsettings
+convert_DATA = paprefs.convert
+
+EXTRA_DIST = $(glade_DATA) $(desktop_in_files) paprefs.convert
 
 CLEANFILES = $(desktop_DATA)
 

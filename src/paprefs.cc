@@ -24,8 +24,9 @@
 #include <signal.h>
 
 #include <gtkmm.h>
+#include <glibmm.h>
+#include <glibmm/regex.h>
 #include <libglademm.h>
-#include <gconfmm.h>
 #include <libintl.h>
 #include <dbus/dbus-glib.h>
 #include <dbus/dbus.h>
@@ -33,8 +34,8 @@
 
 #include <pulse/version.h>
 
-#define PA_GCONF_ROOT "/system/pulseaudio"
-#define PA_GCONF_PATH_MODULES PA_GCONF_ROOT"/modules"
+#define PA_GSETTINGS_PATH_MODULES "/org/freedesktop/pulseaudio/modules"
+#define MAX_MODULES 10
 
 class MainWindow : public Gtk::Window {
 public:
@@ -69,7 +70,13 @@ public:
         *rtpSpeakerRadioButton,
         *rtpNullSinkRadioButton;
 
-    Glib::RefPtr<Gnome::Conf::Client> gconf;
+    Glib::RefPtr<Gio::Settings> combineSettings;
+    Glib::RefPtr<Gio::Settings> remoteAccessSettings;
+    Glib::RefPtr<Gio::Settings> zeroconfSettings;
+    Glib::RefPtr<Gio::Settings> raopSettings;
+    Glib::RefPtr<Gio::Settings> rtpRecvSettings;
+    Glib::RefPtr<Gio::Settings> rtpSendSettings;
+    Glib::RefPtr<Gio::Settings> upnpSettings;
 
     bool ignoreChanges;
 
@@ -93,20 +100,22 @@ public:
     void rtpRecvInstallButtonClicked();
     void rtpSendInstallButtonClicked();
 
-    void readFromGConf();
+    void readFromGSettings();
 
     void checkForPackageKit();
     void checkForModules();
 
-    void writeToGConfRemoteAccess();
-    void writeToGConfZeroconfDiscover();
-    void writeToGConfZeroconfRaopDiscover();
-    void writeToGConfRtpReceive();
-    void writeToGConfRtpSend();
-    void writeToGConfCombine();
-    void writeToGConfUPnP();
+    void writeToGSettingsRemoteAccess();
+    void writeToGSettingsZeroconfDiscover();
+    void writeToGSettingsZeroconfRaopDiscover();
+    void writeToGSettingsRtpReceive();
+    void writeToGSettingsRtpSend();
+    void writeToGSettingsCombine();
+    void writeToGSettingsUPnP();
 
-    void onGConfChange(const Glib::ustring& key, const Gnome::Conf::Value& value);
+    void onGSettingsChange(const Glib::ustring& key);
+
+    bool moduleHasArgument(Glib::RefPtr<Gio::Settings> gsettings, const Glib::ustring& module, const Glib::ustring& name, const Glib::ustring& value);
 
     void showInstallButton(Gtk::Button *button, bool available);
     void installFiles(const char *a, const char *b);
@@ -157,12 +166,35 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
     checkForPackageKit();
     checkForModules();
 
-    gconf = Gnome::Conf::Client::get_default_client();
-    gconf->set_error_handling(Gnome::Conf::CLIENT_HANDLE_ALL);
-    gconf->add_dir(PA_GCONF_ROOT, Gnome::Conf::CLIENT_PRELOAD_RECURSIVE);
+    combineSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                            "/org/freedesktop/pulseaudio/modules/combine/");
 
-    gconf->signal_value_changed().connect(sigc::mem_fun(*this, &MainWindow::onGConfChange));
-    readFromGConf();
+    remoteAccessSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                                 "/org/freedesktop/pulseaudio/modules/remote-access/");
+
+    zeroconfSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                             "/org/freedesktop/pulseaudio/modules/zeroconf-discover/");
+
+    raopSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                         "/org/freedesktop/pulseaudio/modules/raop-discover/");
+
+    rtpRecvSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                            "/org/freedesktop/pulseaudio/modules/rtp-recv/");
+
+    rtpSendSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                            "/org/freedesktop/pulseaudio/modules/rtp-send/");
+
+    upnpSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
+                                         "/org/freedesktop/pulseaudio/modules/upnp-media-server/");
+
+    combineSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    remoteAccessSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    zeroconfSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    raopSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    rtpRecvSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    rtpSendSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    upnpSettings->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onGSettingsChange));
+    readFromGSettings();
 
     closeButton->signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::onCloseButtonClicked));
 
@@ -243,7 +275,7 @@ void MainWindow::onChangeRemoteAccess() {
         return;
 
     updateSensitive();
-    writeToGConfRemoteAccess();
+    writeToGSettingsRemoteAccess();
 }
 
 void MainWindow::onChangeZeroconfDiscover() {
@@ -252,7 +284,7 @@ void MainWindow::onChangeZeroconfDiscover() {
         return;
 
     updateSensitive();
-    writeToGConfZeroconfDiscover();
+    writeToGSettingsZeroconfDiscover();
 }
 
 void MainWindow::onChangeZeroconfRaopDiscover() {
@@ -261,7 +293,7 @@ void MainWindow::onChangeZeroconfRaopDiscover() {
         return;
 
     updateSensitive();
-    writeToGConfZeroconfRaopDiscover();
+    writeToGSettingsZeroconfRaopDiscover();
 }
 
 void MainWindow::onChangeRtpReceive() {
@@ -269,8 +301,8 @@ void MainWindow::onChangeRtpReceive() {
         return;
 
     updateSensitive();
-    writeToGConfRtpReceive();
-    writeToGConfRtpSend();
+    writeToGSettingsRtpReceive();
+    writeToGSettingsRtpSend();
 }
 
 void MainWindow::onChangeRtpSend() {
@@ -278,14 +310,14 @@ void MainWindow::onChangeRtpSend() {
         return;
 
     updateSensitive();
-    writeToGConfRtpSend();
+    writeToGSettingsRtpSend();
 }
 
 void MainWindow::onChangeCombine() {
     if (ignoreChanges)
         return;
 
-    writeToGConfCombine();
+    writeToGSettingsCombine();
 }
 
 void MainWindow::onChangeUpnp() {
@@ -294,7 +326,7 @@ void MainWindow::onChangeUpnp() {
         return;
 
     updateSensitive();
-    writeToGConfUPnP();
+    writeToGSettingsUPnP();
 }
 
 void MainWindow::showInstallButton(Gtk::Button *button, bool available) {
@@ -382,159 +414,117 @@ void MainWindow::rtpSendInstallButtonClicked() {
     installModules("module-rtp-send" SHREXT);
 }
 
-void MainWindow::writeToGConfCombine() {
-    Gnome::Conf::ChangeSet changeSet;
-    changeSet.set(PA_GCONF_PATH_MODULES"/combine/locked", true);
-    gconf->change_set_commit(changeSet, true);
+void MainWindow::writeToGSettingsCombine() {
+    combineSettings->delay();
 
     if (combineCheckButton->get_active()) {
-        changeSet.set(PA_GCONF_PATH_MODULES"/combine/name0", Glib::ustring("module-combine"));
-        changeSet.set(PA_GCONF_PATH_MODULES"/combine/args0", Glib::ustring(""));
+        combineSettings->set_string("name0", Glib::ustring("module-combine"));
+        combineSettings->set_string("args0", Glib::ustring(""));
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/combine/enabled", true);
+        combineSettings->set_boolean("enabled", true);
     } else
-        changeSet.set(PA_GCONF_PATH_MODULES"/combine/enabled", false);
+        combineSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/combine/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    combineSettings->apply();
 }
 
-void MainWindow::writeToGConfRemoteAccess() {
-    Gnome::Conf::ChangeSet changeSet;
+void MainWindow::writeToGSettingsRemoteAccess() {
     bool zeroconfEnabled, anonymousEnabled;
 
-    changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/locked", true);
-    gconf->change_set_commit(changeSet, true);
+    remoteAccessSettings->delay();
 
-    changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/zeroconf_enabled", zeroconfEnabled = zeroconfPublishCheckButton->get_active());
-    changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/anonymous_enabled", anonymousEnabled = anonymousAuthCheckButton->get_active());
+    zeroconfEnabled = zeroconfPublishCheckButton->get_active();
+    anonymousEnabled = anonymousAuthCheckButton->get_active();
 
     if (remoteAccessCheckButton->get_active()) {
-        changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/name0", Glib::ustring("module-native-protocol-tcp"));
-        changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/name1", Glib::ustring("module-esound-protocol-tcp"));
+        remoteAccessSettings->set_string("name0", Glib::ustring("module-native-protocol-tcp"));
+        remoteAccessSettings->set_string("name1", Glib::ustring("module-esound-protocol-tcp"));
 
         if (anonymousEnabled) {
-            changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/args0", Glib::ustring("auth-anonymous=1"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/args1", Glib::ustring("auth-anonymous=1"));
+            remoteAccessSettings->set_string("args0", Glib::ustring("auth-anonymous=1"));
+            remoteAccessSettings->set_string("args1", Glib::ustring("auth-anonymous=1"));
         } else {
-            changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/args0", Glib::ustring(""));
-            changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/args1", Glib::ustring(""));
+            remoteAccessSettings->set_string("args0", Glib::ustring(""));
+            remoteAccessSettings->set_string("args1", Glib::ustring(""));
         }
 
         if (zeroconfEnabled) {
-            changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/name2", Glib::ustring("module-zeroconf-publish"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/args2", Glib::ustring(""));
+            remoteAccessSettings->set_string("name2", Glib::ustring("module-zeroconf-publish"));
+            remoteAccessSettings->set_string("args2", Glib::ustring(""));
         } else {
-            changeSet.unset(PA_GCONF_PATH_MODULES"/remote-access/name2");
-            changeSet.unset(PA_GCONF_PATH_MODULES"/remote-access/args2");
+            remoteAccessSettings->reset("name2");
+            remoteAccessSettings->reset("args2");
         }
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/enabled", true);
+        remoteAccessSettings->set_boolean("enabled", true);
     } else
-        changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/enabled", false);
+        remoteAccessSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/remote-access/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    remoteAccessSettings->apply();
 }
 
-void MainWindow::writeToGConfZeroconfDiscover() {
-    Gnome::Conf::ChangeSet changeSet;
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/zeroconf-discover/locked", true);
-    gconf->change_set_commit(changeSet, true);
+void MainWindow::writeToGSettingsZeroconfDiscover() {
+    zeroconfSettings->delay();
 
     if (zeroconfDiscoverCheckButton->get_active()) {
-        changeSet.set(PA_GCONF_PATH_MODULES"/zeroconf-discover/name0", Glib::ustring("module-zeroconf-discover"));
-        changeSet.set(PA_GCONF_PATH_MODULES"/zeroconf-discover/args0", Glib::ustring(""));
+        zeroconfSettings->set_string("name0", Glib::ustring("module-zeroconf-discover"));
+        zeroconfSettings->set_string("args0", Glib::ustring(""));
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/zeroconf-discover/enabled", true);
+        zeroconfSettings->set_boolean("enabled", true);
     } else
-        changeSet.set(PA_GCONF_PATH_MODULES"/zeroconf-discover/enabled", false);
+        zeroconfSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/zeroconf-discover/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    zeroconfSettings->apply();
 }
 
-void MainWindow::writeToGConfZeroconfRaopDiscover() {
-    Gnome::Conf::ChangeSet changeSet;
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/locked", true);
-    gconf->change_set_commit(changeSet, true);
+void MainWindow::writeToGSettingsZeroconfRaopDiscover() {
+    raopSettings->delay();
 
     if (zeroconfRaopDiscoverCheckButton->get_active()) {
-        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/name0", Glib::ustring("module-raop-discover"));
-        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/args0", Glib::ustring(""));
+        raopSettings->set_string("name0", Glib::ustring("module-raop-discover"));
+        raopSettings->set_string("args0", Glib::ustring(""));
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/enabled", true);
+        raopSettings->set_boolean("enabled", true);
     } else
-        changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/enabled", false);
+        raopSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/raop-discover/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    raopSettings->apply();
 }
 
-void MainWindow::writeToGConfRtpReceive() {
-    Gnome::Conf::ChangeSet changeSet;
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/rtp-recv/locked", true);
-    gconf->change_set_commit(changeSet, true);
+void MainWindow::writeToGSettingsRtpReceive() {
+    rtpRecvSettings->delay();
 
     if (rtpReceiveCheckButton->get_active()) {
-        changeSet.set(PA_GCONF_PATH_MODULES"/rtp-recv/name0", Glib::ustring("module-rtp-recv"));
-        changeSet.set(PA_GCONF_PATH_MODULES"/rtp-recv/args0", Glib::ustring(""));
+        rtpRecvSettings->set_string("name0", Glib::ustring("module-rtp-recv"));
+        rtpRecvSettings->set_string("args0", Glib::ustring(""));
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/rtp-recv/enabled", true);
+        rtpRecvSettings->set_boolean("enabled", true);
     }  else
-        changeSet.set(PA_GCONF_PATH_MODULES"/rtp-recv/enabled", false);
+        rtpRecvSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/rtp-recv/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    rtpRecvSettings->apply();
 }
 
-void MainWindow::writeToGConfRtpSend() {
-    Gnome::Conf::ChangeSet changeSet;
+void MainWindow::writeToGSettingsRtpSend() {
     bool loopbackEnabled, mikeEnabled, speakerEnabled = false;
 
-    changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/locked", true);
-    gconf->change_set_commit(changeSet, true);
+    rtpSendSettings->delay();
 
-    changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/loopback_enabled", loopbackEnabled = rtpLoopbackCheckButton->get_active());
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/mode", Glib::ustring(
-                          (mikeEnabled = rtpMikeRadioButton->get_active()) ? "microphone" :
-                          ((speakerEnabled = rtpSpeakerRadioButton->get_active()) ? "speaker" : "null-sink")));
+    loopbackEnabled = rtpLoopbackCheckButton->get_active();
+    mikeEnabled = rtpMikeRadioButton->get_active();
+    speakerEnabled = rtpSpeakerRadioButton->get_active();
 
     if (rtpSendCheckButton->get_active()) {
         if (!mikeEnabled && !speakerEnabled) {
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name0", Glib::ustring("module-null-sink"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args0", Glib::ustring("sink_name=rtp "
-                                                                                "format=s16be "
-                                                                                "channels=2 "
-                                                                                "rate=44100 "
-                                                                                "sink_properties=\"device.description='RTP Multicast' device.bus='network' device.icon_name='network-server'\""));
+            rtpSendSettings->set_string("name0", Glib::ustring("module-null-sink"));
+            rtpSendSettings->set_string("args0", Glib::ustring("sink_name=rtp "
+                                                               "format=s16be "
+                                                               "channels=2 "
+                                                               "rate=44100 "
+                                                               "sink_properties=\"device.description='RTP Multicast' device.bus='network' device.icon_name='network-server'\""));
 
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name1", Glib::ustring("module-rtp-send"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args1", Glib::ustring(loopbackEnabled ? "source=rtp.monitor loop=1" : "source=rtp.monitor loop=0"));
+            rtpSendSettings->set_string("name1", Glib::ustring("module-rtp-send"));
+            rtpSendSettings->set_string("args1", Glib::ustring(loopbackEnabled ? "source=rtp.monitor loop=1" : "source=rtp.monitor loop=0"));
         } else {
             char tmp[256];
 
@@ -542,94 +532,125 @@ void MainWindow::writeToGConfRtpSend() {
                      mikeEnabled ? "source=@DEFAULT_SOURCE@" : "source=@DEFAULT_MONITOR@",
                      mikeEnabled && loopbackEnabled ? "loop=1" : "loop=0");
 
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/name0", Glib::ustring("module-rtp-send"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/args0", Glib::ustring(tmp));
+            rtpSendSettings->set_string("name0", Glib::ustring("module-rtp-send"));
+            rtpSendSettings->set_string("args0", Glib::ustring(tmp));
 
-            changeSet.unset(PA_GCONF_PATH_MODULES"/rtp-send/name1");
-            changeSet.unset(PA_GCONF_PATH_MODULES"/rtp-send/args1");
+            rtpSendSettings->reset("name1");
+            rtpSendSettings->reset("args1");
         }
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/enabled", true);
-    }  else
-        changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/enabled", false);
+        rtpSendSettings->set_boolean("enabled", true);
+    } else
+        rtpSendSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/rtp-send/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    rtpSendSettings->apply();
 }
 
-void MainWindow::writeToGConfUPnP() {
-    Gnome::Conf::ChangeSet changeSet;
+void MainWindow::writeToGSettingsUPnP() {
+    upnpSettings->delay();
 
-    changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/locked", true);
-    gconf->change_set_commit(changeSet, true);
+    bool mediaServer = upnpMediaServerCheckButton->get_active();
+    bool nullSink = upnpNullSinkCheckButton->get_active();
 
-    if (upnpMediaServerCheckButton->get_active()) {
-        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/name0", Glib::ustring("module-rygel-media-server"));
-        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/args0", Glib::ustring(""));
+    if (mediaServer) {
+        upnpSettings->set_string("name0", Glib::ustring("module-rygel-media-server"));
+        upnpSettings->set_string("args0", Glib::ustring(""));
 
-        if (upnpNullSinkCheckButton->get_active()) {
-            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/name1", Glib::ustring("module-null-sink"));
-            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/args1", Glib::ustring("sink_name=upnp "
-                                                                                         "format=s16be "
-                                                                                         "channels=2 "
-                                                                                         "rate=44100 "
-                                                                                         "sink_properties=\"device.description='DLNA/UPnP Streaming' device.bus='network' device.icon_name='network-server'\""));
-            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/null-sink-enabled", true);
+        if (nullSink) {
+            upnpSettings->set_string("name1", Glib::ustring("module-null-sink"));
+            upnpSettings->set_string("args1", Glib::ustring("sink_name=upnp "
+                                                            "format=s16be "
+                                                            "channels=2 "
+                                                            "rate=44100 "
+                                                            "sink_properties=\"device.description='DLNA/UPnP Streaming' device.bus='network' device.icon_name='network-server'\""));
         } else {
-            changeSet.unset(PA_GCONF_PATH_MODULES"/upnp-media-server/name1");
-            changeSet.unset(PA_GCONF_PATH_MODULES"/upnp-media-server/args1");
-            changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/null-sink-enabled", false);
+            upnpSettings->reset("name1");
+            upnpSettings->reset("args1");
         }
 
-        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/enabled", true);
-    }  else
-        changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/enabled", false);
+        upnpSettings->set_boolean("enabled", true);
+    } else
+        upnpSettings->set_boolean("enabled", false);
 
-    gconf->change_set_commit(changeSet, true);
-
-    changeSet.set(PA_GCONF_PATH_MODULES"/upnp-media-server/locked", false);
-    gconf->change_set_commit(changeSet, true);
-
-    gconf->suggest_sync();
+    upnpSettings->apply();
 }
 
-void MainWindow::onGConfChange(const Glib::ustring&, const Gnome::Conf::Value&) {
-    readFromGConf();
+void MainWindow::onGSettingsChange(const Glib::ustring&) {
+    readFromGSettings();
 }
 
-void MainWindow::readFromGConf() {
-    Glib::ustring mode;
+bool MainWindow::moduleHasArgument(Glib::RefPtr<Gio::Settings> gsettings, const Glib::ustring& module, const Glib::ustring& name = "", const Glib::ustring& value = "") {
+    Glib::ustring args;
+    std::vector<std::string> moduleArgs, keyValue;
 
+    for (int i=0; i<MAX_MODULES; i++) {
+        char tmp[256];
+        snprintf(tmp, sizeof(tmp), "name%d", i);
+        if (gsettings->get_string(tmp) == module) {
+            if (name.empty() && value.empty()) {
+                return gsettings->get_boolean("enabled");
+            }
+            snprintf(tmp, sizeof(tmp), "args%d", i);
+            args = gsettings->get_string(tmp);
+            moduleArgs = Glib::Regex::split_simple(" ", args);
+            for (std::vector<std::string>::iterator it = moduleArgs.begin(); it != moduleArgs.end(); ++it) {
+                keyValue = Glib::Regex::split_simple("=", *it);
+                if (keyValue.size() >= 2 && keyValue[0] == name) {
+                    return keyValue[1] == value;
+                }
+            }
+            break;
+        }
+    }
+    return false;
+}
+
+void MainWindow::readFromGSettings() {
+    Glib::ustring mode, args;
+    std::vector<std::string> moduleArgs, keyValue;
+    bool loopbackEnabled = false;
+    bool anonymousEnabled = false;
+    bool zeroconfEnabled = false;
+    bool mikeEnabled = false;
+    bool speakerEnabled = false;
+    bool nullSink = false;
     ignoreChanges = TRUE;
 
-    remoteAccessCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/remote-access/enabled"));
-    zeroconfPublishCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/remote-access/zeroconf_enabled"));
-    anonymousAuthCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/remote-access/anonymous_enabled"));
+    remoteAccessCheckButton->set_active(remoteAccessSettings->get_boolean("enabled"));
 
-    zeroconfDiscoverCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/zeroconf-discover/enabled"));
-    zeroconfRaopDiscoverCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/raop-discover/enabled"));
+    zeroconfDiscoverCheckButton->set_active(zeroconfSettings->get_boolean("enabled"));
+    zeroconfRaopDiscoverCheckButton->set_active(raopSettings->get_boolean("enabled"));
 
-    rtpReceiveCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/rtp-recv/enabled"));
+    rtpReceiveCheckButton->set_active(rtpRecvSettings->get_boolean("enabled"));
 
-    rtpSendCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/rtp-send/enabled"));
-    rtpLoopbackCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/rtp-send/loopback_enabled"));
+    rtpSendCheckButton->set_active(rtpSendSettings->get_boolean("enabled"));
 
-    mode = gconf->get_string(PA_GCONF_PATH_MODULES"/rtp-send/mode");
-    if (mode == "microphone")
+    loopbackEnabled = moduleHasArgument(rtpSendSettings, "module-rtp-send", "loop", "1");
+    rtpLoopbackCheckButton->set_active(loopbackEnabled);
+
+    anonymousEnabled = moduleHasArgument(remoteAccessSettings, "module-native-protocol-tcp", "auth-anonymous", "1") &&
+                       moduleHasArgument(remoteAccessSettings, "module-esound-protocol-tcp", "auth-anonymous", "1");
+    anonymousAuthCheckButton->set_active(anonymousEnabled);
+
+    zeroconfEnabled = moduleHasArgument(remoteAccessSettings, "module-zeroconf-publish");
+    zeroconfPublishCheckButton->set_active(zeroconfEnabled);
+
+    mikeEnabled = moduleHasArgument(rtpSendSettings, "module-rtp-send", "source", "@DEFAULT_SOURCE@");
+    speakerEnabled = moduleHasArgument(rtpSendSettings, "module-rtp-send", "source", "@DEFAULT_MONITOR@");
+
+    if (mikeEnabled)
         rtpMikeRadioButton->set_active(TRUE);
-    else if (mode == "speaker")
+    else if (speakerEnabled)
         rtpSpeakerRadioButton->set_active(TRUE);
     else
         rtpNullSinkRadioButton->set_active(TRUE);
 
-    combineCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/combine/enabled"));
+    combineCheckButton->set_active(combineSettings->get_boolean("enabled"));
 
-    upnpMediaServerCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/upnp-media-server/enabled"));
-    upnpNullSinkCheckButton->set_active(gconf->get_bool(PA_GCONF_PATH_MODULES"/upnp-media-server/null-sink-enabled"));
+    upnpMediaServerCheckButton->set_active(upnpSettings->get_boolean("enabled"));
+
+    nullSink = moduleHasArgument(upnpSettings, "module-null-sink", "sink_name", "upnp");
+    upnpNullSinkCheckButton->set_active(nullSink);
 
     ignoreChanges = FALSE;
 
@@ -637,7 +658,7 @@ void MainWindow::readFromGConf() {
 }
 
 gchar * MainWindow::modulePath(const gchar *name) {
-  gchar *path, *c, **versions;
+  gchar *path, **versions;
 
   versions = g_strsplit(pa_get_library_version(), ".", 3);
   if (versions[0] && versions[1]) {
@@ -716,8 +737,6 @@ int main(int argc, char *argv[]) {
     signal(SIGPIPE, SIG_IGN);
 
     Gtk::Main kit(argc, argv);
-
-    Gnome::Conf::init();
 
     Gtk::Window* mainWindow = MainWindow::create();
 

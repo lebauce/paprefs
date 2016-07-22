@@ -71,6 +71,10 @@ fi
 
 AM_CONDITIONAL([USE_LYNX], [test "x$lynx" = xyes])
 
+#### GSettings support ####
+PKG_CHECK_MODULES(GSETTINGS, [ gio-2.0 >= 2.26.0 ])
+GLIB_GSETTINGS
+
 AM_GNU_GETTEXT([external])
 
 IT_PROG_INTLTOOL([0.35.0])
