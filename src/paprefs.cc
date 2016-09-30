@@ -25,6 +25,7 @@
 
 #include <gtkmm.h>
 #include <glibmm.h>
+#include <glibmm/keyfile.h>
 #include <glibmm/regex.h>
 #include <libglademm.h>
 #include <libintl.h>
@@ -104,6 +105,7 @@ public:
 
     void checkForPackageKit();
     void checkForModules();
+    void ensureMigrated();
 
     void writeToGSettingsRemoteAccess();
     void writeToGSettingsZeroconfDiscover();
@@ -165,6 +167,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gnome::Glade:
 
     checkForPackageKit();
     checkForModules();
+    ensureMigrated();
 
     combineSettings = Gio::Settings::create("org.freedesktop.pulseaudio.module",
                                             "/org/freedesktop/pulseaudio/modules/combine/");
@@ -726,6 +729,23 @@ void MainWindow::checkForPackageKit() {
     dbus_error_free(&err);
 }
 
+void MainWindow::ensureMigrated() {
+    Glib::KeyFile kf;
+    std::string keypath;
+    std::vector<std::string> list;
+
+    try {
+        kf.load_from_data_dirs("gsettings-data-convert",
+                               keypath, Glib::KEY_FILE_NONE);
+        list = kf.get_string_list("State", "converted");
+    } catch(Glib::KeyFileError) {}
+
+    if(std::find(list.begin(), list.end(), "paprefs.convert") == list.end()) {
+        Glib::spawn_command_line_sync("gsettings-data-convert",
+                                      NULL, NULL, NULL);
+
+    }
+}
 
 int main(int argc, char *argv[]) {
 
@@ -738,7 +758,7 @@ int main(int argc, char *argv[]) {
 
     Gtk::Main kit(argc, argv);
 
-    Gtk::Window* mainWindow = MainWindow::create();
+    MainWindow* mainWindow = MainWindow::create();
 
     Gtk::Main::run(*mainWindow);
     delete mainWindow;
